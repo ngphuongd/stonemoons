@@ -16,6 +16,7 @@ tw-story {
 }	
 
 tw-passage {
+  background-color: white;
   border: solid 3px gray;
   padding: 8px;
   box-shadow: 5px 5px 5px gray;
@@ -27,7 +28,16 @@ tw-link {
   color: red;
 }
 
-.container {
+.container1 { /*Sarah*/
+  display: inline-flex; 
+  width: 22px;
+  height: 22px;
+  background-color: blue;
+  margin: 0 2% 3px 2%;
+  transform: translateY(9%) translateX(%);
+}
+
+.container2 { /*Moon*/
   display: inline-flex; 
   width: 22px;
   height: 22px;
@@ -36,9 +46,36 @@ tw-link {
   transform: translateY(9%) translateX(%);
 }
 
+.container3 { /*Notes*/
+  display: inline-flex; 
+  width: 22px;
+  height: 22px;
+  background-color: purple;
+  margin: 0 2% 3px 2%;
+  transform: translateY(9%) translateX(%);
+}
+
+.container4 { /*LaurelY*/
+  display: inline-flex; 
+  width: 22px;
+  height: 22px;
+  background-color: yellow;
+  margin: 0 2% 3px 2%;
+  transform: translateY(9%) translateX(%);
+}
+
+.container5 { /*LaurelG*/
+  display: inline-flex; 
+  width: 22px;
+  height: 22px;
+  background-color: green;
+  margin: 0 2% 3px 2%;
+  transform: translateY(9%) translateX(%);
+}
+
 /* image styling */
 .space {
-  margin-top: -40px;
+  margin-top: 0px;
 }
 
 /* ---> For 1536px width */
@@ -159,7 +196,7 @@ tw-link {
 }
 
 .CDD1A, .CDD1B {
-  width: 431px; 
+  width: 350px; 
   max-width: 668px; 
   aspect-ratio: 668 / 108;
   
@@ -483,6 +520,7 @@ h2 {
 .sarah {
   padding: 33px;
   margin-top: 0;
+  margin-bottom: -40px;
   border: solid 3px gray;
 }
 
@@ -2540,15 +2578,12 @@ ____________________
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
 &#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
 </tw-passagedata><tw-passagedata pid="49" name="Somehow" tags="Sarah" position="7850,6025" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
-  &lt;h2 class&quot;sarah&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt;&lt;/div&gt;Somehow&lt;div class=&quot;container&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Somehow&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
   &lt;div class=&quot;sarah&quot;&gt;
 To:   mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
-
 From:   Sarah 
-
 Date:   06/1/97 20:08
-
 Subject:   A clean sweep
 
 Well, gang, I finally got the whole house cleaned up.  There are no more baked in chocloate-spinach-macaroni-cheese-powder soufflee stains adorning the top of my range. (I had to use a chisel and a sandblaster, but what the hell, it worked!). No more three-day-old plates of half-eaten potato chips on top of the toilet. 
@@ -2867,12 +2902,21 @@ Bad circuits -&gt; (link-goto: &quot;Electronic madness&quot;)
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="55" name="Running" tags="Sarah" position="8050,6150" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="55" name="Running" tags="Sarah" position="8050,6150" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Running&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 3/9/96  01:10
 Subject: Escape artists
 
-Laurel got out again today. She has figured out the doorbell alarm system and can deactivate it in I think about 4 seconds flat. So anyway, she&#39;&#39; ran out without&#39;&#39; a stitch of clothing on and started to jump up and down in the middle of the street.
+Laurel got out again today. She has figured out the doorbell alarm system and can deactivate it in I think about 4 seconds flat. So anyway, she (link-repeat:&quot;ran out without&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;What we run from&quot;, &quot;Electronic madness&quot;)
+(link-goto: &quot;tells much more about&quot;, &quot;Slip-sliding away&quot;)
+(link-goto: &quot;our deepest souls&quot;, &quot;Running again&quot;)
+(link-goto: &quot;that what we run to.&quot;, &quot;Life in the good lane&quot;)
+]] a stitch of clothing on and started to jump up and down in the middle of the street.
 
 I left Janet watching the Muppets, told her to stay in the house no matter what, and ran out after Laurel in my bare feet. I cut myself on some glass Laurel had thrown down from her window last night, so I left bloody foot prints in the snow trying to catch her.
 
@@ -2880,47 +2924,41 @@ Laurel was too far away, and I ran back into the house for shoes and the car key
 
 Mrs. Macdougal called me a serial child abuser again and threatened to call Social Services. I was too busy making sure Laurel was ok to answer.
 
-When we got back, Laurel made a bee-line for the snow, just avoiding the shattered &#39;&#39;glass&#39;&#39; underneath her window. She mashed it up into her face, smearing the leftover smudges of blood across her cheek and into her hair.
+When we got back, Laurel made a bee-line for the snow, just avoiding the shattered (link-repeat:&quot;glass&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The molecular structure&quot;, &quot;Reputations&quot;)
+(link-goto: &quot;of broken glass is truly&quot;, &quot;glass&quot;)
+(link-goto: &quot;the same as blood.&quot;, &quot;GLASS ENDINGS&quot;)
+]] underneath her window. She mashed it up into her face, smearing the leftover smudges of blood across her cheek and into her hair.
 
 Then she came up and put her sticky hand in mine, pulling for the refrigerator. So we went and had 7-Up and Pepsi.
 
 My feet are ok now, just a little scratched. I am soaking them in hydrogen peroxide while I type. Laurel is curled up behind the couch and has her hand over her nose, shielding her eyes like a cat. I blow kisses at her. She does not notice.
+&lt;/div&gt;
+&lt;/div&gt;
 
-
---space image
---&gt; Continue  #delve deeper 
+(link-repeat: &#39;&lt;img class=&quot;space&quot; src=&quot;https://github.com/ngphuongd/stonemoons/blob/main/stonemoons%20images/ApparentPlaceholder.jpg?raw=true&quot;&gt;&#39;)[(display:&quot;Modal code&quot;)(append: ?modal)
+[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;ARKENSTONES&quot;)
+]]]
+&lt;div class=&quot;CDD&quot;&gt;
+(link-repeat: &#39;&lt;div class=&quot;CDD1A&quot;&gt;&lt;/div&gt;&#39;)[(display:&quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Grocery shopping&quot;)
+ ]]]
+ (link-repeat: &#39;&lt;div class=&quot;CDD1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Lung capacity&quot;, &quot;Running again&quot;)
+(link-goto: &quot;Heart capacity&quot;, &quot;Show biz&quot;)
+(link-goto: &quot;Soul capacity&quot;, &quot;Slip-sliding away&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;ran out without&#39;&#39;
-What we run from -&gt; (link-goto: &quot;Electronic madness&quot;) 
-tells much more about -&gt; (link-goto: &quot;Slip-sliding away&quot;) 
-our deepest souls -&gt; (link-goto: &quot;Running again&quot;)
-that what we run to. -&gt; (link-goto: &quot;Life in the good lane&quot;) 
-
-&#39;&#39;glass&#39;&#39;
-The molecular structure -&gt; (link-goto: &quot;Reputations&quot;) 
-of broken glass is truly -&gt; (link-goto: &quot;glass&quot;)
-the same as blood. -&gt; (link-goto: &quot;GLASS ENDINGS&quot;) 
-
-&#39;&#39;--space image&#39;&#39; -&gt; (link-goto: &quot;ARKENSTONES&quot;) 
-
-&#39;&#39;--Continue&#39;&#39; -&gt; (link-goto: &quot;Grocery shopping&quot;) 
-
-&#39;&#39;#delve deeper&#39;&#39;
-Lung capacity -&gt; (link-goto: &quot;Running again&quot;) 
-Heart capacity -&gt; (link-goto: &quot;Show biz&quot;) 
-Soul capacity -&gt; (link-goto: &quot;Slip-sliding away&quot;) 
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-</tw-passagedata><tw-passagedata pid="56" name="Leaving" tags="Sarah" position="7650,6125" size="100,100">To:  mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="56" name="Leaving" tags="Sarah" position="7650,6125" size="100,100">To:  mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From:  Sarah 
 Date:  5/13/97  18:24
 Subject:  Leaving
@@ -11901,41 +11939,47 @@ Bad circuits -&gt; (link-goto: &quot;to return&quot;)
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="276" name="ARKENSTONES" tags="Moon" position="8975,4300" size="100,100">To: Sarah Murphy
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="276" name="ARKENSTONES" tags="Moon" position="8975,4300" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;ARKENSTONES&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: Sarah Murphy
 From: Sarah
 Subject: Truth files
 
-The stories skirt around the issue; they do not name it. And then the tales came to me in a dream, or maybe a time that was not a dream. I approached an altar, and I saw a &#39;&#39;book*&#39;&#39;, worked in silver thread, written in the moon&#39;s own blood. 
+The stories skirt around the issue; they do not name it. And then the tales came to me in a dream, or maybe a time that was not a dream. I approached an altar, and I saw a (link-repeat:&quot;book&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;note on Book of Thoth&quot;, &quot;Book of Thoth&quot;)
+]], worked in silver thread, written in the moon&#39;s own blood. 
 
-I knew it then. This is the stone treasure the dragon kept watch over, waiting lest anyone approach. This is what all men &#39;&#39;search for&#39;&#39;, though they call it different names: the grail, the golden apples, the ark of the covenant, which disappeared in the destruction of the temple. This is what Laurel needed, the thoughts she was &#39;&#39;so frightened of&#39;&#39;, at the end.
+I knew it then. This is the stone treasure the dragon kept watch over, waiting lest anyone approach. This is what all men (link-repeat:&quot;search for&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;If we admit we do not&quot;, &quot;You follow&quot;)
+(link-goto: &quot;know what we are&quot;, &quot;Memories&quot;)
+]], though they call it different names: the grail, the golden apples, the ark of the covenant, which disappeared in the destruction of the temple. This is what Laurel needed, the thoughts she was (link-repeat:&quot;so frightened of&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;What we understand most,&quot;, &quot;moon skin&quot;)
+(link-goto: &quot;we fear most.&quot;, &quot;blood talks&quot;)
+]], at the end.
 
 With this gift, I understand. 
+&lt;/div&gt;
+&lt;/div&gt;
 
-&lt;--Go back Press on--&gt;
+&lt;div class=&quot;GP&quot;&gt;
+(link-repeat: &#39;&lt;div class=&quot;GP1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOONBLOOD&quot;)
+]]]
+(link-repeat: &#39;&lt;div class=&quot;GP1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;IN THE BEGINNING&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;book*&#39;&#39; -&gt; (link-goto: &quot;Book of Thoth&quot;) 
-
-&#39;&#39;search for&#39;&#39;
-If we admit we do not -&gt; (link-goto: &quot;You follow&quot;) 
-know what we are -&gt; (link-goto: &quot;Memories&quot;) 
-
-&#39;&#39;so frieghtend of&#39;&#39;
-What we understand most, -&gt; (link-goto: &quot;moon skin&quot;) 
-we fear most. -&gt; (link-goto: &quot;blood talks&quot;) 
-
-&#39;&#39;&lt;--Go back&#39;&#39; -&gt; (link-goto: &quot;MOONBLOOD&quot;) 
-&#39;&#39;Press on--&gt;&#39;&#39; -&gt; (link-goto: &quot;IN THE BEGINNING&quot;) 
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="277" name="Emergency 2" tags="Sarah" position="6625,9000" size="100,100">To:   mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="277" name="Emergency 2" tags="Sarah" position="6625,9000" size="100,100">To:   mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From:   Sarah 
 Subject:   Crisis city part 2
 Date:   1/7/97 17:34
@@ -13388,7 +13432,11 @@ back -&gt; (link-goto: &quot;Egress&quot;)
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="316" name="Show biz" tags="Sarah" position="8900,4225" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="316" name="Show biz" tags="Sarah" position="8900,4225" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Show biz&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 3/17/95 22:10
 Subject: Just like a normal kid
@@ -13397,96 +13445,102 @@ This started out to be a bright and beautiful March Sunday. The kids and I slept
 
 Things looked great. I had a few moments to me and I was planning my spending spree of time. I was going to take a long shower, watch &quot;Roseanne&quot;, read some Piers Anthony, play a coupla games with the babies. But first I went to check on Laurel. She was on the roof. Her hands were artistically splayed above her head, her feet in a classic ballarina&#39;s pose (the fifth position, I think). And she was leaning way too far to the other side.  You know how in those moments everything is supposed to go in slow motion? Well, it didn&#39;t.
 
-Laurel took a flying leap, chortled, and jumped  off the other side of the house. I made record time getting to her, throwing old tricycles, pop cans, half a lawnmower, and other urban detritus out of the way. She was sitting quite still, &#39;&#39;stunned&#39;&#39;, with her arms wrapped around her chest, which was unusual for her. She let me kneel by her side and help her to her feet, but she couldn&#39;t put any weight on her left foot. She had that peculiar, jagged breathing that makes me think of broken bones. 
+Laurel took a flying leap, chortled, and jumped  off the other side of the house. I made record time getting to her, throwing old tricycles, pop cans, half a lawnmower, and other urban detritus out of the way. She was sitting quite still, (link-repeat:&quot;stunned&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Out on a limb&quot;)
+]], with her arms wrapped around her chest, which was unusual for her. She let me kneel by her side and help her to her feet, but she couldn&#39;t put any weight on her left foot. She had that peculiar, jagged breathing that makes me think of broken bones. 
 
 Dad sped over to sit on Janet. Chris shoved her husband, Rob out the door to help me take Laurel to the Emergency Room. I suggested we take two cars, but Rob said there was no chance he was leaving until the last paper was signed, so we just took mine. 
 
 Laurel adapted beautifully to maneuvering herself from the car to a wheelchair. She didn&#39;t want to lie down, didn&#39;t trust that big machine that the radiology tech said, &quot;won&#39;t hurt.&quot; But with the help of a little tylenol and codeine, and an inflated surgical glove, she decided she could hang out for a little while. The x-rays didn&#39;t show any breaks, but the ER doc said that kids&#39; breaks often don&#39;t show, especially not within the first hours after the injury. 
 
-Nonetheless, ER doc said that the degree of pain Laurel is showing indicates &#39;&#39;a probable break&#39;&#39;. The nurse announced she was going to put a splint on Laurel&#39;s foot. Laurel shook her head &quot;no&quot; so hard her hair whapped her chin. I explained that this probably wasn&#39;t the best idea, as if Laurel didn&#39;t want it, she certainly would have it off in about two nanoseconds flat.
+Nonetheless, ER doc said that the degree of pain Laurel is showing indicates (link-repeat:&quot;a probable break&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. What do bones weigh?&quot;, &quot;bones&quot;)
+(link-goto: &quot;A. A skele-ton.&quot;, &quot;BONES KNOW&quot;)
+]]. The nurse announced she was going to put a splint on Laurel&#39;s foot. Laurel shook her head &quot;no&quot; so hard her hair whapped her chin. I explained that this probably wasn&#39;t the best idea, as if Laurel didn&#39;t want it, she certainly would have it off in about two nanoseconds flat.
 
-The nurse muttered under her breath that she could certainly understand that, but asked if we could just keep an eye on Laurel so she wouldn&#39;t tear the cast off. After all, it would only be for about three weeks. Chris, Rob, and I started &#39;&#39;laughing hysterically&#39;&#39;. It had taken all three of us to keep an eye on her in the emergency room  how did the nurse think we were going to do it after we got her home??? 
+The nurse muttered under her breath that she could certainly understand that, but asked if we could just keep an eye on Laurel so she wouldn&#39;t tear the cast off. After all, it would only be for about three weeks. Chris, Rob, and I started (link-repeat:&quot;laughing hysterically&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Laughter is the body&#39;s&quot;, &quot;Laughing meds&quot;)
+(link-goto: &quot;final defense against&quot;, &quot;For the time being&quot;)
+(link-goto: &quot;madness.&quot;, &quot;HYSTERICS&quot;)
+]]. It had taken all three of us to keep an eye on her in the emergency room  how did the nurse think we were going to do it after we got her home??? 
 
 After we calmed down a bit, the ER doc said that if she didn&#39;t have at least a splint, then the bone would not heal properly and we would probaly have to rebreak it and reset it. I asked if we could create some sort of bandage that would keep the bones together and still be impossible for a very active, highly adept seven-year-old to take off. The doc, bless his heart, came up with a steel cage-like thing that he locked around Laurel&#39;s shin and ankle. Then he put the plaster on top of that. There was no way that she could get her hands under the plaster and steel. So this worked out well. We applauded. He bowed.
 
 Laurel tolerated it &#39;til we got to the car. Then she started screaming and banging her leg on the front seat. Chris and Rob climbed in back to hold her. Laurel clopped Chris on the chin with the cast  a heavy clomp. We thought we&#39;d have to go back into the emergency room, but Chris announced that she&#39;d survive. 
 
 After we got home, Laurel needed to &quot;undo&quot; the imbalance of having gone out the back and off the front of the house. On her one good foot, she found it necessary to climb over the fence. Twice. Rob completely disapproved. And helped. I carried Laurel through the back yard and into the house. Then she was fine, and allowed me to carry her to the shower where she could just wet her upper body and good leg, to the kitchen for a bedtime snack, and into her room to bed. I am one pooped puppy. I&#39;m going to look into borrowing a wheelchair for her. But right now, I&#39;m going to bed. 
+&lt;/div&gt;
+&lt;/div&gt;
 
---higher
---lower
-
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Running&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;After the show&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;stunned&#39;&#39; -&gt; (link-goto: &quot;Out on a limb&quot;)
-
-&#39;&#39;a probable break&#39;&#39;
-Q. What do bones weigh? -&gt; (link-goto: &quot;bones&quot;) 
-A. A skele-ton. -&gt; (link-goto: &quot;BONES KNOW&quot;) 
-
-&#39;&#39;laughing hysterically&#39;&#39;
-Laughter is the body&#39;s -&gt; (link-goto: &quot;Laughing meds&quot;) 
-final defense against -&gt; (link-goto: &quot;For the time being&quot;) 
-madness. -&gt; (link-goto: &quot;HYSTERICS&quot;) 
-
-&#39;&#39;--Higher&#39;&#39; -&gt; (link-goto: &quot;Running&quot;) 
-&#39;&#39;--Lower&#39;&#39; -&gt; (link-goto: &quot;After the show&quot;) 
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-</tw-passagedata><tw-passagedata pid="317" name="Slip-sliding away" tags="Sarah" position="8975,4225" size="100,100">To:  mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="317" name="Slip-sliding away" tags="Sarah" position="8975,4225" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Slip-sliding away&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From:  Sarah 
 Date:  12/28/94 19:29
 Subject: Houdini&#39;s end.
 
 Laurel ran off again today. While I was washing dishes, she planned her escape. The child has been watching David Copperfield, or maybe old movies of Houdini (I don&#39;t know, did they really make old movies of Houdini?). She must be emulating someone, surely this couldn&#39;t come out of one innocent child&#39;s own head! She left the water running in ythe sink, and the noise hid the slight noises as she dragged the chair to the door, clambered up, and de-activated the alarm Rob installed for me just last week.  Mission accomplished, she slipped out the door, left the house barefoot and ran out into the ice and snow, making a bee-line for the grocery store and Colorado Boulevard . 
 
-I noticed a green flash outside the window and instictively ran to the door. This day, my &#39;&#39;self-preservation genes&#39;&#39; were kicking in--I stopped to get shoes. By the time I looked up (5 nanoseconds later, I am really getting to be a fast-change artist), she was nowhere to be seen. So I ran out to the car, which wouldn&#39;t start, natch.  No one else was around (it was about noon-thirty, and Janet had gone off with the Coopers for a day trip to Keystone--the Coopers paid for her day skiing and sledding as a Christmas present-but I digress). 
+I noticed a green flash outside the window and instictively ran to the door. This day, my (link-repeat:&quot;self-preservation genes&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;These genes, however,&quot;, &quot;Getting down to it&quot;)
+(link-goto: &quot;often forget to&quot;, &quot;babysitters&quot;)
+(link-goto: &quot;preserve themselves--&quot;, &quot;DOUBLED&quot;)
+(link-goto: &quot;and suicide then becomes&quot;, &quot;leave her again&quot;)
+(link-goto: &quot;an attractive option.&quot;, &quot;Cop-sickles&quot;)
+]] were kicking in--I stopped to get shoes. By the time I looked up (5 nanoseconds later, I am really getting to be a fast-change artist), she was nowhere to be seen. So I ran out to the car, which wouldn&#39;t start, natch.  No one else was around (it was about noon-thirty, and Janet had gone off with the Coopers for a day trip to Keystone--the Coopers paid for her day skiing and sledding as a Christmas present-but I digress). 
 
-So I ran after the &#39;&#39;footprints in the snow&#39;&#39; (we&#39;d gotten about 4 inches the day before this). I saw her green dress in the snow just this side of Colorado Boulevard, and ran like hell to get to her. But I slipped on the ice and skidded. Pain surrounded me with its sudden, final dictatorship. 
+So I ran after the (link-repeat:&quot;foorprints in the snow&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The snow makes&quot;, &quot;Running&quot;)
+(link-goto: &quot;everything easier&quot;, &quot;snowvoice&quot;)
+(link-goto: &quot;to see and understand.&quot;, &quot;My soul&quot;)
+]] (we&#39;d gotten about 4 inches the day before this). I saw her green dress in the snow just this side of Colorado Boulevard, and ran like hell to get to her. But I slipped on the ice and skidded. Pain surrounded me with its sudden, final dictatorship. 
 
 I could not get up off the ground. 
 
 I could not move. 
 
 I could only watch with horror as she sat down and slid into the busy road. I knew no one would see her. I knew this was the end.
-
---Higher
---Lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Running&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Death wish&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;self-preservation genes&#39;&#39;
-These genes, however, -&gt; (link-goto: &quot;Getting down to it&quot;)
-often forget to -&gt; (link-goto: &quot;babysitters&quot;)
-preserve themselves-- -&gt; (link-goto: &quot;DOUBLED&quot;)
-and suicide then becomes -&gt; (link-goto: &quot;leave her again&quot;)
-an attractive option. -&gt; (link-goto: &quot;Cop-sickles&quot;)
-
-&#39;&#39;foorprints in the snow&#39;&#39;
-The snow makes -&gt; (link-goto: &quot;Running&quot;) 
-everything easier -&gt; (link-goto: &quot;snowvoice&quot;)
-to see and understand. -&gt; (link-goto: &quot;My soul&quot;)
-
-&#39;&#39;--Higher&#39;&#39; -&gt; (link-goto: &quot;Running&quot;)
-&#39;&#39;--Lower&#39;&#39; -&gt; (link-goto: &quot;Death wish&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="318" name="Running again" tags="Sarah" position="9075,4225" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="318" name="Running again" tags="Sarah" position="9075,4225" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Running again&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 2/8/94
 Subject: A haunting tale
@@ -13495,7 +13549,11 @@ I probably should tell you guys all this because you are my friends and you care
 
 Let me begin at the beginning of this sordid little tale. Laurel and some other kids go swimming every Tuesday at the Y. She loves the water, and I love just watching her little yellow cap bobbing up and down through the chlorine green.  This is the one and only time she will stand for anything on her head--I think she follows the electorial philosophy of suffering the lesser evil--a thick plastic cap or water in her ears and eyes.  
 
-Her &#39;&#39;rituals&#39;&#39; are worthy of a choir spot on Ethel Merman&#39;s shows, supposing the lines of time and space could be warped enough to bring that about. Laurel swims in a four foot circle in the shallow part, her head barely below the water, her arms holding her knees as she kicks silently. When the water sprays, she stops circling and stands for a moment, letting the water just lap into the kelly green top of her one piece.
+Her (link-repeat:&quot;rituals&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;These touchstones are&quot;, &quot;RITUALS&quot;)
+(link-goto: &quot;what keep her form&quot;, &quot;zorfs&quot;)
+(link-goto: &quot;drowning&quot;, &quot;alone.&quot;)
+]] are worthy of a choir spot on Ethel Merman&#39;s shows, supposing the lines of time and space could be warped enough to bring that about. Laurel swims in a four foot circle in the shallow part, her head barely below the water, her arms holding her knees as she kicks silently. When the water sprays, she stops circling and stands for a moment, letting the water just lap into the kelly green top of her one piece.
 
 The other kids form rings around the rosy, stick their feet up through the air in the shallow part, and hunt monsters down as long as their breath holds them together. Laurel ignores them entirely. She is much more interested in her own little pockets of posy, her poses and pirouettes.
 
@@ -13503,101 +13561,107 @@ Anyway, I really am getting to my point, because I always have at least one. Any
 
 Then I ran out barefoot in 30-degree weather trying to catch her. I ran forever, and finally my lungs filled with fire and air refused to move through me. Then I saw Laurel--only a block and a half away, the yellow bathing cap jumping up and down like the little jump stick dolls they used to have when everybody who is older than the hills grew up. (which just dates me, but anyway I&#39;m getting to the scary part here, so just hold your breath folks).
 
-This is the scary part:  My side cramped so badly I could not move. And &#39;&#39;no one would help me&#39;&#39;.
-
---Higher
---Lower
-
+This is the scary part:  My side cramped so badly I could not move. And (link-repeat:&quot;no one would help me&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Why are we always&quot;, &quot;Any other questions?&quot;)
+(link-goto: &quot;alone in the midst&quot;, &quot;Out on a limb&quot;)
+(link-goto: &quot;of a crowd?&quot;, &quot;Out of options&quot;)
+]].
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Running&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Fear&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="319" name="Crypt" tags="Note" position="8825,3700" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;Crypt&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
+
+Our local BDSM (Bondage and Discipline, Sado-Masochism) store. The people there are incredibly friendly, extremely knowledgeable about every possible type of (link-repeat:&quot;safe restraint&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;If it works,&quot;, &quot;Devices&quot;)
+(link-goto: &quot;usue it!&quot;, &quot;Armor&quot;)
+]]. They are beginning to know me quite well, actually. I keep recommending them to other moms, school districts, and friends, but no one can quite get up the courage to enter the shop. 
+
+I will admit that the chain bikinis and nipple clamps in the window are a wee bit intimidating.  Nonetheless, if I can brave a roomful of administrators, educators, and psychologists for my child, I can (link-repeat:&quot;brave&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;No one will keep&quot;, &quot;THE MOON&#39;S PRICE&quot;)
+(link-goto: &quot;me from my child.&quot;, &quot;in my pain&quot;)
+]] anything.
+&lt;/div&gt;
+&lt;/div&gt;
+ (link-repeat: &#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;After the show&quot;)
+(link-goto: &quot;back&quot;, &quot;Mama&quot;)
+(link-goto: &quot;back&quot;, &quot;Whatcha gonna do&quot;)
+(link-goto: &quot;back&quot;, &quot;Uncertain&quot;)
+(link-goto: &quot;back&quot;, &quot;Devices&quot;)
+]]]
 ___________________
-
-
-Links:
-____________________
-
-&#39;&#39;rituals&#39;&#39;
-These touchstones are -&gt; (link-goto: &quot;RITUALS&quot;)
-what keep her form -&gt; (link-goto: &quot;zorfs&quot;)
-drowning -&gt; (link-goto: &quot;alone.&quot;)
-
-&#39;&#39;no one would help me&#39;&#39;
-Why are we always -&gt; (link-goto: &quot;Any other questions?&quot;)
-alone in the midst -&gt; (link-goto: &quot;Out on a limb&quot;)
-of a crowd? -&gt; (link-goto: &quot;Out of options&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Running&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;Fear&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="319" name="Crypt" tags="Note" position="8825,3700" size="100,100">NOTE:
-
-Our local BDSM (Bondage and Discipline, Sado-Masochism) store. The people there are incredibly friendly, extremely knowledgeable about every possible type of &#39;&#39;safe restraint&#39;&#39;. They are beginning to know me quite well, actually. I keep recommending them to other moms, school districts, and friends, but no one can quite get up the courage to enter the shop. 
-
-I will admit that the chain bikinis and nipple clamps in the window are a wee bit intimidating.  Nonetheless, if I can brave a roomful of administrators, educators, and psychologists for my child, I can &#39;&#39;brave&#39;&#39; anything.
-
---back
-___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;safe restraint&#39;&#39;
-If it works, -&gt; (link-goto: &quot;Devices&quot;)
-usue it! -&gt; (link-goto: &quot;Armor&quot;)
-
-&#39;&#39;brave &#39;&#39;
-No one will keep -&gt; (link-goto: &quot;THE MOON&#39;S PRICE&quot;) 
-me from my child. -&gt; (link-goto: &quot;in my pain&quot;)
-
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;After the show&quot;)
-back -&gt; (link-goto: &quot;Mama&quot;)
-back -&gt; (link-goto: &quot;Whatcha gonna do&quot;)
-back -&gt; (link-goto: &quot;Uncertain&quot;)
-back -&gt; (link-goto: &quot;Devices&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="320" name="echololia" tags="Note" position="8825,3850" size="100,100">NOTE:
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="320" name="echololia" tags="Note" position="8825,3850" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;echololia&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
 
 Echololia is a repeating sound. The child might say something she heard before in that spot or in another location. For example, if a teacher said &quot;Let&#39;s go for a walk&quot; three months ago and then proceeded to get a drink of water, the child might say &quot;Let&#39;s go for a walk&quot; when she really wants a drink of water.
 
-Needless to say, this repetition creates &#39;&#39;more of a mystery&#39;&#39; than it solves.
+Needless to say, this repetition creates (link-repeat:&quot;more of mystery &quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Hush baby bunting&quot;, &quot;The storm&quot;)
+(link-goto: &quot;don&#39;t say a word.&quot;, &quot;After I&quot;)
+(link-goto: &quot;Momma&#39;s gonna cry.&quot;, &quot;OICHE DHUIBHRE&quot;)
+]] than it solves.
+&lt;/div&gt;
+&lt;/div&gt;
 
-
---back
-
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;After the show&quot;)
+(link-goto: &quot;back&quot;, &quot;Flyer&quot;)
+]]]
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;more of a mystery&#39;&#39;
-Hush baby bunting -&gt; (link-goto: &quot;The storm&quot;) 
-don&#39;t say a word. -&gt; (link-goto: &quot;After I&quot;) 
-Momma&#39;s gonna cry. -&gt; (link-goto: &quot;OICHE DHUIBHRE&quot;) 
-
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;After the show&quot;) 
-back -&gt; (link-goto: &quot;Flyer&quot;) 
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-</tw-passagedata><tw-passagedata pid="321" name="After the show" tags="Sarah" position="8750,3775" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="321" name="After the show" tags="Sarah" position="8750,3775" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;After the show&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 3/22/95 22:10
 Subject: Encore, encore
 
-Hi Friends! Laurel has been using a rental wheelchair for the past five days. I managed to get her one the morning after she &#39;&#39;jumped off the roof&#39;&#39;. The cast is still on, but she doesn&#39;t seem to feel the pain when she walks. So she has walked a bit, been surprised when her leg does not work, sat a bit, forgot about it, and walked a bit more. To combat this, I went down to the &#39;&#39;Crypt*&#39;&#39; to get some restraints and tie her into the chair. Unfortunately, I got only the buckle kind, not the lock and key kind.
+Hi Friends! Laurel has been using a rental wheelchair for the past five days. I managed to get her one the morning after she (link-repeat:&quot;jumped off the roof&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Knock, knock.&quot;, &quot;Show biz&quot;)
+(link-goto: &quot;Who&#39;s there?&quot;, &quot;lucky&quot;)
+(link-goto: &quot;Bonsai.&quot;, &quot;bones&quot;)
+(link-goto: &quot;Bonsai who?&quot;, &quot;trees&quot;)
+(link-goto: &quot;Bonsai broken&quot;, &quot;Helpfulness&quot;)
+]]. The cast is still on, but she doesn&#39;t seem to feel the pain when she walks. So she has walked a bit, been surprised when her leg does not work, sat a bit, forgot about it, and walked a bit more. To combat this, I went down to the (link-repeat:&quot;Crypt*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Crypt&quot;)
+]] to get some restraints and tie her into the chair. Unfortunately, I got only the buckle kind, not the lock and key kind.
 
 Today, as I was working on a business letter, not ten feet from where I&#39;d tied Laurel to the chair, I realized I hadn&#39;t heard from her for about ten minutes. I looked at her chair. Nothing there. I pulled my heart down from the ceiling and went outside--merely to find the little bugger climbing back onto the roof! Expletive deleted! I rushed up onto the roof before realizing that I am terrified of heights. The rolling in the stomach. The pressing behind the eyes as you realize two totally separate, simultaneous states of reality: 
 
@@ -13605,55 +13669,48 @@ Today, as I was working on a business letter, not ten feet from where I&#39;d ti
 
    2. There is no phone on the roof.
 
-I choked back my screams and started toward Laurel, crooning in my most comforting &#39;&#39;voice&#39;&#39;, &quot;peanut, peanut butter, peanut peanut butter,&quot; over and over again. This helped some. At least, I felt calmer. Laurel stayed just a few inches away from me during all of this, slowly and steadiy climbing higher on the tarry, grey-and-red pebbled shingles. Her cast made scratchy noises, light scraping against my nerves. The sandpaper roughness was just enough to catch the edges of my fear. 
+I choked back my screams and started toward Laurel, crooning in my most comforting (link-repeat:&quot;voice&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Merging&quot;)
+]], &quot;peanut, peanut butter, peanut peanut butter,&quot; over and over again. This helped some. At least, I felt calmer. Laurel stayed just a few inches away from me during all of this, slowly and steadiy climbing higher on the tarry, grey-and-red pebbled shingles. Her cast made scratchy noises, light scraping against my nerves. The sandpaper roughness was just enough to catch the edges of my fear. 
 
-Laurel, of course, felt none of this. Finally she reached the apex of the roof and straddled it like a horse. Then she patted the roof and said &quot;Gee go,&quot; which is what I say when I let her on the penny-a-ride horse in the front of the Super KMart. I wasn&#39;t sure if the &#39;&#39;echololia*&#39;&#39; was good right here or not. In any other circumstances, I would have been wallowing ecstatically in the sound of &#39;&#39;Laurel&#39;s voice&#39;&#39;. The vertigo in my stomach kept my mind on the current matter.
+Laurel, of course, felt none of this. Finally she reached the apex of the roof and straddled it like a horse. Then she patted the roof and said &quot;Gee go,&quot; which is what I say when I let her on the penny-a-ride horse in the front of the Super KMart. I wasn&#39;t sure if the (link-repeat:&quot;echololia*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;echololia&quot;)
+]] was good right here or not. In any other circumstances, I would have been wallowing ecstatically in the sound of (link-repeat:&quot;Laurel&#39;s voice&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;A child&#39;s voice has a&quot;, &quot;snowvoice&quot;)
+(link-goto: &quot;lot more meaning if you&quot;, &quot;Glimpses&quot;)
+(link-goto: &quot;haven&#39;t heard it before.&quot;, &quot;Mama&quot;)
+]]. The vertigo in my stomach kept my mind on the current matter.
 
-I didn&#39;t dare get any closer, as Laurel was only two feet from the edge of the roof. She looked back at me and giggled. I shouted for Janet and bless her, she came running in from playing with her friend Carina about two doors up. Carina ran to get her father, Mr. &#39;&#39;Fisher&#39;&#39;. Mr. Fisher came over in his bare feet and terry cloth robe. That is the great thing about my neighbors, they know that when I call, it really IS an emergency.
+I didn&#39;t dare get any closer, as Laurel was only two feet from the edge of the roof. She looked back at me and giggled. I shouted for Janet and bless her, she came running in from playing with her friend Carina about two doors up. Carina ran to get her father, Mr. (link-repeat:&quot;Fisher&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Merging&quot;)
+]]. Mr. Fisher came over in his bare feet and terry cloth robe. That is the great thing about my neighbors, they know that when I call, it really IS an emergency.
 
 Laurel and I sat up there for about fifteen minutes while Mr. Fisher, on my instructions, set up the ladder. Janet climbed up (I didn&#39;t want to risk anyone who wasn&#39;t a family member), and set out a trail of orange Starburst candies--one for every two shingles on the shortest way down to the ladder. 
 
 Hey, don&#39;t knock bribery. It worked! Laurel was mostly crawling once she got back inside, but the cast seemed to hold up pretty well. With that steel lining, it should hold up against practically anything--up to and including a nuclear disaster. 
-
---Higher
---Lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Show biz&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Merging&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;jumped off the roof&#39;&#39;
-Knock, knock. -&gt; (link-goto: &quot;Show biz&quot;) 
-Who&#39;s there? -&gt; (link-goto: &quot;lucky&quot;) 
-Bonsai. -&gt; (link-goto: &quot;bones&quot;) 
-Bonsai who? -&gt; (link-goto: &quot;trees&quot;) 
-Bonsai broken -&gt; (link-goto: &quot;Helpfulness&quot;) 
-
-&#39;&#39;Crypt*&#39;&#39; -&gt; (link-goto: &quot;Crypt&quot;) 
-
-&#39;&#39;voice&#39;&#39; -&gt; (link-goto: &quot;Merging&quot;) 
-
-&#39;&#39;echololia*&#39;&#39; -&gt; (link-goto: &quot;echololia&quot;) 
-
-&#39;&#39;Laurel&#39;s voice&#39;&#39;
-A child&#39;s voice has a -&gt; (link-goto: &quot;snowvoice&quot;) 
-lot more meaning if you -&gt; (link-goto: &quot;Glimpses&quot;) 
-haven&#39;t heard it before. -&gt; (link-goto: &quot;Mama&quot;) 
-
-&#39;&#39;Fisher&#39;&#39; -&gt; (link-goto: &quot;Merging&quot;) 
-
-&#39;&#39;--Higher&#39;&#39; -&gt; (link-goto: &quot;Show biz&quot;) 
-&#39;&#39;--Lower&#39;&#39; -&gt; (link-goto: &quot;Merging&quot;) 
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-
-</tw-passagedata><tw-passagedata pid="322" name="Fear" tags="Sarah" position="9225,4050" size="100,100">To: Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="322" name="Fear" tags="Sarah" position="9225,4050" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Fear&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: Sarah Murphy
 From: Sarah
 Subject: Heart files
 
@@ -13662,40 +13719,42 @@ You have to run after your child and you cannot run.
 
 You have to lift her up and you cannot lift her up.
 
-You have to find the &#39;&#39;money&#39;&#39; to feed here and there is &#39;&#39;no money&#39;&#39;.
+You have to find the (link-repeat:&quot;money&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;LIFE FEAR&quot;)
+]] to feed here and there is (link-repeat:&quot;no money&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. How do cows&quot;, &quot;Withering choices&quot;)
+(link-goto: &quot;get their money?&quot;, &quot;Surgery aftermath&quot;)
+(link-goto: &quot;A. They churn it&quot;, &quot;The great wall&quot;)
+]].
 
-In one horrible, lung-fire-filled instant, every idea I had about keeping her safe for her whole life &#39;&#39;vanished&#39;&#39; from every known universe.
-
---Higher
---Lower
-
-
+In one horrible, lung-fire-filled instant, every idea I had about keeping her safe for her whole life (link-repeat:&quot;vanished&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;And then she vanished&quot;, &quot;Leaving&quot;)
+(link-goto: &quot;softly and suddenly away,&quot;, &quot;CELL MEMORY&quot;)
+(link-goto: &quot;as the snark was a boojum&quot;, &quot;moon breaks&quot;)
+]] from every known universe.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Running again&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;LIFE FEAR&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;money&#39;&#39; -&gt; (link-goto: &quot;LIFE FEAR&quot;)
-
-&#39;&#39;no money&#39;&#39;
-Q. How do cows -&gt; (link-goto: &quot;Withering choices&quot;)
-get their money? -&gt; (link-goto: &quot;Surgery aftermath&quot;)
-A. They churn it -&gt; (link-goto: &quot;The great wall&quot;)
-
-&#39;&#39;vanished&#39;&#39;
-And then she vanished -&gt; (link-goto: &quot;Leaving&quot;)
-softly and suddenly away, -&gt; (link-goto: &quot;CELL MEMORY&quot;)
-as the snark was a boojum -&gt; (link-goto: &quot;moon breaks&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Running again&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;LIFE FEAR&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="323" name="Death wish" tags="Sarah" position="9025,3950" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="323" name="Death wish" tags="Sarah" position="9025,3950" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Death wish&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Psych files
 DateLine:  Winter 1994
@@ -13704,31 +13763,35 @@ I did not want to get up from the ice to save my child. My hip was on fire, my f
 
 I closed my eyes against the guilt this brought out. This was surely the right thing to do. Surely no one would have to suffer anymore.
 
-I cried as if she were &#39;&#39;already dead&#39;&#39;.
-
---Higher
---Lower
-
+I cried as if she were (link-repeat:&quot;already dead&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;My little girl&quot;, &quot;LIFE FEAR&quot;)
+(link-goto: &quot;dressed in blue&quot;, &quot;Frozen dreams&quot;)
+(link-goto: &quot;died last night&quot;, &quot;fades.&quot;)
+(link-goto: &quot;at half-past two.&quot;, &quot;MOON FALLEN&quot;)
+]].
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Slip-sliding away&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Rescue party&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;already dead&#39;&#39;
-My little girl -&gt; (link-goto: &quot;LIFE FEAR&quot;)
-dressed in blue -&gt; (link-goto: &quot;Frozen dreams&quot;)
-died last night -&gt; (link-goto: &quot;fades.&quot;)
-at half-past two. -&gt; (link-goto: &quot;MOON FALLEN&quot;)
-
-&#39;&#39;--higher &#39;&#39;-&gt; (link-goto: &quot;Slip-sliding away&quot;)
-&#39;&#39;--lower &#39;&#39;-&gt; (link-goto: &quot;Rescue party&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="324" name="Merging" tags="Sarah" position="8950,3425" size="100,100">To: Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="324" name="Merging" tags="Sarah" position="8950,3425" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Merging&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: Sarah Murphy
 From: Sarah
 Subject: Heart files
 
@@ -13736,76 +13799,90 @@ I knew I could do this. I began to know the strength of my cells when my child f
 
 When my blood spilled out from the birth pains, when my body heaved and every muscle, every tendon bore down to force my child into the light, I knew. From then on, my body would do anything to protect my child. 
 
-My cells would take &#39;&#39;power from beyond&#39;&#39; themselves, gather it, and save it for when my child cried out.
-
---Higher
---Lower
-
+My cells would take (link-repeat:&quot;power from beyond&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Do not go gentyly&quot;, &quot;so far&quot;)
+(link-goto: &quot;into that good birth,&quot;, &quot;Desperate&quot;)
+(link-goto: &quot;rage, rage, against the&quot;, &quot;Don&#39;t stand&quot;)
+(link-goto: &quot;taking of her life.&quot;, &quot;dramatical&quot;)
+]] themselves, gather it, and save it for when my child cried out.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;After the show&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;TRIUMPHS&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;power from beyond&#39;&#39;
-So not go gentyly -&gt; (link-goto: &quot;so far&quot;) 
-into that good birth, -&gt; (link-goto: &quot;Desperate&quot;) 
-rage, rage, against the -&gt; (link-goto: &quot;Don&#39;t stand&quot;)
-taking of her life. -&gt; (link-goto: &quot;dramatical&quot;)
-
-&#39;&#39;--Higher&#39;&#39; -&gt; (link-goto: &quot;After the show&quot;)
-&#39;&#39;--Lower&#39;&#39; -&gt; (link-goto: &quot;TRIUMPHS&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-</tw-passagedata><tw-passagedata pid="325" name="TRIUMPHS" tags="Moon" position="9075,3150" size="100,100">I do not remember when I first realized this was a fight to the &#39;&#39;death&#39;&#39;. I think perhaps I have known this from the moment of my own conception. Yet I do not tell Laurel this.
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="325" name="TRIUMPHS" tags="Moon" position="9075,3150" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;TRIUMPHS&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+I do not remember when I first realized this was a fight to the (link-repeat:&quot;death&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Everything important has&quot;, &quot;REPETITION&quot;)
+(link-goto: &quot;always been to the death.&quot;, &quot;SOLE REMEDY&quot;)
+]]. I think perhaps I have known this from the moment of my own conception. Yet I do not tell Laurel this.
 
 I tell her I am not ready for the moon to have her. I tell her she is safe with me.
 
-My fingers press against her flesh as we struggle, as I hold Laurel back from the moon. My fingers &#39;&#39;cause pools of blood&#39;&#39; to gather under her pale skin. And we both know the sacrifices demanded to keep her here.
+My fingers press against her flesh as we struggle, as I hold Laurel back from the moon. My fingers (link-repeat:&quot;cause pools of blood&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;This is the price&quot;, &quot;HARM&quot;)
+(link-goto: &quot;I am willing to pay&quot;, &quot;blood talks&quot;)
+(link-goto: &quot;and my child.&quot;, &quot;Any other questions?&quot;)
+]] to gather under her pale skin. And we both know the sacrifices demanded to keep her here.
 
 I tell her I have the strength to hold her and I clutch at her chest, holding her tightly against me. Sometimes she clutches back. Sometimes she wanders away, her eyes caught in the moonlight.
-
---Moon
---Sarah
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;MS&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;MS1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;ARKENSTONES&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;MS1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Grocery shopping&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;death&#39;&#39;
-Everything important has -&gt; (link-goto: &quot;REPETITION&quot;)
-always been to the death. -&gt; (link-goto: &quot;SOLE REMEDY&quot;)
-
-&#39;&#39;cause pools of blood&#39;&#39;
-This is the price -&gt; (link-goto: &quot;HARM&quot;)
-I am willing to pay -&gt; (link-goto: &quot;blood talks&quot;)
-and my child. -&gt; (link-goto: &quot;Any other questions?&quot;)
-
-&#39;&#39;--Moon&#39;&#39; -&gt; (link-goto: &quot;ARKENSTONES&quot;)
-&#39;&#39;--Sarah&#39;&#39; -&gt; (link-goto: &quot;Grocery shopping&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="326" name="Rescue party" tags="Sarah" position="9150,3675" size="100,100">To:  mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="326" name="Rescue party" tags="Sarah" position="9150,3675" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Rescue party&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From:  Sarah 
 Date:  12/28/94 23:41
 Subject: Cliffhanger ending
 
-Sorry about that cliffhanger there. While I was typing, Laurel had gotten out of her room and was decorating the hallway in a tasteful shade of peanut butter and broken glass.  This would have been ok, except that the floor had to be decorated to match, and she was barefoot. We got the glass out of her foot and she insisted on putting the &#39;&#39;bloody glass&#39;&#39; onto the wall-where it belonged. I will wait until she falls asleep to clean up the mess.
+Sorry about that cliffhanger there. While I was typing, Laurel had gotten out of her room and was decorating the hallway in a tasteful shade of peanut butter and broken glass.  This would have been ok, except that the floor had to be decorated to match, and she was barefoot. We got the glass out of her foot and she insisted on putting the (link-repeat:&quot;bloody glass&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Glass is the one&quot;, &quot;Running&quot;)
+(link-goto: &quot;medium that slides&quot;, &quot;glass&quot;)
+(link-goto: &quot;easily into flesh&quot;, &quot;GLASS HARMONICA&quot;)
+]] onto the wall-where it belonged. I will wait until she falls asleep to clean up the mess.
 
 So, needless to say, Laurel is still very much alive. The gas station attendant on Monaco knows us pretty well. Luckily, Laurel was in his line of sight (about 50 feet away). He saw what was going on, left his store, and ran out to grab Laurel.
 
 Laurel bit him. He held on and grasped her shoulders. Laurel struggled. He pulled her up off the sidewalk and dragged her into the gas station. Not daring to let go because he feared my darling daughter would bite again, he yelled at a customer to call 911. The customer, a big burly guy about 6 feet 6 or so grabbed Laurel&#39;s legs, which were kicking faster than a helicopter&#39;s propellers and doing just about as much damage to the gas station attendant&#39;s snow-caked legs. Another customer, a small black-haired lady, saw only a small portion of what was going on, drew her own conclusions, and called 911 to report a burglary in progress. 
 
-In the meantime, I was still on the ground about 100 yards away from the gas station, trying to get up. My hip was simply not cooperating and was perusing &#39;&#39;travel brochures&#39;&#39; for the Caribbean or maybe even Tahiti.
+In the meantime, I was still on the ground about 100 yards away from the gas station, trying to get up. My hip was simply not cooperating and was perusing (link-repeat:&quot;travel brochures&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;My body wants to land&quot;, &quot;I will find a way&quot;)
+(link-goto: &quot;a life very far away&quot;, &quot;enough&quot;)
+(link-goto: &quot;from my soul.&quot;, &quot;is captured&quot;)
+]] for the Caribbean or maybe even Tahiti.
 
 So I started to crawl toward the gas station, calling out that Laurel was autistic and was not going to hurt anyone. I could not see what was going on.
 
@@ -13813,106 +13890,99 @@ The cops came when I was about on the 60 yard line and crawling for the tackle. 
 
 I called out as the cop entered the store, but he was much too interested in the burglary. I don&#39;t know what was said in there, but I can imagine, as the cop was out in about a minute, scouring the street for me. I called out again and he came over. He said not to move, and he called the paramedics. I told him my daughter was autistic, and could not speak or reason (which is a bit of a lie, but under the circumstances was the easiest thing to say). He said that everything was under control there and not to worry.
 
-&#39;&#39;I kept crawling forward anyway&#39;&#39;.
+(link-repeat:&quot;I kept crawling forward anyway&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;I have gone beyond&quot;, &quot;First strike&quot;)
+(link-goto: &quot;the beyond&quot;, &quot;Merging&quot;)
+(link-goto: &quot;so many times&quot;, &quot;SOLE REMEDY&quot;)
+(link-goto: &quot;that I can do anything&quot;, &quot;Beyond anything&quot;)
+]].
 
 He sighed and said, &quot;Well, if that&#39;s the way you want it, lady.&quot; and gave me a hand up. We covered the last 50 yards and when I got into the store, I could see Laurel was calming down. So I said that I could hold her and took over from the burly customer. Laurel immediately wriggled out of my grasp, grabbed a Pepsi from the display, and started chugging it. At that point, I found I had forgotten my wallet. The gas station attendant said, &quot;Don&#39;t worry about it, lady. I&#39;ll catch you next time.&quot; I tried to tell him how grateful I was and he just said, &quot;Merry Christmas, ma&#39;am.&quot;
 
 The paramedics checked out my hip, pronounced it merely bruised, and left without a bill when they figured out what was going on. 
 
 Merry Christmas to all, and to all a good night.
-
-
---Higher
---Lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Death wish&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;LISTEN&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="327" name="LISTEN" tags="Moon" position="9275,3400" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;LISTEN&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+Listen. Please just listen. How can sparing one small soul, one tiny child even matter to you~ you who have (link-repeat:&quot;created the universe?&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Those whom the&quot;, &quot;MOON CYCLES&quot;)
+(link-goto: &quot;goddess would destroy,&quot;, &quot;IN THE BEGINNING&quot;)
+(link-goto: &quot;she first must create--&quot;, &quot;HOLD NO HOPE&quot;)
+(link-goto: &quot;and make them understand.&quot;, &quot;HANDING DOWN DOOM&quot;)
+]] It matters so much to me, and can mean so little to you. Let me have my child. Leave us trifles alone.
+
+Listen. Just for once, listen. I&#39;m begging the (link-repeat:&quot;mother in you&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Now that I have your&quot;, &quot;MOON MOTHER&quot;)
+(link-goto: &quot;attention, I can&#39;t&quot;, &quot;MOON CYCLES&quot;)
+(link-goto: &quot;find any words to&quot;, &quot;MOON SHINE&quot;)
+(link-goto: &quot;convey my need&quot;, &quot;personal sentiments&quot;)
+]] who is the mother in me who cannot stop wanting her child.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;MS&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;MS1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;ARKENSTONES&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;MS1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Running&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-
-
-Links:
-____________________
-
-&#39;&#39;bloody glass&#39;&#39;
-Glass is the one -&gt; (link-goto: &quot;Running&quot;)
-medium that slides -&gt; (link-goto: &quot;glass&quot;)
-easily into flesh -&gt; (link-goto: &quot;GLASS HARMONICA&quot;)
-
-&#39;&#39;travel brochures&#39;&#39;
-My body wants to land -&gt; (link-goto: &quot;I will find a way&quot;)
-a life very far away -&gt; (link-goto: &quot;enough&quot;)
-from my soul. -&gt; (link-goto: &quot;is captured&quot;)
-
-&#39;&#39;I kept crawling forward anyway&#39;&#39;
-I have gone beyond -&gt; (link-goto: &quot;First strike&quot;)
-the beyond -&gt; (link-goto: &quot;Merging&quot;)
-so many times -&gt; (link-goto: &quot;SOLE REMEDY&quot;)
-that I can do anything -&gt; (link-goto: &quot;Beyond anything&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Death wish&quot;)
-&#39;&#39;--lower &#39;&#39;-&gt; (link-goto: &quot;LISTEN&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="327" name="LISTEN" tags="Moon" position="9275,3400" size="100,100">Listen. Please just listen. How can sparing one small soul, one tiny child even matter to you~ you who have &#39;&#39;created the universe?&#39;&#39; It matters so much to me, and can mean so little to you. Let me have my child. Leave us trifles alone.
-
-Listen. Just for once, listen. I&#39;m begging the &#39;&#39;mother in you&#39;&#39; who is the mother in me who cannot stop wanting her child.
-
-
---Moon
---Sarah
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="328" name="LIFE FEAR" tags="Moon" position="9350,3775" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;LIFE FEAR&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+I think I will think until I am dead that nothing holds more fear than finally knowing that your body (link-repeat:&quot;will not save&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Misertarianism&quot;, &quot;Frozen dreams&quot;)
+(link-goto: &quot;When you die, you get&quot;, &quot;Leaving&quot;)
+(link-goto: &quot;everything you saved&quot;, &quot;moon hole&quot;)
+]] your child.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;MS&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;MS1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;ARKENSTONES&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;MS1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Grocery shopping&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;created the universe?&#39;&#39;
-Those whom the -&gt; (link-goto: &quot;MOON CYCLES&quot;)
-goddess would destroy, -&gt; (link-goto: &quot;IN THE BEGINNING&quot;)
-she first must create-- -&gt; (link-goto: &quot;HOLD NO HOPE&quot;)
-and make them understand. -&gt; (link-goto: &quot;HANDING DOWN DOOM&quot;)
-
-&#39;&#39;mother in you&#39;&#39;
-Now that I have your -&gt; (link-goto: &quot;MOON MOTHER&quot;)
-attention, I can&#39;t -&gt; (link-goto: &quot;MOON CYCLES&quot;)
-find any words to -&gt; (link-goto: &quot;MOON SHINE&quot;)
-convey my need -&gt; (link-goto: &quot;personal sentiments&quot;)
-
-&#39;&#39;--Moon&#39;&#39; -&gt; (link-goto: &quot;ARKENSTONES&quot;)
-&#39;&#39;--Sarah&#39;&#39;-&gt; (link-goto: &quot;Running&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-</tw-passagedata><tw-passagedata pid="328" name="LIFE FEAR" tags="Moon" position="9350,3775" size="100,100">
-I think I will think until I am dead that nothing holds more fear than finally knowing that your body &#39;&#39;will not save&#39;&#39; your child.
-
-
---Moon
---Sarah
-
-___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;will not save&#39;&#39;
-Misertarianism -&gt; (link-goto: &quot;Frozen dreams&quot;)
-When you die, you get -&gt; (link-goto: &quot;Leaving&quot;)
-everything you saved -&gt; (link-goto: &quot;moon hole&quot;)
-
-&#39;&#39;--Moon&#39;&#39; - &gt; (link-goto: &quot;ARKENSTONES&quot;)
-&#39;&#39;--Sarah&#39;&#39; -&gt; (link-goto: &quot;Grocery shopping&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="329" name="Meaning what" tags="Sarah" position="10300,5600" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="329" name="Meaning what" tags="Sarah" position="10300,5600" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 7/21/96  24:06
 Subject: Follow up
