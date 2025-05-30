@@ -1,0 +1,757 @@
+:: StoryTitle
+Stone Moons Demo Map
+
+
+:: StoryData
+{
+  "ifid": "34F39B14-DDB7-4C0F-9FCB-6E32D320B890",
+  "format": "Harlowe",
+  "format-version": "3.3.7",
+  "start": "Home Map",
+  "zoom": 1
+}
+
+
+:: Home Map {"position":"400,400","size":"100,100"}
+<div class="box title-page">
+		<div class="header"><a href=""><span>&#182;</span>Title page</a></div>
+		<a href="" class="inner" id="t1"></a>
+		<a href="" class="inner" id="t2"></a>
+		<a href="" class="inner" id="t3"></a>
+	</div>
+
+	<div class="box laurel green-lg" id="l1">
+		<div class="header"><a href=""><span>&#182;</span>Laurel's World</a></div>
+		<a href="" class="inner yellow-sm" id="l1-a1"></a>
+		<a href="" class="inner yellow-sm" id="l1-a2"></a>
+		<a href="" class="inner yellow-sm" id="l1-a3"></a>
+		<a href="" class="inner yellow-sm" id="l1-a4"></a>
+		<a href="" class="inner yellow-sm" id="l1-a5"></a>
+		<a href="" class="inner yellow-sm" id="l1-a6"></a>
+		<a href="" class="inner yellow-sm" id="l1-a7"></a>
+		<a href="" class="inner yellow-sm" id="l1-a8"></a>
+		<a href="" class="inner yellow-sm" id="l1-a9"></a>
+		<a href="" class="inner yellow-sm" id="l1-a10"></a>
+		<a href="" class="inner yellow-sm" id="l1-a11"></a>
+		<a href="" class="inner yellow-sm" id="l1-a12"></a>
+		<a href="" class="inner yellow-sm" id="l1-a13"></a>
+		<a href="" class="inner yellow-sm" id="l1-a14"></a>
+		<a href="" class="inner yellow-sm" id="l1-a15"></a>
+		<a href="" class="inner yellow-sm" id="l1-a16"></a>
+		<a href="" class="inner yellow-sm" id="l1-a17"></a>
+		<a href="" class="inner yellow-sm" id="l1-a18"></a>
+		<a href="" class="inner yellow-sm" id="l1-a19"></a>
+		<a href="" class="inner yellow-sm" id="l1-a20"></a>
+		<a href="" class="inner yellow-sm" id="l1-a21"></a>
+		<a href="" class="inner yellow-sm" id="l1-a22"></a>
+		<a href="" class="inner yellow-sm" id="l1-a23"></a>
+		<a href="" class="inner yellow-sm" id="l1-a24"></a>
+
+		<a href="" class="inner green-sm" id="l2-a1"></a>
+		<a href="" class="inner green-sm" id="l2-a2"></a>
+		<a href="" class="inner green-sm" id="l2-a3"></a>
+		<a href="" class="inner green-sm" id="l2-a4"></a>
+		<a href="" class="inner green-sm" id="l2-a5"></a>
+		<a href="" class="inner green-sm" id="l2-a6"></a>
+		<a href="" class="inner green-sm" id="l2-a7"></a>
+		<a href="" class="inner green-sm" id="l2-a8"></a>
+		<a href="" class="inner green-sm" id="l2-a9"></a>
+		<a href="" class="inner green-sm" id="l2-a10"></a>
+		<a href="" class="inner green-sm" id="l2-a11"></a>
+		<a href="" class="inner green-sm" id="l2-a12"></a>
+		<a href="" class="inner green-sm" id="l2-a13"></a>
+		<a href="" class="inner green-sm" id="l2-a14"></a>
+		<a href="" class="inner green-sm" id="l2-a15"></a>
+		<a href="" class="inner green-sm" id="l2-a16"></a>
+        
+		<a href="" class="inner yellow-sm" id="l3-a1"></a>
+		<a href="" class="inner yellow-sm" id="l3-a2"></a>
+		<a href="" class="inner yellow-sm" id="l3-a3"></a>
+		<a href="" class="inner yellow-sm" id="l3-a4"></a>
+		<a href="" class="inner yellow-sm" id="l3-a5"></a>
+		<a href="" class="inner yellow-sm" id="l3-a6"></a>
+		<a href="" class="inner yellow-sm" id="l3-a7"></a>
+		<a href="" class="inner yellow-sm" id="l3-a8"></a>
+        
+		<a href="" class="inner green-sm" id="l4-a1"></a>
+	</div>
+
+
+:: Laurel's World Map {"position":"600,400","size":"100,100"}
+<div class="map">
+(bg:red)[<!-- ------------------------Laurel 1------------------------ -->]
+  <div class="box laurel yellow-lg" id="lg-l1-a1">
+          <div class="header"><a href=""><span>&#182;</span>books</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a2">
+          <div class="header"><a href=""><span>&#182;</span>stones</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a3">
+          <div class="header"><a href=""><span>&#182;</span>carpet</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a4">
+          <div class="header"><a href=""><span>&#182;</span>hands</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a5">
+          <div class="header"><a href=""><span>&#182;</span>snowvoice</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a6">
+          <div class="header"><a href=""><span>&#182;</span>hideouts</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a7">
+          <div class="header"><a href=""><span>&#182;</span>people</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a8">
+          <div class="header"><a href=""><span>&#182;</span>doors</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a9">
+          <div class="header"><a href=""><span>&#182;</span>filigree</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a10">
+          <div class="header"><a href=""><span>&#182;</span>papers</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a11">
+          <div class="header"><a href=""><span>&#182;</span>practice</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a12">
+          <div class="header"><a href=""><span>&#182;</span>bridges</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a13">
+          <div class="header"><a href=""><span>&#182;</span>darkness</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a14">
+          <div class="header"><a href=""><span>&#182;</span>clothes</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a15">
+          <div class="header"><a href=""><span>&#182;</span>gravy</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a16">
+          <div class="header"><a href=""><span>&#182;</span>potatoe eyes</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a17">
+          <div class="header"><a href=""><span>&#182;</span>trees</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a18">
+          <div class="header"><a href=""><span>&#182;</span>cars</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a19">
+          <div class="header"><a href=""><span>&#182;</span>peanut butter</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a20">
+          <div class="header"><a href=""><span>&#182;</span>dust</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a21">
+          <div class="header"><a href=""><span>&#182;</span>bones</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a22">
+          <div class="header"><a href=""><span>&#182;</span>clouds</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a23">
+          <div class="header"><a href=""><span>&#182;</span>doorlights</a></div>
+  </div>
+  <div class="box laurel yellow-lg" id="lg-l1-a24">
+          <div class="header"><a href=""><span>&#182;</span>glass</a></div>
+  </div>
+ 
+(bg:red)[<!-- ------------------------Laurel 2------------------------ -->]
+  <div class="box laurel green-lg" id="lg-l2-a1">
+          <div class="header"><a href=""><span>&#182;</span>cold sun</a></div>
+  </div>
+  <div class="box laurel green-lg" id="lg-l2-a2">
+          <div class="header"><a href=""><span>&#182;</span>disharmonics</a></div>
+  </div>
+  <div class="box laurel green-lg" id="lg-l2-a3">
+          <div class="header"><a href=""><span>&#182;</span>pine secrets</a></div>
+  </div>
+  <div class="box laurel green-lg" id="lg-l2-a4">
+          <div class="header"><a href=""><span>&#182;</span>cds</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a5">
+          <div class="header"><a href=""><span>&#182;</span>moon cd</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a6">
+          <div class="header"><a href=""><span>&#182;</span>moon closets</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a7">
+          <div class="header"><a href=""><span>&#182;</span>moon door</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a8">
+          <div class="header"><a href=""><span>&#182;</span>moon mind</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a9">
+          <div class="header"><a href=""><span>&#182;</span>moon hole</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a10">
+          <div class="header"><a href=""><span>&#182;</span>other moons</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a11">
+          <div class="header"><a href=""><span>&#182;</span>moon skin</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a12">
+          <div class="header"><a href=""><span>&#182;</span>moon flesh</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a13">
+          <div class="header"><a href=""><span>&#182;</span>blood talks</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a14">
+          <div class="header"><a href=""><span>&#182;</span>numbers know</a></div>
+  </div>  
+  <div class="box laurel green-lg" id="lg-l2-a15">
+          <div class="header"><a href=""><span>&#182;</span>water falls</a></div>
+  </div>
+  <div class="box laurel green-lg" id="lg-l2-a16">
+          <div class="header"><a href=""><span>&#182;</span>water drowns</a></div>
+  </div>
+  
+(bg:red)[<!-- ------------------------Laurel 3------------------------ -->]
+  <div class="box laurel yellow-lg" id="lg-l3-a1">
+          <div class="header"><a href=""><span>&#182;</span>carpet knows</a></div>
+  </div>
+
+  <div class="box laurel yellow-lg" id="lg-l3-a2">
+          <div class="header"><a href=""><span>&#182;</span>moon wants</a></div>
+  </div>
+
+  <div class="box laurel yellow-lg" id="lg-l3-a3">
+          <div class="header"><a href=""><span>&#182;</span>clouds creep</a></div>
+  </div>
+
+  <div class="box laurel yellow-lg" id="lg-l3-a4">
+          <div class="header"><a href=""><span>&#182;</span>everything waits</a></div>
+  </div>
+
+  <div class="box laurel yellow-lg" id="lg-l3-a5">
+          <div class="header"><a href=""><span>&#182;</span>letters come</a></div>
+  </div>
+
+  <div class="box laurel yellow-lg" id="lg-l3-a6">
+          <div class="header"><a href=""><span>&#182;</span>grass talks</a></div>
+  </div>
+
+  <div class="box laurel  yellow-lg" id="lg-l3-a7">
+          <div class="header"><a href=""><span>&#182;</span>moon breaks</a></div>
+  </div>
+
+  <div class="box laurel  yellow-lg" id="lg-l3-a8">
+          <div class="header"><a href=""><span>&#182;</span>dandelion blood</a></div>
+  </div>
+  
+(bg:red)[<!-- ------------------------Laurel 4------------------------ -->]
+  <div class="box laurel green-lg" id="lg-l4-a1">
+          <div class="header"><a href=""><span>&#182;</span>You know</a></div>
+  </div>
+</div>
+
+
+
+:: StoryStylesheet [stylesheet]
+*, :before, :after {
+  box-sizing: initial;
+}
+
+/* Set color palette */
+:root {
+  --title: ;
+  --sarah: ;
+  --moon: ;
+  --green-laurel: #577441;
+  --yellow-laurel: #d2d20d;
+  --notes: ;
+}
+
+.darkmode {
+  --title: ;
+  --sarah: ;
+  --moon: ;
+  --green-laurel: ;
+  --yellow-laurel: ;
+  --notes: ;
+}
+
+/* Override Twine CSS */
+tw-story {
+  background-color: transparent;
+}
+
+/* Set up map*/
+.map {
+  width: auto !important;
+  max-width: none !important;
+  position: relative;
+}
+
+/* Set up box */
+.box {
+  width: 132px;
+  height: 80px;
+  position: absolute;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 1;
+}
+
+.header {
+  background: transparent;
+  width: 100%; 
+  height: 2.5rem; 
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header a {
+  font-size: 1rem;
+  text-decoration: none;
+  position: absolute; 
+  bottom: 21%; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inner {
+  width: 1.5rem;
+  height: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.inner::before {
+  content: "";
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0;
+  width: 100%;
+  height: 0.5px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 772px) and (max-width: 1615px) {
+}
+
+/* Desktop */
+@media only screen and (min-width: 1616px) {
+  .box {
+    width: 132px;
+  	height: 80px;
+  }
+  
+  .header a {
+    font-size: 1rem;
+    bottom: 21%; 
+    left: 0; 
+  }
+}
+
+/* Title Page */
+.title-page {
+  left: 11%;
+  top: 11%;
+  border: 5px solid black;
+  box-shadow: 10px 10px 0.1px black;
+}
+
+.title-page::before {
+  background-color: black;
+}
+
+.title-page .header a {
+  color: black;
+}
+
+.title-page .inner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-shadow: 3px 3px 0.1px black;
+  border: 1px solid black;
+} 
+
+.title-page .inner::before {
+  background-color: black;
+}
+
+.title-page #t1 {
+  left: 16%;
+  top: 60%;
+}
+
+.title-page #t2 {
+  left: 42%;
+  top: 33%;
+}
+
+.title-page #t3 {
+  left: 66%;
+  top: 60%;
+}
+
+/* Laurel's World 
+.laurel {
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
+} */
+
+
+.green-lg {
+  border: 5px solid var(--green-laurel);
+  box-shadow: 10px 10px 0.1px var(--green-laurel);
+}
+
+.yellow-lg {
+  border: 5px solid var(--yellow-laurel);
+  box-shadow: 10px 10px 0.1px var(--yellow-laurel);
+}
+
+.green-lg::before {
+  background-color: var(--green-laurel);
+}
+
+.yellow-lg::before {
+  background-color: var(--yellow-laurel);
+}
+
+.green-lg .header a {
+  color: var(--green-laurel);
+}
+
+.yellow-lg .header a {
+  color: var(--yellow-laurel);
+}
+
+.green-sm {
+  box-shadow: 3px 3px 0.1px var(--green-laurel);
+  border: 1px solid var(--green-laurel);
+}
+
+.yellow-sm {
+  box-shadow: 3px 3px 0.1px var(--yellow-laurel);
+  border: 1px solid var(--yellow-laurel);
+}
+
+.green-sm::before {
+  background-color: var(--green-laurel);
+}
+
+.yellow-sm::before {
+  background-color: var(--yellow-laurel);
+}
+
+/* Home Map */
+	#l1 {
+      left: 50%;
+      top: 50%;
+	}
+
+    #l3-a1 {
+      left: 40%;
+      top: 28%;
+    }
+
+    #l3-a2 {
+      left: 20%;
+      top: 35%;
+    }
+
+    #l3-a3 {
+      left: 0;
+      top: 50%;
+    }
+
+    #l3-a4 {
+      left: 20%;
+      top: 65%;
+    }
+
+    #l3-a5 {
+      left: 40%;
+      top: 75%;
+    }
+
+    #l3-a6 {
+      left: 60%;
+      top: 65%;
+    }
+
+    #l3-a7 {
+      left: 80%;
+      top: 50%;
+    }
+
+    #l3-a8 {
+      left: 60%;
+      top: 35%;
+    }
+
+    #l4-a1 {
+      left: 40%;
+      top: 50%;
+    }
+
+/* Laurel's World Map */
+
+/* ------------Layer 1------------ */
+#lg-l1-a1 {
+  left: calc(50% - 66px);
+  top: calc(0% - 40px);
+}
+
+#lg-l1-a2 {
+  left: calc(38% - 66px);
+  top: calc(4% - 40px);
+}
+
+#lg-l1-a3 {
+  left: calc(26% - 66px);
+  top: calc(8% - 40px);
+}
+
+#lg-l1-a4 {
+  left: calc(14% - 66px);
+  top: calc(12% - 40px);
+}
+
+#lg-l1-a5 {
+  left: calc(2% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l1-a6 {
+  left: calc(-9% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l1-a7 {
+  left: calc(-20% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l1-a8 {
+  right: calc(110% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l1-a9 {
+  left: calc(2% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l1-a10 {
+  left: calc(14% - 66px);
+  top: calc(36% - 40px);
+}
+
+#lg-l1-a11 {
+  left: calc(26% - 66px);
+  top: calc(40% - 40px);
+}
+
+#lg-l1-a12 {
+  left: calc(38% - 66px);
+  top: calc(44% - 40px);
+}
+
+#lg-l1-a13 {
+  left: calc(50% - 66px);
+  top: calc(48% - 40px);
+}
+
+#lg-l1-a14 {
+  left: calc(62% - 66px);
+  top: calc(44% - 40px);
+}
+
+#lg-l1-a15 {
+  left: calc(74% - 66px);
+  top: calc(40% - 40px);
+}
+
+#lg-l1-a16 {
+  left: calc(86% - 66px);
+  top: calc(36% - 40px);
+}
+
+#lg-l1-a17 {
+  left: calc(98% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l1-a18 {
+  left: calc(110% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l1-a19 {
+  left: calc(122% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l1-a20 {
+  left: calc(110% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l1-a21 {
+  left: calc(98% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l1-a22 {
+  left: calc(86% - 66px);
+  top: calc(12% - 40px);
+}
+
+#lg-l1-a23 {
+  left: calc(74% - 66px);
+  top: calc(8% - 40px);
+}
+
+#lg-l1-a24 {
+  left: calc(62% - 66px);
+  top: calc(4% - 40px);
+}
+
+
+/* ------------Layer 2------------ */
+#lg-l2-a1 {
+  left: calc(50% - 66px);
+  top: calc(8% - 40px);
+}
+
+#lg-l2-a2 {
+  left: calc(38% - 66px);
+  top: calc(12% - 40px);
+}
+
+#lg-l2-a3 {
+  left: calc(26% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l2-a4 {
+  left: calc(14% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l2-a5 {
+  left: calc(2% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l2-a6 {
+  left: calc(14% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l2-a7 {
+  left: calc(26% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l2-a8 {
+  left: calc(38% - 66px);
+  top: calc(36% - 40px);
+}
+
+#lg-l2-a9 {
+  left: calc(50% - 66px);
+  top: calc(40% - 40px);
+}
+
+#lg-l2-a10 {
+  left: calc(62% - 66px);
+  top: calc(36% - 40px);
+}
+
+#lg-l2-a11 {
+  left: calc(74% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l2-a12 {
+  left: calc(86% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l2-a13 {
+  left: calc(98% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l2-a14 {
+  left: calc(86% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l2-a15 {
+  left: calc(74% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l2-a16 {
+  left: calc(62% - 66px);
+  top: calc(12% - 40px);
+}
+
+/* ------------Layer 3------------ */
+#lg-l3-a1 {
+  left: calc(50% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l3-a2 {
+  left: calc(38% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l3-a3 {
+  left: calc(26% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l3-a4 {
+  left: calc(38% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l3-a5 {
+  left: calc(50% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l3-a6 {
+  left: calc(62% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l3-a7 {
+  left: calc(74% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l3-a8 {
+  left: calc(62% - 66px);
+  top: calc(20% - 40px);
+}
+
+/* ------------Layer 4------------ */
+#lg-l4-a1 {
+  left: calc(50% - 66px);
+  top: calc(24% - 40px);
+}
