@@ -9,7 +9,533 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Master - Stone Moons.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Master - Stone Moons" startnode="438" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="79cb9fa1-dd80-4d3d-8abf-227acb7026d6" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/*Desktop styling*/
+<tw-storydata name="Master - Stone Moons" startnode="438" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="79cb9fa1-dd80-4d3d-8abf-227acb7026d6" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* ---- Map Styles ---- */
+*, :before, :after {
+  box-sizing: initial;
+}
+
+/* Set color palette */
+:root {
+  --title: ;
+  --sarah: ;
+  --moon: ;
+  --green-laurel: #577441;
+  --yellow-laurel: #d2d20d;
+  --notes: ;
+}
+
+.darkmode {
+  --title: ;
+  --sarah: ;
+  --moon: ;
+  --green-laurel: ;
+  --yellow-laurel: ;
+  --notes: ;
+}
+
+/* Override Twine CSS */
+tw-story {
+  background-color: transparent;
+}
+
+tw-link {
+  color: inherit;
+}
+
+/* Set up map*/
+.map {
+  width: auto !important;
+  max-width: none !important;
+  position: relative;
+}
+
+/* Set up box */
+.box {
+  width: 132px;
+  height: 80px;
+  position: absolute;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: 22%;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  z-index: 1;
+}
+
+.header {
+  background: transparent;
+  width: 100%; 
+  height: 2.5rem; 
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header a {
+  font-size: 1rem;
+  text-decoration: none;
+  position: absolute; 
+  bottom: 21%; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inner {
+  width: 1.5rem;
+  height: 0.8rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.inner::before {
+  content: "";
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0;
+  width: 100%;
+  height: 0.5px;
+}
+
+/* Tablet */
+@media only screen and (min-width: 772px) and (max-width: 1615px) {
+  .box {
+    width: 100px;
+  	height: 50px;
+  }
+  
+  .header a {
+    font-size: 1rem;
+    bottom: 21%; 
+    left: 0; 
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1616px) {
+  .box {
+    width: 132px;
+  	height: 80px;
+  }
+  
+  .header a {
+    font-size: 1rem;
+    bottom: 21%; 
+    left: 0; 
+  }
+}
+
+/* Title Page */
+.title-page {
+  left: 11%;
+  top: 11%;
+  border: 5px solid black;
+  box-shadow: 10px 10px 0.1px black;
+}
+
+.title-page::before {
+  background-color: black;
+}
+
+.title-page .header a {
+  color: black;
+}
+
+.title-page .inner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-shadow: 3px 3px 0.1px black;
+  border: 1px solid black;
+} 
+
+.title-page .inner::before {
+  background-color: black;
+}
+
+.title-page #t1 {
+  left: 16%;
+  top: 60%;
+}
+
+.title-page #t2 {
+  left: 42%;
+  top: 33%;
+}
+
+.title-page #t3 {
+  left: 66%;
+  top: 60%;
+}
+
+/* Laurel's World 
+.laurel {
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
+} */
+
+
+.green-lg {
+  border: 5px solid var(--green-laurel);
+  box-shadow: 10px 10px 0.1px var(--green-laurel);
+}
+
+.yellow-lg {
+  border: 5px solid var(--yellow-laurel);
+  box-shadow: 10px 10px 0.1px var(--yellow-laurel);
+}
+
+.green-lg::before {
+  background-color: var(--green-laurel);
+}
+
+.yellow-lg::before {
+  background-color: var(--yellow-laurel);
+}
+
+.green-lg .header a {
+  color: var(--green-laurel);
+}
+
+.yellow-lg .header a {
+  color: var(--yellow-laurel);
+}
+
+.green-sm {
+  box-shadow: 3px 3px 0.1px var(--green-laurel);
+  border: 1px solid var(--green-laurel);
+}
+
+.yellow-sm {
+  box-shadow: 3px 3px 0.1px var(--yellow-laurel);
+  border: 1px solid var(--yellow-laurel);
+}
+
+.green-sm::before {
+  background-color: var(--green-laurel);
+}
+
+.yellow-sm::before {
+  background-color: var(--yellow-laurel);
+}
+
+/* Home Map */
+	#l1 {
+      left: 50%;
+      top: 50%;
+	}
+
+    #l3-a1 {
+      left: 40%;
+      top: 28%;
+    }
+
+    #l3-a2 {
+      left: 20%;
+      top: 35%;
+    }
+
+    #l3-a3 {
+      left: 0;
+      top: 50%;
+    }
+
+    #l3-a4 {
+      left: 20%;
+      top: 65%;
+    }
+
+    #l3-a5 {
+      left: 40%;
+      top: 75%;
+    }
+
+    #l3-a6 {
+      left: 60%;
+      top: 65%;
+    }
+
+    #l3-a7 {
+      left: 80%;
+      top: 50%;
+    }
+
+    #l3-a8 {
+      left: 60%;
+      top: 35%;
+    }
+
+    #l4-a1 {
+      left: 40%;
+      top: 50%;
+    }
+
+/* Laurel's World Map */
+
+/* ------------Layer 1------------ */
+#lg-l1-a1 {
+  left: calc(50% - 66px);
+  top: calc(0% - 40px);
+}
+
+#lg-l1-a2 {
+  left: calc(38% - 66px);
+  top: calc(4% - 40px);
+}
+
+#lg-l1-a3 {
+  left: calc(26% - 66px);
+  top: calc(8% - 40px);
+}
+
+#lg-l1-a4 {
+  left: calc(14% - 66px);
+  top: calc(12% - 40px);
+}
+
+#lg-l1-a5 {
+  left: calc(2% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l1-a6 {
+  left: calc(-9% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l1-a7 {
+  left: calc(-20% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l1-a8 {
+  left: calc(-9% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l1-a9 {
+  left: calc(2% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l1-a10 {
+  left: calc(14% - 66px);
+  top: calc(36% - 40px);
+}
+
+#lg-l1-a11 {
+  left: calc(26% - 66px);
+  top: calc(40% - 40px);
+}
+
+#lg-l1-a12 {
+  left: calc(38% - 66px);
+  top: calc(44% - 40px);
+}
+
+#lg-l1-a13 {
+  left: calc(50% - 66px);
+  top: calc(48% - 40px);
+}
+
+#lg-l1-a14 {
+  left: calc(62% - 66px);
+  top: calc(44% - 40px);
+}
+
+#lg-l1-a15 {
+  left: calc(74% - 66px);
+  top: calc(40% - 40px);
+}
+
+#lg-l1-a16 {
+  left: calc(86% - 66px);
+  top: calc(36% - 40px);
+}
+
+#lg-l1-a17 {
+  left: calc(98% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l1-a18 {
+  left: calc(110% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l1-a19 {
+  left: calc(122% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l1-a20 {
+  left: calc(110% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l1-a21 {
+  left: calc(98% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l1-a22 {
+  left: calc(86% - 66px);
+  top: calc(12% - 40px);
+}
+
+#lg-l1-a23 {
+  left: calc(74% - 66px);
+  top: calc(8% - 40px);
+}
+
+#lg-l1-a24 {
+  left: calc(62% - 66px);
+  top: calc(4% - 40px);
+}
+
+
+/* ------------Layer 2------------ */
+#lg-l2-a1 {
+  left: calc(50% - 66px);
+  top: calc(8% - 40px);
+}
+
+#lg-l2-a2 {
+  left: calc(38% - 66px);
+  top: calc(12% - 40px);
+}
+
+#lg-l2-a3 {
+  left: calc(26% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l2-a4 {
+  left: calc(14% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l2-a5 {
+  left: calc(2% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l2-a6 {
+  left: calc(14% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l2-a7 {
+  left: calc(26% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l2-a8 {
+  left: calc(38% - 66px);
+  top: calc(36% - 40px);
+}
+
+#lg-l2-a9 {
+  left: calc(50% - 66px);
+  top: calc(40% - 40px);
+}
+
+#lg-l2-a10 {
+  left: calc(62% - 66px);
+  top: calc(36% - 40px);
+}
+
+#lg-l2-a11 {
+  left: calc(74% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l2-a12 {
+  left: calc(86% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l2-a13 {
+  left: calc(98% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l2-a14 {
+  left: calc(86% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l2-a15 {
+  left: calc(74% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l2-a16 {
+  left: calc(62% - 66px);
+  top: calc(12% - 40px);
+}
+
+/* ------------Layer 3------------ */
+#lg-l3-a1 {
+  left: calc(50% - 66px);
+  top: calc(16% - 40px);
+}
+
+#lg-l3-a2 {
+  left: calc(38% - 66px);
+  top: calc(20% - 40px);
+}
+
+#lg-l3-a3 {
+  left: calc(26% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l3-a4 {
+  left: calc(38% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l3-a5 {
+  left: calc(50% - 66px);
+  top: calc(32% - 40px);
+}
+
+#lg-l3-a6 {
+  left: calc(62% - 66px);
+  top: calc(28% - 40px);
+}
+
+#lg-l3-a7 {
+  left: calc(74% - 66px);
+  top: calc(24% - 40px);
+}
+
+#lg-l3-a8 {
+  left: calc(62% - 66px);
+  top: calc(20% - 40px);
+}
+
+/* ------------Layer 4------------ */
+#lg-l4-a1 {
+  left: calc(50% - 66px);
+  top: calc(24% - 40px);
+}
+
+/* ---- Desktop Styles ---- */
 tw-story {
   background-color: white;
   color: black;
@@ -24,8 +550,20 @@ tw-passage {
   min-width: 824px;
 }
 
+/* Exclude the 'map' passage */
+tw-passage[tags~="map"] {
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
 tw-link {
   color: red;
+}
+
+tw-passage[tags~="map"] tw-link {
+  color: inherit !important;
+  font-weight: normal;
 }
 
 .container1 { /*Sarah*/
@@ -3367,12 +3905,20 @@ some other day. -&gt; (link-goto: &quot;Reputations&quot;)
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="64" name="Grocery shopping" tags="Sarah" position="8225,6275" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="64" name="Grocery shopping" tags="Sarah" position="8225,6275" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Grocery shopping&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 5/19/96  16:15
 Subject: Our little daily deaths
 
-I am about to be uncharacteristically brief, in favor of hedonistic self-indulgence; I intend to clean the &#39;&#39;blood&#39;&#39; out of my wounds before I stiffen into complete paralysis.
+I am about to be uncharacteristically brief, in favor of hedonistic self-indulgence; I intend to clean the (link-repeat:&quot;blood &quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. Where do vampires&quot;, &quot;clouds&quot;)
+(link-goto: &quot;save for retirement?&quot;, &quot;AFTER A WHILE&quot;)
+(link-goto: &quot;A. At a blood bank.&quot;, &quot;Emergency 5&quot;)
+]] out of my wounds before I stiffen into complete paralysis.
 
 We just got back from the grocery store. Laurel was fine until we got to the checkout line, thanks in part to a trick I learned from her teachers; I took one of her shoes. She won&#39;t run away unless she has both her shoes on. Mostly.
 
@@ -3384,58 +3930,47 @@ I tell you, I would never recognize them in a police line up. It is amazing how 
 
 In the car, Laurel pounded my shoulder, gouged my arm, and yanked out handfuls of my hair as we drove home. 
 
-Anyway, I just thought I&#39;d tell you about all this so that you know. &#39;&#39;TOS*&#39;&#39;, if you read about my murder/suicide, you are to inform the press that Ms. Eleanor &#39;&#39;Bradshaw&#39;&#39;, assistant director of special education for Cattail Creek School District e-mail address ebradshaw@cattailelem.co.edu, is responsible. Despite the laws, and for all she gets paid out of your tax dollars, she has &#39;&#39;yet to find a&#39;&#39; placement or behavioral intervention or respite person in six and a half months of looking. Laurel has not had an actual school day since last December when I yanked her out of the closet they had her in. They have been trying for something ever since. And god only knows &#39;&#39;what will happen this year&#39;&#39;. We have no summer program (as promised to make up for the lack of a winter program). Let alone what will happen next school year. AAAACK.
+Anyway, I just thought I&#39;d tell you about all this so that you know. (link-repeat:&quot;TOS*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;TOS&quot;)
+]], if you read about my murder/suicide, you are to inform the press that Ms. Eleanor (link-repeat:&quot;Bradshaw&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Take me for a ride&quot;)
+]], assistant director of special education for Cattail Creek School District e-mail address ebradshaw@cattailelem.co.edu, is responsible. Despite the laws, and for all she gets paid out of your tax dollars, she has (link-repeat:&quot;yet to find a&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Is it that what we&quot;, &quot;babysitters&quot;)
+(link-goto: &quot;are searching for&quot;, &quot;Wrong Residence&quot;)
+(link-goto: &quot;doesn&#39;t exist, or that&quot;, &quot;Paranoia&quot;)
+(link-goto: &quot;we aren&#39;t looking&quot;, &quot;Alternatives&quot;)
+(link-goto: &quot;in the right places?&quot;, &quot;I knew&quot;)
+]] placement or behavioral intervention or respite person in six and a half months of looking. Laurel has not had an actual school day since last December when I yanked her out of the closet they had her in. They have been trying for something ever since. And god only knows (link-repeat:&quot;what will happen this year,&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Living in the future is&quot;, &quot;Beyond anything&quot;)
+(link-goto: &quot;for those who can&#39;t&quot;, &quot;The great wall&quot;)
+(link-goto: &quot;handle living today.&quot;, &quot;Profits at home&quot;)
+]]. We have no summer program (as promised to make up for the lack of a winter program). Let alone what will happen next school year. AAAACK.
 
 I&#39;ll tell you guys more tomorrow.
-
-
---Continue
---picture
---Delve deeper
---delve deeper 
-
-
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat: &#39;&lt;img class=&quot;space&quot; src=&quot;https://github.com/ngphuongd/stonemoons/blob/main/stonemoons%20images/ApparentPlaceholder.jpg?raw=true&quot;&gt;&#39;)[(display:&quot;Modal code&quot;)(append: ?modal)
+[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;ARKENSTONES&quot;)
+]]]
+&lt;div class=&quot;CDD&quot;&gt;
+(link-repeat: &#39;&lt;div class=&quot;CDD1A&quot;&gt;&lt;/div&gt;&#39;)[(display:&quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Take me for a ride&quot;)
+ ]]]
+ (link-repeat: &#39;&lt;div class=&quot;CDD1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Operatic&quot;, &quot;As the grocery turns&quot;)
+(link-goto: &quot;Communications&quot;, &quot;We take our destiny&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;blood &#39;&#39;
-Q. Where do vampires -&gt; (link-goto: &quot;clouds&quot;)
-save for retirement? -&gt; (link-goto: &quot;AFTER A WHILE&quot;)
-A. At a blood bank.-&gt; (link-goto: &quot;Emergency 5&quot;)
-
-&#39;&#39;TOS*&#39;&#39; -&gt; (link-goto: &quot;TOS&quot;)
-
-&#39;&#39;Bradshaw&#39;&#39; -&gt; (link-goto: &quot;Take me for a ride&quot;)
-
-&#39;&#39;yet to find a&#39;&#39;
-Is it that what we -&gt; (link-goto: &quot;babysitters&quot;)
-are searching for -&gt; (link-goto: &quot;Wrong Residence&quot;)
-doesn&#39;t exist, or that -&gt; (link-goto: &quot;Paranoia&quot;)
-we aren&#39;t looking -&gt; (link-goto: &quot;Alternatives&quot;)
-in the right places? -&gt; (link-goto: &quot;I knew&quot;)
-
-&#39;&#39;what will happen this year&#39;&#39;
-Living in the future is -&gt; (link-goto: &quot;Beyond anything&quot;)
-for those who can&#39;t -&gt; (link-goto: &quot;The great wall&quot;)
-handle living today. -&gt; (link-goto: &quot;Profits at home&quot;)
-
-&#39;&#39;--picture&#39;&#39; -&gt; (link-goto: &quot;IN THE BEGINNING&quot;)
-&#39;&#39;--Continue&#39;&#39; -&gt; (link-goto: &quot;Take me for a ride&quot;)
-&#39;&#39;--Delve deeper&#39;&#39; -&gt; (link-goto: &quot;Take me for a ride&quot;)
-
-&#39;&#39;--delve deeper&#39;&#39;
-Operatic - (link-goto: &quot;As the Grocery turns&quot;) 
-Communications -&gt; (link-goto: &quot;We take our destiny&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-</tw-passagedata><tw-passagedata pid="65" name="OTHER list" tags="Note" position="5250,6650" size="100,100">NOTE:
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="65" name="OTHER list" tags="Note" position="5250,6650" size="100,100">NOTE:
 
 Autism and education:  currently debating the &#39;&#39;political correctness&#39;&#39; of integrating the parent&#39;s belief system into the individualized curriculum.
 
@@ -9936,224 +10471,240 @@ and only pursue me? -&gt; (link-goto: &quot;Rage&quot;)
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="230" name="IN THE BEGINNING" tags="Moon" position="9875,4550" size="100,100">To: Sarah Murphy
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="230" name="IN THE BEGINNING" tags="Moon" position="9875,4550" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;IN THE BEGINNING&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: Sarah Murphy
 From: Sarah
 Subject: Truth files
 
 
-Once the moon was all powerful, &#39;&#39;all knowing&#39;&#39;. All the seas flowed into her; all the seas flowed out of her. She inhabited the lungs of every creature; she worked the bowels and hearts and tongues.
+Once the moon was all powerful, (link-repeat:&quot;all knowing&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The moon has forgotten&quot;, &quot;WHAT THE MOON FORGOT&quot;)
+(link-goto: &quot;more than anyone&quot;, &quot;moon mind&quot;)
+(link-goto: &quot;will ever know.&quot;, &quot;MOON CYCLES&quot;)
+]]. All the seas flowed into her; all the seas flowed out of her. She inhabited the lungs of every creature; she worked the bowels and hearts and tongues.
 
 Everything lived in harmony with the moon. No one could wish for more than what the moon had given, what she had created.
 
 The moon saw this, and it was good. She would come down to earth and the people and animals would feed her. All would rejoice mightily in the great white light as she came ever closer, ever stronger.
 
-After the feasting, she would rise back across the horizon and take her place, lighting the stars from her own pale light. Her light grew dimmer as the stars grew brighter, and the people marvelled at the dances of the stars. And all would partake &#39;&#39;in the dance&#39;&#39;. 
+After the feasting, she would rise back across the horizon and take her place, lighting the stars from her own pale light. Her light grew dimmer as the stars grew brighter, and the people marvelled at the dances of the stars. And all would partake (link-repeat:&quot;in the dance&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Dancing is the most&quot;, &quot;MOON BLESSINGS&quot;)
+(link-goto: &quot;ancient way of knowing&quot;, &quot;Mythic origins&quot;)
+(link-goto: &quot;your bodies are made&quot;, &quot;dancing&quot;)
+(link-goto: &quot;from the same cells.&quot;, &quot;Visigoths&quot;)
+]]. 
 
 This then, was primordial happiness.
-
---Go Back
---Press on 
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;GP&quot;&gt;
+(link-repeat: &#39;&lt;div class=&quot;GP1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;ARKENSTONES&quot;)
+]]]
+(link-repeat: &#39;&lt;div class=&quot;GP1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;IT MUST BE WRITTEN&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;all knowing&#39;&#39;
-The moon has forgotten -&gt; (link-goto: &quot;WHAT THE MOON FORGOT&quot;)
-more than anyone -&gt; (link-goto: &quot;moon mind&quot;)
-will ever know. -&gt; (link-goto: &quot;MOON CYCLES&quot;)
-
-&#39;&#39;in the dance&#39;&#39;
-Dancing is the most -&gt; (link-goto: &quot;MOON BLESSINGS&quot;) 
-ancient way of knowing -&gt; (link-goto: &quot;Mythic origins&quot;)
-your bodies are made -&gt; (link-goto: &quot;dancing&quot;)
-from the same cells. -&gt; (link-goto: &quot;Visigoths&quot;)
-
-&#39;&#39;--Go Back&#39;&#39; -&gt; (link-goto: &quot;ARKENSTONES&quot;)
-&#39;&#39;--Press on&#39;&#39; -&gt; (link-goto: &quot;IT MUST BE WRITTEN&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="231" name="As the Grocery turns" tags="Sarah" position="9825,4625" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="231" name="As the Grocery turns" tags="Sarah" position="9825,4625" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;As the Grocery turns&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 5/20/96 18: 46
 Subject: Tissue lifelines
 
 
-So right, I&#39;m standing there in the cold wide entrance of Safeway , having wrestled Laurel out that far. She is still deftly dodging carts, defiantly overturning the newspaper stands, even kicking at the new coke machines and old penny gumball machines (now demanding 25 cents) and trying to squirm out of my arms, kick my shins, and bite me at the same time. I kept thinking of the Taz monster on tv, the whirlwind of destruction, the abu jinn of the arabian mythos. Strange where &#39;&#39;one tends to go&#39;&#39; in those split seconds.
+So right, I&#39;m standing there in the cold wide entrance of Safeway , having wrestled Laurel out that far. She is still deftly dodging carts, defiantly overturning the newspaper stands, even kicking at the new coke machines and old penny gumball machines (now demanding 25 cents) and trying to squirm out of my arms, kick my shins, and bite me at the same time. I kept thinking of the Taz monster on tv, the whirlwind of destruction, the abu jinn of the arabian mythos. Strange where (link-repeat:&quot;one tends to go&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. When is a mind&quot;, &quot;her own society&quot;)
+(link-goto: &quot;not a mind?&quot;, &quot;Continuous replay&quot;)
+(link-goto: &quot;A. When its&#39;s a land mine.&quot;, &quot;LISTEN&quot;)
+]] in those split seconds.
 
 One of the ladies at the customer service and video checkout counter looked at Laurel screaming all over the place. Gazed slowly at my bleeding arms. Solemnly offered me a tissue.
 
-Naturally, I couldn&#39;t take it, my arms filled with hysterical child. She didn&#39;t walk out from the counter with her offering. Of course not. Rather, she carefully looked at me, looked at the tissue, and said, &quot;No dear, you probably &#39;&#39;need more than this&#39;&#39;.&quot;  
+Naturally, I couldn&#39;t take it, my arms filled with hysterical child. She didn&#39;t walk out from the counter with her offering. Of course not. Rather, she carefully looked at me, looked at the tissue, and said, &quot;No dear, you probably (link-repeat:&quot;need more than this&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;My needs have always&quot;, &quot;Can I help?&quot;)
+(link-goto: &quot;outstripped my resources.&quot;, &quot;WARNING LIGHTS&quot;)
+]].&quot;  
 
 And walked off to help some other customer.
-
---higher
---lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Grocery shopping&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Putting stuff away&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;one tends to go&#39;&#39;
-Q. When is a mind -&gt; (link-goto: &quot;her own society&quot;)
-not a mind? -&gt; (link-goto: &quot;Continuous replay&quot;)
-A. When its&#39;s a land mine. -&gt; (link-goto: &quot;LISTEN&quot;)
-
-&#39;&#39;need more than this&#39;&#39;
-My needs have always -&gt; (link-goto: &quot;Can I help?&quot;)
-outstripped my resources. -&gt; (link-goto: &quot;WARNING LIGHTS&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Grocery shopping&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;Putting stuff away&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="232" name="TOS" tags="Note" position="9875,4700" size="100,100">NOTE:
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="232" name="TOS" tags="Note" position="9875,4700" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;TOS&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
 
 totally off the subject.
 off the wall
-&#39;&#39;offing something&#39;&#39;.
-
-
-
---back
-
+(link-repeat:&quot;offing something&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;We kill because death&quot;, &quot;Violence&quot;)
+(link-goto: &quot;is closer to life&quot;, &quot;Video prescription&quot;)
+(link-goto: &quot;than we know.&quot;, &quot;GLASS HARMONICA&quot;)
+]].
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Grocery shopping&quot;)
+]]]
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;offing something&#39;&#39;
-We kill because death -&gt; (link-goto: &quot;Violence&quot;)
-is closer to life -&gt; (link-goto: &quot;Video prescription&quot;)
-than we know. -&gt; (link-goto: &quot;GLASS HARMONICA&quot;)
-
-&#39;&#39;--back&#39;&#39; -&gt; (link-goto: &quot;Grocery shopping&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="233" name="We take our destiny" tags="Sarah" position="9925,4625" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="233" name="We take our destiny" tags="Sarah" position="9925,4625" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;We take our destiny&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 5/30/96 12:38
 Subject: What hath man wrought?
 
 
-I can&#39;t rely on the school for anything. They promise classes; they give &#39;&#39;closet space&#39;&#39;. They say they plant tomaters, but all I gets is weeds. Aack, sorry. Not doing so well on the accents today.
+I can&#39;t rely on the school for anything. They promise classes; they give (link-repeat:&quot;closet space&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. When is a closet&quot;, &quot;Yanking&quot;)
+(link-goto: &quot;an animal?&quot;, &quot;Isolation&quot;)
+(link-goto: &quot;A. When it&#39;s bare.&quot;, &quot;Brown vs Board&quot;)
+]]. They say they plant tomaters, but all I gets is weeds. Aack, sorry. Not doing so well on the accents today.
 
 So I&#39;m reading Doug Biklen&#39;s and Rosemary Crossley&#39;s stuff about facilitated communication and I decide to try it mine own self. Jus&#39; little ol me and let&#39;s not bring in the system this year. 
 
 Chris has generously offered to be my second in command whilst I teach. With the trusty aid of her Singer sewing machine, we put together a communication book for Laurel. The book is made from 2 blocks of 8 by 17 inch dark navy upholstry cloth. We cut out the pages, sewed down the middle, et voila, a book. We then bought out the local supply of velcro strips. We sewed the fuzzy edges in just like lines in a primer, and then cut up the hard plasticy edges into one inch strips. 
 
-Then we pasted pictures on the one inch strips: Pepsi, Doritos, starbursts, Applebees, feet, arms, dresses (yellow only), shirts and socks (green only). All the things in &#39;&#39;Laurel&#39;s world&#39;&#39;. Of course magazines don&#39;t have pictures of &#39;&#39;zorfs*&#39;&#39; or &#39;&#39;shattered glass&#39;&#39;, or &#39;&#39;moonbeams&#39;&#39;, but we made do. 
+Then we pasted pictures on the one inch strips: Pepsi, Doritos, starbursts, Applebees, feet, arms, dresses (yellow only), shirts and socks (green only). All the things in (link-repeat:&quot;Lauel&#39;s world&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Is that Laurel&#39;s world&quot;, &quot;Laurel&#39;s World&quot;)
+(link-goto: &quot;is insane, or just more&quot;, &quot;Cat&#39;s eyes&quot;)
+(link-goto: &quot;distant than other worlds&quot;, &quot;grass talks&quot;)
+]]. Of course magazines don&#39;t have pictures of (link-repeat:&quot;zorfs*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;zorfs&quot;)
+]] or (link-repeat:&quot;shattered glass&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Glass is that magic&quot;, &quot;glass&quot;)
+(link-goto: &quot;state halfway between&quot;, &quot;WHAT THE MOON FORGOT&quot;)
+(link-goto: &quot;solid and liquid.&quot;, &quot;Out on a limb&quot;)
+]], or (link-repeat:&quot;moonbeams&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;We are only&quot;, &quot;STONES UNDERSTAND&quot;)
+(link-goto: &quot;what the moon forgot&quot;, &quot;moon closets&quot;)
+]], but we made do. 
 
 Now we have a place in the book for what is coming up, what has happened, what is happening. So the book (and the plastic bag of velcro&#39;d concepts) go with us. We actually got Laurel to take it and velcro for an aggregate total of 15 minutes out of 5 hours trying the first day.
 
-Not so bad, eh? When you consider that home schoolers just need to be in educational status for 4 hours a day (the educators themselves figure the rest is lost in &#39;&#39;administrivia*&#39;&#39;.) When you subtract out class distractions and get to the individual attention, you probably have about what we got.
-
---Higher
---Lower
-
+Not so bad, eh? When you consider that home schoolers just need to be in educational status for 4 hours a day (the educators themselves figure the rest is lost in (link-repeat:&quot;administrivia*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;bureaucrazy&quot;)
+]].) When you subtract out class distractions and get to the individual attention, you probably have about what we got.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Grocery shopping&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Into our own hands&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;closet space&#39;&#39;
-Q. When is a closet -&gt; (link-goto: &quot;Yanking&quot;)
-an animal? -&gt; (link-goto: &quot;Isolation&quot;)
-A. When it&#39;s bare. -&gt; (link-goto: &quot;Brown vs Board&quot;) 
-
-&#39;&#39;Lauel&#39;s world&#39;&#39;
-Is that Laurel&#39;s world -&gt; (link-goto: &quot;Laurel&#39;s World&quot;)
-is insane, or just more -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-distant than other worlds -&gt; (link-goto: &quot;grass talks&quot;)
-
-&#39;&#39;zorfs*&#39;&#39; -&gt; (link-goto: &quot;zorfs&quot;)
-
-&#39;&#39;shattered glass&#39;&#39;
-Glass is that magic -&gt; (link-goto: &quot;glass&quot;)
-state halfway between -&gt; (link-goto: &quot;WHAT THE MOON FORGOT&quot;)
-solid and liquid. -&gt; (link-goto: &quot;Out on a limb&quot;)
-
-&#39;&#39;moonbeams&#39;&#39;
-We are only -&gt; (link-goto: &quot;STONES UNDERSTAND&quot;)
-what the moon forgot -&gt; (link-goto: &quot;moon closets&quot;)
-administrivia* -&gt; (link-goto: &quot;bureaucrazy&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Grocery shopping&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;Into our own hands&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="234" name="Into our own hands" tags="Sarah" position="10225,4425" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="234" name="Into our own hands" tags="Sarah" position="10225,4425" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Into our own hands&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 5/23/96 9:34
 Subject: And now, for something completely different
 
-You will never in a million billion trillion quadrillion years guess what happened. So I will tell you. Before I burst out in tears of rapture. In smiles, using muscles my face didn&#39;t know I had. YES!!! Today is more than a red letter day, it is a rainbow, a &#39;&#39;laurel*&#39;&#39; wreath, an oscartonygrammypulitzernobel day. 
+You will never in a million billion trillion quadrillion years guess what happened. So I will tell you. Before I burst out in tears of rapture. In smiles, using muscles my face didn&#39;t know I had. YES!!! Today is more than a red letter day, it is a rainbow, a (link-repeat:&quot;Laurel*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Laurel&quot;)
+]] wreath, an oscartonygrammypulitzernobel day. 
 
-Chris and I had been working with Laurel and her comm book all morning. Just when we were going to quit for lunch, Laurel put a Pepsi icon in the &quot;&#39;&#39;This is what is going to happen&#39;&#39;&quot; page and got (drumroll here.....) a Pepsi! Dah did did dah! yes!! all right!! She took the Pepsi, opened the top, slugged it back like a pro, slammed it on the table in an end zone hike right on the Pepsi icon.
+Chris and I had been working with Laurel and her comm book all morning. Just when we were going to quit for lunch, Laurel put a Pepsi icon in the &quot;(link-repeat:&quot;This is what is going to happen&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Blessed are the young--&quot;, &quot;Leaving&quot;)
+(link-goto: &quot;They can fortell anything&quot;, &quot;us&quot;)
+]]&quot; page and got (drumroll here.....) a Pepsi! Dah did did dah! yes!! all right!! She took the Pepsi, opened the top, slugged it back like a pro, slammed it on the table in an end zone hike right on the Pepsi icon.
 
-While Chris and I were high-fiving, Laurel went off and put in the Muppets Go to New York video. She put her hands on her ears and hummed while we ostentatiously moved the Pepsi icon from the &quot;This is what is going to happen&quot; page to the &quot;&#39;&#39;This is what happened page.&#39;&#39;&quot; She didn&#39;t look at us, not even out of the corners of her eyes.
+While Chris and I were high-fiving, Laurel went off and put in the Muppets Go to New York video. She put her hands on her ears and hummed while we ostentatiously moved the Pepsi icon from the &quot;This is what is going to happen&quot; page to the &quot;(link-repeat:&quot;This is what happened page.&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;It is memories that give&quot;, &quot;Profoundly simple&quot;)
+(link-goto: &quot;us strength to go on&quot;, &quot;When you knew&quot;)
+]]&quot; She didn&#39;t look at us, not even out of the corners of her eyes.
 
 None the less, never the more, it didn&#39;t really matter.  We made contact. Repeat, Houston, we have contact! Liftoff!!
 
  Chris went home to her long neglected family. Laurel rocked back and forth in front of the tv, mesmerized by Kermit. I snuggled with Janet for a while, and we giggled over Candyland.
 
 After the muppets finished making havoc of New York City, I put a bath/shower icon on the &quot;this is what is going to happen page&quot; and all three of us piled into the shower. I left the spilled water and soap on the floor as our icons of triumph.
-
---Higher
---Lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;We take our destiny&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;And rejoice&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;Laurel*&#39;&#39; -&gt; (link-goto: &quot;Laurel&quot;)
-
-&#39;&#39;This is what is going to happen&#39;&#39;
-Blessed are the young-- -&gt; (link-goto: &quot;Leaving&quot;)
-They can fortell anything -&gt; (link-goto: &quot;us&quot;)
-
-&#39;&#39;This is what happened page.&#39;&#39;
-It is memories that give -&gt; (link-goto: &quot;Profoundly simple&quot;)
-us strength to go on -&gt; (link-goto: &quot;When you knew&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;We take our destiny&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;And rejoice&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-
-
-
-
-</tw-passagedata><tw-passagedata pid="235" name="And rejoice" tags="Sarah" position="10475,4175" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="235" name="And rejoice" tags="Sarah" position="10475,4175" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;And rejoice&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 5/29/96 22:44
 Subject: Progress you can taste.
 
-I don&#39;t want to imply a connection where one may not be, but we started Laurel back on Evening Primrose Oil last night (I&#39;d run out, but I got some more) and today was much, much better. I have also &#39;&#39;bombarded her&#39;&#39; with Vitamin B, and am doing a regimen of &#39;&#39;zorfs*&#39;&#39;.
+I don&#39;t want to imply a connection where one may not be, but we started Laurel back on Evening Primrose Oil last night (I&#39;d run out, but I got some more) and today was much, much better. I have also (link-repeat:&quot;bombarded her&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The only thing I haven&#39;t&quot;, &quot;attention&quot;)
+(link-goto: &quot;tried are pomegranates--&quot;, &quot;diets&quot;)
+(link-goto: &quot;I do not want to lose&quot;, &quot;Whatcha gonna do&quot;)
+(link-goto: &quot;her like Demeter did.&quot;, &quot;eccentric lunch&quot;)
+]] with Vitamin B, and am doing a regimen of (link-repeat:&quot;zorfs*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;zorfs&quot;)
+]].
 
 We are working with Laurel, getting her to find a banana and put it on the word &quot;banana,&quot; find an orange and put it on the word &quot;orange&quot; (She does amazingly well at this, actually. When she does put an object on the word it is right. The only difficulty comes when she puts the object on the couch or the table, and cannot understand that this does not count in the strange game we play.) Laurel began to walk away and try the front doors. Rob just put another complicated switch on it so she can&#39;t get out without an alarm going off and she has yet to figure the new one out. Chris gave her the communication/icon book that we&#39;ve been developing. Laurel took out the &quot;Safeway&quot; (grocery store) icon and put it on the velcro strip on the first page the area that says &quot;this is what is now going to happen.&quot; 
 
@@ -10163,47 +10714,36 @@ What a cutie! We got home and things were fine.
 
 Thus today, I was on a cloud. Nah, on a roller coaster of clouds. Screaming up into the soft floating air, flying like nothing was holding me on the ground, dreaming of true weightlessness. 
 
-I waxed ecstatic to Mrs. Cooper four doors down when she came out to sweep the walk. I rhapsodized over Laurel&#39;s appropriate use of her comm book. Not to mention her appropriate use of my arms, legs, etc. I kissed my &#39;&#39;healing bruises&#39;&#39; I was so happy.
+I waxed ecstatic to Mrs. Cooper four doors down when she came out to sweep the walk. I rhapsodized over Laurel&#39;s appropriate use of her comm book. Not to mention her appropriate use of my arms, legs, etc. I kissed my (link-repeat:&quot;healing bruises&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. What herb heals&quot;, &quot;Grocery shopping&quot;)
+(link-goto: &quot;everything?&quot;, &quot;Emergency 2&quot;)
+(link-goto: &quot;A. Thyme.&quot;, &quot;at all times&quot;)
+]] I was so happy.
 
 Mrs. Cooper cracked a smile and shook my hand.
-
---Higher
---Lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Into our own hands&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Life in the good lane&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;bombarded her&#39;&#39;
-The only thing I haven&#39;t -&gt; (link-goto: &quot;attention&quot;)
-tried are pomegranates-- -&gt; (link-goto: &quot;diets&quot;)
-I do not want to lose -&gt; (link-goto: &quot;Whatcha gonna do&quot;)
-her like Demeter did. -&gt; (link-goto: &quot;eccentric lunch&quot;)
-
-&#39;&#39;zorfs* &#39;&#39;-&gt; (link-goto: &quot;zorfs&quot;)
-
-&#39;&#39;healing bruises&#39;&#39;
-Q. What herb heals -&gt; (link-goto: &quot;Grocery shopping&quot;)
-everything? -&gt; (link-goto: &quot;Emergency 2&quot;)
-A. Thyme. -&gt; (link-goto: &quot;at all times&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Into our own hands&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;Life in the good lane&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-
-
-
-
-
-
-</tw-passagedata><tw-passagedata pid="236" name="Life in the good lane" tags="Sarah" position="10700,3900" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="236" name="Life in the good lane" tags="Sarah" position="10700,3900" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Life in the good lane&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 6/2/96 20:21
 Subject: Progress you can taste.
@@ -10215,122 +10755,119 @@ But right now, there is only good.  Laurel can communicate. She knows what she w
 
 This evening, Laurel decided to take a walk. She dumped all of the icons out for her comm book and frenetically searched through them. Finally selecting the slide, Pepsi, book, tree, and starburst icons, she slathered the whole mess on the this is what is about to happen page in her comm book. Then she gathered up the book and walked out the door with it, cradling it in her arms. She didn&#39;t let me see the book of course, but as I was hovering just in front of her, I could see what was going on.
 
-I darted back into the house a half dozen times, getting money, Kodi&#39;s collar and leash, my shoes! And Laurel waited out front, &#39;&#39;amidst but not with&#39;&#39; a bunch of neighborhood kids. We walked up to the school and she tried to get in. Alas, it was locked up tight. She pointed to the book icon on her comm book and then the school. Yes! &#39;&#39;COMMUNICATION&#39;&#39;!!!! NO! I don&#39;t have the KEY!!!
+I darted back into the house a half dozen times, getting money, Kodi&#39;s collar and leash, my shoes! And Laurel waited out front, (link-repeat:&quot;amidst but not with&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;We don&#39;t need scarlet&quot;, &quot;Isn&#39;t that special?&quot;)
+(link-goto: &quot;letters to shun anymore.&quot;, &quot;the looks&quot;)
+]] a bunch of neighborhood kids. We walked up to the school and she tried to get in. Alas, it was locked up tight. She pointed to the book icon on her comm book and then the school. Yes! (link-repeat:&quot;COMMUNICATION&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Communication isn&#39;t alway&quot;, &quot;School success!&quot;)
+(link-goto: &quot;what you expect it to be.&quot;, &quot;Catch 22&quot;)
+]]!!!! NO! I don&#39;t have the KEY!!!
 
 Communication does not quite yet grasp Sundays in summer. Luckily, on one of my half dozen trips back to the house, I&#39;d picked up Jane Eyre, and Laurel was content to take the book over to the merry go round in the playground. She lay face up, holding the book like a fashionable fan and flipping the pages--upside down.
 
-So we played on the playground. Every time I glanced at Laurel, &#39;&#39;Janet urgently needed&#39;&#39; me to watch her. Janet did cartwheels, loop-the-loops, and &#39;&#39;summersalts*&#39;&#39;. So Laurel pretty much wandered about and did whatever without supervision. When the sun was kissing the mountains, we made our calm egress through the dust-pink light. 
+So we played on the playground. Every time I glanced at Laurel, (link-repeat:&quot;Janet urgently needed&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. Who answered the phone&quot;, &quot;attention&quot;)
+(link-goto: &quot;at the zoo?&quot;, &quot;Janet&#39;s magazine&quot;)
+(link-goto: &quot;A. No one.&quot;, &quot;Janet&#39;s essay&quot;)
+(link-goto: &quot;The lion was busy.&quot;, &quot;god&#39;s eyes&quot;)
+(link-goto: &quot;**DELETE**&quot;, &quot;Life in the good lane&quot;)
+]] me to watch her. Janet did cartwheels, loop-the-loops, and (link-repeat:&quot;sunnersalts*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;summersalts&quot;)
+]]. So Laurel pretty much wandered about and did whatever without supervision. When the sun was kissing the mountains, we made our calm egress through the dust-pink light. 
 
-Anyway, I just had to tell you guys. I am still so thrilled! I want to just grab this feeling and part it and lock it up in the refrigerator like the friends sourdough starter. And &#39;&#39;have it forever&#39;&#39;.
+Anyway, I just had to tell you guys. I am still so thrilled! I want to just grab this feeling and part it and lock it up in the refrigerator like the friends sourdough starter. And (link-repeat:&quot;have it forever&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Forevertarianism:&quot;, &quot;free her.&quot;)
+(link-goto: &quot;When you die in ecstacy--&quot;, &quot;Pigeon blood&quot;)
+(link-goto: &quot;and God hits the&quot;, &quot;For richer&quot;)
+(link-goto: &quot;continuous replay.&quot;, &quot;Rain included&quot;)
+]].
 
  I cannot keep my hands on the keyboard! Good night. Really, really good night.
-
---Higher
---Lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;And rejoice&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Life in Laurel&#39;s lane&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;amidst but not with&#39;&#39;
-We don&#39;t need scarlet -&gt; (link-goto: &quot;Isn&#39;t that special?&quot;)
-letters to shun anymore. -&gt; (link-goto: &quot;the looks&quot;)
-
-&#39;&#39;COMMUNICATION!!!!&#39;&#39;
-Communication isn&#39;t alway -&gt;(link-goto: &quot;School success!&quot;)
-what you expect it to be. -&gt; (link-goto: &quot;Catch 22&quot;)
-
-&#39;&#39;Janet urgently needed&#39;&#39;
-Q. Who answered the phone -&gt; (link-goto: &quot;attention&quot;)
-at the zoo? -&gt; (link-goto: &quot;Janet&#39;s magazine&quot;)
-A. No one. -&gt; (link-goto: &quot;Janet&#39;s essay&quot;)
-The lion was busy. -&gt; (link-goto: &quot;god&#39;s eyes&quot;)
---DELETE-- -&gt; (link-goto: &quot;Life in the good lane&quot;) (current node)
-
-&#39;&#39;summersalts*&#39;&#39; -&gt; (link-goto: &quot;summersalts&quot;)
-
-&#39;&#39;have it forever&#39;&#39;
-Forevertarianism: -&gt; (link-goto: &quot;free her.&quot;)
-When you die in ecstacy-- -&gt; (link-goto: &quot;Pigeon blood&quot;)
-and God hits the -&gt; (link-goto: &quot;For richer&quot;)
-continuous replay. -&gt; (link-goto: &quot;Rain included&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;And rejoice&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;Life in Laurel&#39;s lane&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-
-</tw-passagedata><tw-passagedata pid="237" name="summersalts" tags="Note" position="10775,3975" size="100,100">NOTE:
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="237" name="summersalts" tags="Note" position="10775,3975" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;summersalts&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
 
 Janet&#39;s spelling -- she says you can only do these in summer, because then you can sweat to get the salts.
-
-
---back
-
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Life in the good lane&quot;)
+]]]
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;--back&#39;&#39; -&gt; (link-goto: &quot;Life in the good lane&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-</tw-passagedata><tw-passagedata pid="238" name="Life in Laurel&#39;s lane" tags="Sarah" position="11150,3850" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="238" name="Life in Laurel&#39;s lane" tags="Sarah" position="11150,3850" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Life in Laurel&#39;s lane&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 6/10/96 18:14
 Subject: Another quiet day
 
 Celebrate with me! As someone said, &quot;the best is yet to be!&quot; 
 
-The comm book is still working. Laurel actually gave me the book with the icon for starbursts (a little starburst wrapper) and store on the &quot;This is what is going to happen now&quot; page.  Then she handed me my shoes, coat, wallet, and dog leash.  These, she has evidently decided, are the primary requisites for any venture on the outside. This is one &#39;&#39;ritual&#39;&#39; I can definitely live with! I got the car keys, but Laurel took them out of my hand. 
+The comm book is still working. Laurel actually gave me the book with the icon for starbursts (a little starburst wrapper) and store on the &quot;This is what is going to happen now&quot; page.  Then she handed me my shoes, coat, wallet, and dog leash.  These, she has evidently decided, are the primary requisites for any venture on the outside. This is one (link-repeat:&quot;ritual&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Rituals are the only&quot;, &quot;zorfs&quot;)
+(link-goto: &quot;ticket we have to&quot;, &quot;Flyer&quot;)
+(link-goto: &quot;travel from the profane&quot;, &quot;Running again&quot;)
+(link-goto: &quot;into the sacred.&quot;, &quot;RITUALS&quot;)
+]] I can definitely live with! I got the car keys, but Laurel took them out of my hand. 
 
-So we walked. Laurel chose to head for the Safeway about four blocks away. She even passed up the little &#39;&#39;gas station&#39;&#39; that she likes better. She selected a six pack each of Pepsi and Coke, decided against Doritos and chose a box of Fruit Loops. Shock City! If I&#39;ve ever bought them, it&#39;s been years. We don&#39;t shop the cereal aisle at Safeway; Chris gets the bulk cereal at Wild Oats and brings it by for us. So this really was some heavy flexibility.
+So we walked. Laurel chose to head for the Safeway about four blocks away. She even passed up the little (link-repeat:&quot;gas station&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Gas stations are today&#39;s&quot;, &quot;Doubletake&quot;)
+(link-goto: &quot;equivalent of water holes&quot;, &quot;Rescue party&quot;)
+]] that she likes better. She selected a six pack each of Pepsi and Coke, decided against Doritos and chose a box of Fruit Loops. Shock City! If I&#39;ve ever bought them, it&#39;s been years. We don&#39;t shop the cereal aisle at Safeway; Chris gets the bulk cereal at Wild Oats and brings it by for us. So this really was some heavy flexibility.
 
 Choosing the least crowded aisle (the one with no cashier), Laurel lay down her basket and headed for the candy machines, leaving me to pay for it all. Surprise! I made sure Laurel brought her fanny-pack, and I gave her her allowance before we left the house. I waited, and coached her to take the basket over to the cashier. She wasn&#39;t sure exactly what was expected, but after some prompting, she handed over her wallet. (Oh well, close enough.) She had $5 and change and the tab came to $8 and change. Her attention was waning quickly as she moved toward the beckoning colored gums, so I asked the cashier to take off the Pepsi. She did, gave Laurel the change and receipt (and wallet), and her bag. Laurel waited by the gumball machines, her fingers tracing the long slide inside the clear tube. I led her away. She lunged back inside (for the Pepsi? for something else we&#39;d neglected?). I grabbed her and told her she didn&#39;t have enough money. She did not appear convinced, but conceded to the inevitability of my irrationality. 
 
 Several times, she asked me to carry the bag. I declined. She carried it all the way home after that, even offering it to me and snatching it away, offering and snatching. Janet held my hand and we swung up and down, up and down, in tune with Laurel&#39;s antics. At home, Laurel put her things away by herself, and sat down to enjoy &quot;The Muppet Movie.&quot; She hummed the rainbow song over and over through the whole thing even before the movie began! I took it as a good sign and hummed right along with her.
 
 Ignoring, for the moment, that we were pretty much entirely on Laurel&#39;s agenda, and I made almost no demands on her aside from those directly leading to her getting what she wanted, this was a pretty terrific evening. Y&#39;know, no blood and stuff.
-
-
---Higher
---Lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Life in the good lane&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Money matters&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;ritual &#39;&#39;
-Rituals are the only -&gt; (link-goto: &quot;zorfs&quot;)
-ticket we have to -&gt; (link-goto: &quot;Flyer&quot;)
-travel from the profane -&gt; (link-goto: &quot;Running again&quot;)
-into the sacred. -&gt; (link-goto: &quot;RITUALS&quot;)
-
-&#39;&#39;gas station&#39;&#39;
-Gas stations are today&#39;s -&gt; (link-goto: &quot;Doubletake&quot;)
-equivalent of water holes -&gt; (link-goto: &quot;Rescue party&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Life in the good lane&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;Money matters&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="239" name="Janet&#39;s essay" tags="Sarah" position="9875,8675" size="100,100">To:  mstegall@cattail.elem.edu
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="239" name="Janet&#39;s essay" tags="Sarah" position="9875,8675" size="100,100">To:  mstegall@cattail.elem.edu
 From:  Janet Murphy
 Date: 11/26/97 19:19
 Subject:  My Class Essay
@@ -10410,7 +10947,11 @@ A. Stay out of the water. -&gt; (link-goto: &quot;Fear&quot;)
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
 &#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-</tw-passagedata><tw-passagedata pid="240" name="Money matters" tags="Sarah" position="10950,3650" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+</tw-passagedata><tw-passagedata pid="240" name="Money matters" tags="Sarah" position="10950,3650" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Money matters&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 6/29/96
 Subject: The cost of raising a child is over $100,000
@@ -10421,7 +10962,13 @@ Is THAT all? You would think it was higher. Sort of like the IRS tax forms:
 
           Line B: Write a check for Line A and send it in.
 
-Anyway, this morning, &#39;&#39;Janet&#39;&#39; and I discussed all the work that needs to be done to keep the household working smoothly. (More of a forced discussion, actually. If I could have tied her to the chair wihout &#39;&#39;getting it from the SS&#39;&#39;, I would have.) I&#39;ve informed her that these are not things she gets paid for; she gets money for the things she needs. She cleans her room and looks after her things because she is a person. She helps with the laundry and the dishes because she&#39;s a member of this family. She will do what she needs to do to be a member of her school and community. Ahh the lectures in this household.
+Anyway, this morning, (link-repeat:&quot;Janet&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Normalcy&quot;)
+]] and I discussed all the work that needs to be done to keep the household working smoothly. (More of a forced discussion, actually. If I could have tied her to the chair wihout (link-repeat:&quot;getting it from the SS&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Whenever the state&quot;, &quot;Kelly and I&quot;)
+(link-goto: &quot;get&#39;s involved, our souls&quot;, &quot;Getting down to it&quot;)
+(link-goto: &quot;go out the window&quot;, &quot;Catch 22&quot;)
+]], I would have.) I&#39;ve informed her that these are not things she gets paid for; she gets money for the things she needs. She cleans her room and looks after her things because she is a person. She helps with the laundry and the dishes because she&#39;s a member of this family. She will do what she needs to do to be a member of her school and community. Ahh the lectures in this household.
 
  We sat down and figured out what her expenses are: if she were to put one third of her income into savings and donate ten percent to a worthy, charitable organization, and pay for her own goodies and outings, and presents for friends and family, and half of any special classes she wants to take, like karate or dance or drama, and her miscellaneous needs such as hair accessories, bike locks and what not  that works out to about $20 per week! 
 
@@ -10437,178 +10984,172 @@ Ya know, I almost had to agree!
 
 Laurel is treating the comm book like a normal part of everyday life. She got it out and we went to the store again. I tried to go past the convenience store, but Laurel wanted to go in. She selected a Pepsi, some Doritos, and some LifeSavers gummies, and almost walked out the door with them. I signaled to the clerk, who quickly got out of his bulletproof case and stood at the door. (Thank whatever deity is currently in vogue that the store was empty and he could do that!) So Laurel stopped, staring at brightly colored package in her hand and the imposing denim blocking the door. She turned around and handed the clerk her wallet.
 
-This, I must say is vocational progress. But she spent a total of $5.06 there today. Another hefty allowance, and she is not doing her own saving, presents, classes, etc. Oh me...I&#39;m not sure I can &#39;&#39;afford Laurel&#39;s world&#39;&#39;.
+This, I must say is vocational progress. But she spent a total of $5.06 there today. Another hefty allowance, and she is not doing her own saving, presents, classes, etc. Oh me...I&#39;m not sure I can (link-repeat:&quot;afford Laurel&#39;s world&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;A penny for our daily&quot;, &quot;Flyer&quot;)
+(link-goto: &quot;bread/ A penny for a&quot;, &quot;Then again&quot;)
+(link-goto: &quot;needle/ That&#39;s the way&quot;, &quot;Out of options&quot;)
+(link-goto: &quot;the money goes--&quot;, &quot;Surgery aftermath&quot;)
+(link-goto: &quot;POP goes the weasel.&quot;, &quot;Fear&quot;)
+]].
 
 G&#39;night. I&#39;m going to bed. G&#39;night. 
-
---higher
---lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Life in Laurel&#39;s lane&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Normalcy&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;Janet&#39;&#39; -&gt; (link-goto: &quot;Normalcy&quot;)
-
-&#39;&#39;Getting it from the SS&#39;&#39;
-Whenever the state -&gt; (link-goto: &quot;Kelly and I&quot;)
-get&#39;s involved, our souls -&gt; (link-goto: &quot;Getting down to it&quot;)
-go out the window -&gt; (link-goto: &quot;Catch 22&quot;)
-
-&#39;&#39;afford Laurel&#39;s world&#39;&#39;
-A penny for our daily -&gt; (link-goto: &quot;Flyer&quot;)
-bread/ A penny for a -&gt; (link-goto: &quot;Then again&quot;)
-needle/ That&#39;s the way -&gt; (link-goto: &quot;Out of options&quot;)
-the money goes-- -&gt; (link-goto: &quot;Surgery aftermath&quot;) 
-POP goes the weasel. -&gt; (link-goto: &quot;Fear&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Life in Laurel&#39;s lane&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;Normalcy&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-
-</tw-passagedata><tw-passagedata pid="241" name="Credits" tags="Sarah" position="11375,3075" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="241" name="Credits" tags="Sarah" position="11375,3075" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Credits&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 7/4/96 23:08
 Subject: Independance Day Muse
 
-Happy fourth to all, and to all a good night! Any how is it, life has certainly calmed down in the last month or so. Dad took care of Laurel while I went to work for a couple of hours (a stop-gap, &#39;&#39;temporary driving&#39;&#39; job for a friend...)
+Happy fourth to all, and to all a good night! Any how is it, life has certainly calmed down in the last month or so. Dad took care of Laurel while I went to work for a couple of hours (a stop-gap, (link-repeat:&quot;temporary driving&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON BLESSINGS&quot;)
+]] job for a friend...)
 
  The comm book is working. We add about four new words a day--Laurel peruses the paper&#39;s ads like a pro. We have a watch picture that she sets to match the hall clock (and I thank god every day it is the old fashioned hands and seconds, the numbers would be just too fast to change). The sun gods have smiled down upon us--we have gone for walks on the Highline Canal every day for the past week and have crossed Colorado Boulevard without a single incident. Janet has a new toy--someone showed her how to use an old vaccuum tube to suck crayfish out of the creek without getting any of the water on her or in her. So she sucks them out, touches the claws, says ooooh, tries to get Laurel interested, and then carefully puts them right back in the water.
 
-Laurel has gone to Safeway every day this week to buy Pepsi and Doritos. She does not eat them - or rather, she tears open the plastic, places three &#39;&#39;Doritos&#39;&#39; in her mouth, hums &quot;Peanut, peanut butter&quot; with more enthusiasm than the Mormon Tabernacle Choir and chomps down hard. Then she leaves the package on top of the refrigerator.
+Laurel has gone to Safeway every day this week to buy Pepsi and Doritos. She does not eat them - or rather, she tears open the plastic, places three (link-repeat:&quot;Doritos&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;There are some foods&quot;, &quot;moon wants&quot;)
+(link-goto: &quot;that even goddesses&quot;, &quot;blood talks&quot;)
+(link-goto: &quot;will not touch.&quot;, &quot;Somehow&quot;)
+]] in her mouth, hums &quot;Peanut, peanut butter&quot; with more enthusiasm than the Mormon Tabernacle Choir and chomps down hard. Then she leaves the package on top of the refrigerator.
 
-And who is to thank for this wondrous interlude? Dr. Morgan credits the &#39;&#39;Risperdal*&#39;&#39; he prescribed to replace the Clonidine, Ms. Bradshaw thinks it is the good weather, Mrs. Macdougal thinks Social Services has finally gotten to my case, and me, I&#39;m afraid the fragile structure of this peace would collapse under scrutiny. I point blank refuse to analyze. Under no threat of anything.
+And who is to thank for this wondrous interlude? Dr. Morgan credits the (link-repeat:&quot;Risperdal*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;drugs&quot;)
+]] he prescribed to replace the Clonidine, Ms. Bradshaw thinks it is the good weather, Mrs. Macdougal thinks Social Services has finally gotten to my case, and me, I&#39;m afraid the fragile structure of this peace would collapse under scrutiny. I point blank refuse to analyze. Under no threat of anything.
 
-Laurel is going through a bed smoothing phase right now. She takes the sheet and smooths it over her bed, gently rubbing out every single wrinkle. When she gets finished, she &#39;&#39;does it again&#39;&#39;. She is occupied in this for hours at a stretch. 
+Laurel is going through a bed smoothing phase right now. She takes the sheet and smooths it over her bed, gently rubbing out every single wrinkle. When she gets finished, she (link-repeat:&quot;does it again&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;These are the basic&quot;, &quot;RITUALS&quot;)
+(link-goto: &quot;patterns in our lives.&quot;, &quot;OCD&quot;)
+]]. She is occupied in this for hours at a stretch. 
 
 I even bought bath salts the last time we were out. And used them. Morning Mist. And had time to notice something. I am not even bruised anywhere right now. For the first time in ages of months. (Ages of monks? How old are monks, anyway?)
 
-Even better - Laurel is not cowering over the cherry bombs and stink crackers resounding in the street. She is simply avoiding the windows. Hoorah, an action to control her environment, as the &#39;&#39;shrinkspeak&#39;&#39; says. 
-
-
---higher
---lower
-
+Even better - Laurel is not cowering over the cherry bombs and stink crackers resounding in the street. She is simply avoiding the windows. Hoorah, an action to control her environment, as the (link-repeat:&quot;shrinkspeak&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;We  make our argot to keep&quot;, &quot;Sandwiches&quot;)
+(link-goto: &quot;outsiders out.&quot;, &quot;Profession&quot;)
+]] says. 
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Normalcy&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON BLESSINGS&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;temporary driving&#39;&#39; -&gt; (link-goto: &quot;MOON BLESSINGS&quot;)
-
-&#39;&#39;Doritos&#39;&#39;
-There are some foods -&gt; (link-goto: &quot;moon wants&quot;)
-that even goddesses -&gt; (link-goto: &quot;blood talks&quot;)
-will not touch. -&gt; (link-goto: &quot;Somehow&quot;)
-
-&#39;&#39;Risperdal*&#39;&#39; -&gt; (link-goto: &quot;drugs&quot;)
-
-&#39;&#39;does it again&#39;&#39;
-These are the basic -&gt; (link-goto: &quot;RITUALS&quot;)
-patterns in our lives. -&gt; (link-goto: &quot;OCD&quot;)
-
-&#39;&#39;shrinkspeak&#39;&#39;
-We make our argot to keep -&gt; (link-goto: &quot;Sandwiches&quot;)
-outsiders out. -&gt; (link-goto: &quot;Profession&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Normalcy&quot;) 
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;MOON BLESSINGS&quot;) 
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-</tw-passagedata><tw-passagedata pid="242" name="Normalcy" tags="Sarah" position="11200,3400" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="242" name="Normalcy" tags="Sarah" position="11200,3400" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Normalcy&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 6/29/96
 Subject: A chicken in every pot, and a boy for every girl...
 
 Hello friends: )
  
-Prepare for yet another installment in the actual (and thus placidly boring tah dah! lives of the silver girls (I could have chosen golden, or platinum, but those were already taken..) This ongoing series is brought to you live via the Internet (What did we ever do without&#39;&#39; e-mail&#39;&#39;? I can no longer remember...larger phone bills, probably...)
+Prepare for yet another installment in the actual (and thus placidly boring tah dah! lives of the silver girls (I could have chosen golden, or platinum, but those were already taken..) This ongoing series is brought to you live via the Internet (What did we ever do without (link-repeat:&quot;e-mail&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Electronics zooming&quot;, &quot;Psychic Roses&quot;)
+(link-goto: &quot;across the country&quot;, &quot;the bullshit&quot;)
+(link-goto: &quot;carry far more than&quot;, &quot;For the time being&quot;)
+(link-goto: &quot;they realize.&quot;, &quot;Social Services&quot;)
+]]? I can no longer remember...larger phone bills, probably...)
 
 Around three today, Laurel decided she wanted to go for a walk, but Janet went into the garage barefoot and got a glass sliver in her foot. After a soak in the tub, Janet allowed me to douse it with Orajel and work it out with a needle and cuticle scissors. (Where do all the tweezers go?) She hummed and bit her thumb while I worked and barely felt a thing. Janet hopped on her bike, and we allowed Laurel to lead us out. 
 
-It is noteworthy that Laurel chose not to go out until we were ready. She stood at the door with her comm book and pounded the &quot;This is what is going to happen&quot; page against the doorknob, but she didn&#39;t actually touch the doorknob until she saw us.  When she did, she started off down the street, looking back over her shoulder and coming back when she saw we weren&#39;t following. Janet rode her bike, and we brought Kodi on a leash. Laurel walked up Kearney to Yale, then east and into the gas station on Colorado Boulevard when she saw &#39;&#39;we weren&#39;t following&#39;&#39;. 
+It is noteworthy that Laurel chose not to go out until we were ready. She stood at the door with her comm book and pounded the &quot;This is what is going to happen&quot; page against the doorknob, but she didn&#39;t actually touch the doorknob until she saw us.  When she did, she started off down the street, looking back over her shoulder and coming back when she saw we weren&#39;t following. Janet rode her bike, and we brought Kodi on a leash. Laurel walked up Kearney to Yale, then east and into the gas station on Colorado Boulevard when she saw (link-repeat:&quot;we weren&#39;t following&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Laurel goes to so&quot;, &quot;BORGES&quot;)
+(link-goto: &quot;many places we&quot;, &quot;LEFT ANGLES TO THE MOON&quot;)
+(link-goto: &quot;can&#39;t follow&quot;, &quot;alone.&quot;)
+]]. 
 
 Laurel led us across Colorado Boulevard to the park. As we were going across the busy driveways at the shopping center, she(linked arms with me or placed her hand on my elbow. She pushed the button for the walk light at the intersection. 
 
 Yelling wildly, Laurel made for the slide. She pushed three different kids down the slide. Not violently, just sort of helping. One didn&#39;t complain, and the other two complained so constantly about everything that their parents kind of dismissed them. She played a bit, accepted that Kodi did not want to go down the slide...after only fifteen minutes of pushing that poor patient dog up the slide ladder. Then she went off to her large elm in the northwest corner of the playground and spread sand into the knothole, watching it spill down to the ground. When the sun left the tree, Laurel indicated that we would leave by heading back a bit and then waiting for Janet and me to scramble after her. 
 
-While we were at the playground, Janet met a younger man, a kindergartner, though he was her height. He quickly rushed his hands through his dark cowlick and offered the resulting grime to Janet. They held hands and promenaded around the merry-go-round and finally settled on the seesaw. They exchanged crabapple blossoms before he left, and he drew a heart in the sand. Janet &#39;&#39;raved&#39;&#39; about his dark blue eyes, thick lashes, and gorgeous nose and informed me he would be back next Saturday. Oh my... 
+While we were at the playground, Janet met a younger man, a kindergartner, though he was her height. He quickly rushed his hands through his dark cowlick and offered the resulting grime to Janet. They held hands and promenaded around the merry-go-round and finally settled on the seesaw. They exchanged crabapple blossoms before he left, and he drew a heart in the sand. Janet (link-repeat:&quot;raved&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Love is somehow better&quot;, &quot;You mean&quot;)
+(link-goto: &quot;in the abstract&quot;, &quot;He means&quot;)
+(link-goto: &quot;not the concrete.&quot;, &quot;PRO RE NATA&quot;)
+]] about his dark blue eyes, thick lashes, and gorgeous nose and informed me he would be back next Saturday. Oh my... 
 
-Laurel asked for a shower, and actually let me trim her hair for about ten minutes before she took the scissors from me, wrapped them in a wet washcloth, and put them carefully back on the bathroom cabinet shelf at right angles to the cuticle scissors. Her hair is a bit longer on the front/right quadrant, but there&#39;s always tomorrow. What interested me is that Laurel was quite resistant until I started talking about how Jack &#39;&#39;Cooper&#39;&#39; (also a younger man a first grader down the street) thought she was cute. Then she calmed right down. Oh my.... 
-
---higher
---lower
-
-
+Laurel asked for a shower, and actually let me trim her hair for about ten minutes before she took the scissors from me, wrapped them in a wet washcloth, and put them carefully back on the bathroom cabinet shelf at right angles to the cuticle scissors. Her hair is a bit longer on the front/right quadrant, but there&#39;s always tomorrow. What interested me is that Laurel was quite resistant until I started talking about how Jack (link-repeat:&quot;Cooper&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Credits&quot;)
+]] (also a younger man a first grader down the street) thought she was cute. Then she calmed right down. Oh my.... 
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Money matters&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Credits&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="243" name="comes up" tags="Note" position="10075,4275" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;comes up&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
+
+Today, even (link-repeat:&quot;emergencies&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Panic just isn&#39;t&quot;, &quot;Emergency placement&quot;)
+(link-goto: &quot;what it used to be.&quot;, &quot;Emergency 5&quot;)
+]] wait in line.
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Putting stuff away&quot;)
+]]]
 ___________________
-
-
-Links:
-____________________
-
-&#39;&#39;e-mail &#39;&#39;
-Electronics zooming -&gt; (link-goto: &quot;Psychic Roses&quot;) 
-across the country -&gt; (link-goto: &quot;the bullshit&quot;)
-carry far more than -&gt; (link-goto: &quot;For the time being&quot;)
-they realize. -&gt; (link-goto: &quot;Social Services&quot;)
-
-&#39;&#39;we weren&#39;t following&#39;&#39;
-Laurel goes to so -&gt; (link-goto: &quot;BORGES&quot;)
-many places we -&gt; (link-goto: &quot;LEFT ANGLES TO THE MOON&quot;)
-can&#39;t follow -&gt; (link-goto: &quot;alone.&quot;)
-
-&#39;&#39;raved&#39;&#39;
-Love is somehow better -&gt; (link-goto: &quot;You mean&quot;)
-in the abstract -&gt; (link-goto: &quot;He means&quot;)
-not the concrete. -&gt; (link-goto: &quot;PRO RE NATA&quot;)
-
-&#39;&#39;Cooper&#39;&#39; -&gt; (link-goto: &quot;Credits&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Money matters&quot;) 
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;Credits&quot;) 
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-
-
-
-</tw-passagedata><tw-passagedata pid="243" name="comes up" tags="Note" position="10075,4275" size="100,100">NOTE:
-
-Today, even &#39;&#39;emergencies&#39;&#39; wait in line.
-
---back
-___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;emergencies&#39;&#39;
-Panic just isn&#39;t -&gt; (link-goto: &quot;Emergency placement&quot;)
-what it used to be. -&gt; (link-goto: &quot;Emergency 5&quot;)
-
-&#39;&#39;--back&#39;&#39; -&gt; (link-goto: &quot;Putting stuff away&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="244" name="Putting stuff away" tags="Sarah" position="9975,4275" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="244" name="Putting stuff away" tags="Sarah" position="9975,4275" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Putting stuff away&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 5/20/96 23:32
 Subject: All the groceries of our lives
@@ -10617,39 +11158,42 @@ Getting back to the keyboard to finish up my story. Things are calm now. Laurel 
 
 Janet went to bed after the ninty-nth showing of Beauty and the Beast. She wants to be just like Beauty when she grows up, and she keeps putting her hair in that thick-sided ponytail. Her primary goal in life? Not to read and get ahead. Oh no. To sprinkle bird seed and have birds come down on her head. She is all for practicing right now, but I told her Mrs. Pots had already put Chips to bed. And she believed me. For once. 
 
-Right, back to the tale at hand. I have &#39;&#39;mixed feelings&#39;&#39; about confessing that, upon our arrival at home, I took Laurel into her room and spanked her. Laurel locked her door herself and stayed in self-imposed exile for about 6 hours.
+Right, back to the tale at hand. I have (link-repeat:&quot;mixed feelings&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;If feelings were crimes&quot;, &quot;Herculean&quot;)
+(link-goto: &quot;we would all be on&quot;, &quot;Beyond anything&quot;)
+(link-goto: &quot;death row by now.&quot;, &quot;Death wish&quot;)
+]] about confessing that, upon our arrival at home, I took Laurel into her room and spanked her. Laurel locked her door herself and stayed in self-imposed exile for about 6 hours.
 
-I put away groceries. I called the Dr Morgan, our latest pediatric neurologist, who has had extensive experience with autistic kids. Or at least as much as anyone. And at least he understands that each kid is different. Got the Ellie, the new nurse practitioner. She suggests giving Laurel a higher dose of the&#39;&#39; Clonidine*&#39;&#39; prescribed (at an already ridiculously high dose) last spring. We agree that Laurel is in distress and needs help. They have an opening for an emergency appointment next week, and will call if something &#39;&#39;comes up sooner*&#39;&#39;.  
+I put away groceries. I called the Dr Morgan, our latest pediatric neurologist, who has had extensive experience with autistic kids. Or at least as much as anyone. And at least he understands that each kid is different. Got the Ellie, the new nurse practitioner. She suggests giving Laurel a higher dose of the (link-repeat:&quot;Clondine*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;drugs&quot;)
+]] prescribed (at an already ridiculously high dose) last spring. We agree that Laurel is in distress and needs help. They have an opening for an emergency appointment next week, and will call if something (link-repeat:&quot;comes up sooner*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;comes up&quot;)
+]].  
 
 Laurel went to sleep on the kitchen floor, and I just put her soft blanket near her so she can cover up if she wants to. She is sleeping the slep of the dead, the truly exhausted. As I will be in a few minutes. First, I want to wash off my arms and take a long bath the first I have had time for in a long time. I have about 3 dozen bleeding scratches and bruises that won&#39;t show fully for days. My arms looked like violent rejects from an octopus-lover. 
-
---higher
---lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;As the Grocery Turns&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Doubletake&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;mixed feelings&#39;&#39;
-If feelings were crimes -&gt; (link-goto: &quot;Herculean&quot;)
-we would all be on -&gt; (link-goto: &quot;Beyond anything&quot;)
-death row by now. -&gt; (link-goto: &quot;Death wish&quot;)
-
-&#39;&#39;Clondine*&#39;&#39; -&gt; (link-goto: &quot;drugs&quot;)
-
-&#39;&#39;comes up sooner*&#39;&#39; -&gt; (link-goto: &quot;comes up&quot;)
-
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;As the Grocery turns&quot;) 
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;Doubletake&quot;) 
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="245" name="Doubletake" tags="Sarah" position="10200,3975" size="100,100"> To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="245" name="Doubletake" tags="Sarah" position="10200,3975" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Doubletake&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 5/23/96 20: 04
 Subject: Take two. Cut. Retake.
@@ -10658,9 +11202,15 @@ I want to write happy and sweet cause it&#39;s just nearly dawn, and the birdies
 
 I haven&#39;t had any sleep--Laurel is still up and I haven&#39;t dared sleep while she is raging. The door alarms have gone off twice in the last three hours. So far, I&#39;ve managed to beat her to it. Typing seems to calm her, although I am not sure about the hum of the computer. So I&#39;ll sit and &#39;splore with you guys. If you&#39;ve heard it all before, don&#39;t bother with the rest of this.
 
-The background goes something like this. Laurel is definitely an aborigine from the &#39;&#39;moon&#39;&#39;. We all know this, but I give just a couple more recent examples to illustrate my point. The child is one frustrated walkabout. But if I could just figure out why (or even have a half-second warning ahead of time) we wouldn&#39;t be so damned stymied. Let me explain. It&#39;s the only fun I&#39;m gonna get today.
+The background goes something like this. Laurel is definitely an aborigine from the (link-repeat:&quot;moon&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;You pays your money&quot;, &quot;MOON PRINCESS&quot;)
+(link-goto: &quot;and takes your chances&quot;, &quot;MOON GIRL&quot;)
+]]. We all know this, but I give just a couple more recent examples to illustrate my point. The child is one frustrated walkabout. But if I could just figure out why (or even have a half-second warning ahead of time) we wouldn&#39;t be so damned stymied. Let me explain. It&#39;s the only fun I&#39;m gonna get today.
 
-Sunday, Laurel walked up to the &#39;&#39;gas station&#39;&#39; and I followed (what choice did I have?) I had no way of knowing where she was going, and I had not had time to grab my purse. Also, Kodi-dog was with us, without a leash. I managed to tackle her and sit on her while holding the dog, but I only managed this at the last possible minute so we were at an awkward place, laying in the doorway, tasting the greasy metal, and blocking all paying customers. Couldn&#39;t even call for help, let alone get Laurel anything she wanted. I sent a pleading look at the clerk, asked him to call my buddy Chris. The clerk cheerfully phoned from inside his bullet-proof case. My buddy Chris sent her husband in his spiffy new Jeep, who picked up Laurel and dragged her screaming into the Jeep. To calm her a bit, we shouted the first line of Peanut, peanut butter, which anyone who knows me knows really well.
+Sunday, Laurel walked up to the (link-repeat:&quot;gas station&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. What gas is worst?&quot;, &quot;Death wish&quot;)
+(link-goto: &quot;A. Re-gas. (regress)&quot;, &quot;Rescue party&quot;)
+]] and I followed (what choice did I have?) I had no way of knowing where she was going, and I had not had time to grab my purse. Also, Kodi-dog was with us, without a leash. I managed to tackle her and sit on her while holding the dog, but I only managed this at the last possible minute so we were at an awkward place, laying in the doorway, tasting the greasy metal, and blocking all paying customers. Couldn&#39;t even call for help, let alone get Laurel anything she wanted. I sent a pleading look at the clerk, asked him to call my buddy Chris. The clerk cheerfully phoned from inside his bullet-proof case. My buddy Chris sent her husband in his spiffy new Jeep, who picked up Laurel and dragged her screaming into the Jeep. To calm her a bit, we shouted the first line of Peanut, peanut butter, which anyone who knows me knows really well.
  
 An hour or two later, she walked out again. This time I grabbed my purse before following her. It had been raining, so I sent Janet back to get her raincoat and catch up to us on her bike. She let Kodi out in the process. 
 
@@ -10668,186 +11218,183 @@ Laurel took a shortcut, ducking through a gap in a fence too small for the bike.
 
 When she couldn&#39;t find us, she had returned home and summoned adult help, directing our neighbor to where she last saw us. By an exhaustive process of pushing, pulling, lifting by the jaw and dragging, I got Laurel into the back seat. It took many minutes. During the whole ride home, she kept snatching at me, ripping out handfuls of my hair. I can deal with the pain, but I really hate that sound. 
 
-&#39;&#39;Janet told me&#39;&#39; she thought it was all her fault, for letting Kodi out. I told her no way. Laurel goes off sometimes and it isn&#39;t anyone&#39;s fault. I did ask her to think next time there was a crisis, though, and try to keep Kodi from following as that is just one more distraction. Whew. Talk about mixed messages!
+(link-repeat:&quot;Janet told me&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Kids think everything&quot;, &quot;Janet&#39;s essay&quot;)
+(link-goto: &quot;their fault-- this is the&quot;, &quot;Escapes&quot;)
+(link-goto: &quot;way they can seize control&quot;, &quot;Escapes vetoed&quot;)
+]] she thought it was all her fault, for letting Kodi out. I told her no way. Laurel goes off sometimes and it isn&#39;t anyone&#39;s fault. I did ask her to think next time there was a crisis, though, and try to keep Kodi from following as that is just one more distraction. Whew. Talk about mixed messages!
 
-Who was it who noted the aggression happens when Laurel ventures anywhere away from a narrowly defined comfort zone (her small classroom, her backyard, her room, her kitchen)? &quot;Tis true. I truly feel that Laurel rages in her walls of frustration at her inability to communicate, and her perception that her needs are being unreasonably denied. C&#39;est trop vrai that she doesn&#39;t often get her way, mostly because I don&#39;t know what her way is, but often for other reasons--like I haven&#39;t brought my purse, or I need to look after Janet, or the dog is with us or some such. I don&#39;t think Laurel is aware enough of money or of other&#39;s needs and various rules to know more than just &quot;Mom&#39;s being mean.&quot; When we are home, Laurel can get almost anything she wants. When she needs help with something, she can say &quot;Guh&quot; to ask me to come with her, and show me what is wrong. 
+Who was it who noted the aggression happens when Laurel ventures anywhere away from a narrowly defined comfort zone (her small classroom, her backyard, her room, her kitchen)? &quot;Tis true. I truly feel that Laurel rages in her walls of frustration at her inability to communicate, and her perception that her needs are being unreasonably denied. C&#39;est trop vrai that she doesn&#39;t often get her way, mostly because I don&#39;t know what her way is, but often for other reasons--like I haven&#39;t brought my purse, or I need to look after Janet, or the dog is with us or some such. I don&#39;t think Laurel is aware enough of money or of other&#39;s needs and various rules to know more than just &quot;Mom&#39;s being mean.&quot; When we are home, Laurel can get almost anything she wants. When she needs help with something, she (link-repeat:&quot;can say&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. When is a voice&quot;, &quot;After the show&quot;)
+(link-goto: &quot;not a voice?&quot;, &quot;My soul&quot;)
+(link-goto: &quot;A. When it&#39;s void.&quot;, &quot;Can&#39;t say 2&quot;)
+]] &quot;Guh&quot; to ask me to come with her, and show me what is wrong. 
 
 Fights are nearly always about wanting to go somewhere, and I don&#39;t understand. I&#39;m gonna quit typing now and put some calamine lotion on my cuts (No peroxide left, I gotta get stock in a medical company, or at least stock up more) and then wash the mud out of what&#39;s left of my hair, see if Laurel is calm enough to go to class so I can get to the preschool and teach. Wonder if they&#39;ll ask about the pink stuff?
-
---higher
---lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Putting stuff away&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Just another day&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;moon&#39;&#39;
-You pays your money -&gt; (link-goto: &quot;MOON PRINCESS&quot;)
-and takes your chances -&gt; (link-goto: &quot;MOON GIRL&quot;)
-
-&#39;&#39;gas station&#39;&#39;
-Q. What gas is worst? -&gt; (link-goto: &quot;Death wish&quot;)
-A. Re-gas. (regress) -&gt; (link-goto: &quot;Rescue party&quot;)
-
-&#39;&#39;Janet told me&#39;&#39;
-Kids think everything -&gt; (link-goto: &quot;Janet&#39;s essay&quot;)
-their fault-- this is the -&gt; (link-goto: &quot;Escapes&quot;)
-way they can seize contro -&gt; (link-goto: &quot;Escapes vetoed&quot;)
-
-&#39;&#39;can say&#39;&#39;
-Q. When is a voice -&gt; (link-goto: &quot;After the show&quot;)
-not a voice? -&gt; (link-goto: &quot;My soul&quot;)
-A. When it&#39;s void. -&gt; (link-goto: &quot;Can&#39;t say 2&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Putting stuff away&quot;)
-&#39;&#39;--lower &#39;&#39;-&gt;(link-goto: &quot;Just another day&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="246" name="Just another day" tags="Sarah" position="10450,3725" size="100,100"> To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="246" name="Just another day" tags="Sarah" position="10450,3725" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Just another day&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 9/19/95
 Subject: Once more into the breach, my friends 
 
 This is being typed right in the wake of the storm, so by the time you read it and get all distressed, I&#39;ll probably be fine.
 
-We went shopping. I got Laurel everything she wanted until we came to the candy aisle. She wanted Reese&#39;s &#39;&#39;peanut butter&#39;&#39; cups. She&#39;s violently allergic to peanut butter, but no matter, obviously the thick sweet stuff has nothing to do with the belly-rendering and scream erupting tornadoes later.
+We went shopping. I got Laurel everything she wanted until we came to the candy aisle. She wanted Reese&#39;s (link-repeat:&quot;peanut butter&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;A. Which nuts make the&quot;, &quot;Credits&quot;)
+(link-goto: &quot;best batters?&quot;, &quot;Anthropophobia&quot;)
+(link-goto: &quot;A. Peanuts&quot;, &quot;First strike&quot;)
+(link-goto: &quot;(Peanut butter)&quot;, &quot;peanut butter&quot;)
+]] cups. She&#39;s violently allergic to peanut butter, but no matter, obviously the thick sweet stuff has nothing to do with the belly-rendering and scream erupting tornadoes later.
 
- I offered her Rolos, I offered her Snickers, I pointed out Mars bars and &#39;&#39;Starbursts&#39;&#39; and Milky Ways, but I signed our &quot;no&quot; to the Reeses. So she began attacking me. Ham-fisting me in the face over and over. Pulling my hair. Kicking me. She scratched my face up and I was bleeding. She had my blood smeared on her face. (I was afraid I had been so angry I&#39;d hit her without realizing it, in kind of a mini-berserker rage. But it was ok--it was only my blood.) So I told Janet to ask for some tissues and a wet clean up and gave her the credit card to pay for what we had. I hoped wildly it wasn&#39;t the maxed out one. You think of the oddest things in the arms of the storm.
+ I offered her Rolos, I offered her Snickers, I pointed out Mars bars and (link-repeat:&quot;Starburst&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Doubletake&quot;)
+]] and Milky Ways, but I signed our &quot;no&quot; to the Reeses. So she began attacking me. Ham-fisting me in the face over and over. Pulling my hair. Kicking me. She scratched my face up and I was bleeding. She had my blood smeared on her face. (I was afraid I had been so angry I&#39;d hit her without realizing it, in kind of a mini-berserker rage. But it was ok--it was only my blood.) So I told Janet to ask for some tissues and a wet clean up and gave her the credit card to pay for what we had. I hoped wildly it wasn&#39;t the maxed out one. You think of the oddest things in the arms of the storm.
 
 My plan was to get Laurel out of the store as soon as possible. But Laurel decided she wanted chips and Pepsi, so we were going through the checkout line, period. She still kept roaring and attacking me every minute or so in the check-out line. You&#39;d think the people would have offered to let me go on ahead, but they were kind of busy not staring, I think. 
 
 Janet handed me back the credit card. Laurel intercepted and threw it at the clerk, barely missing his eye. The clerk calmly took it, noted the numbers, handed Laurel the chips and Pepsi, and I scrawled something out on the piece of paper. You would think this was an everyday occurrence for this guy. Which, I dunno, it might be. I guided Laurel out, all the while she was screaming and throwing herself on the ground and hitting with the Pepsi cans and grabbing my hair or hitting my face.
 
-A man came up behind us and said, &quot;&#39;&#39;Your mother loves you.&#39;&#39;&quot; I have not idea what he looks like or who he was. I couldn&#39;t drop my shields for long enough to look at him. I couldn&#39;t even wonder at the time why he didn&#39;t just get us a damp rag or a pair of cuffs or a circus elephant or something useful like that.
+A man came up behind us and said, &quot;(link-repeat:&quot;Your mother loves you&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Love is just another way&quot;, &quot;Abandon-mints&quot;)
+(link-goto: &quot;of saying there&#39;s&quot;, &quot;Tobacco shards&quot;)
+(link-goto: &quot;nothing left to lose.&quot;, &quot;Death wish&quot;)
+]]&quot; I have not idea what he looks like or who he was. I couldn&#39;t drop my shields for long enough to look at him. I couldn&#39;t even wonder at the time why he didn&#39;t just get us a damp rag or a pair of cuffs or a circus elephant or something useful like that.
 
 We got home and Laurel jumped out of the car and went for me again. I knocked her on the ground, grabbed her hair, pulled her head back and smacked her. I know. Now you all know what an ogre I am. I put her in her room. Then I went and got a cup of cold water, and then unlocked her door. She threatened to come after me, but every time, I&#39;d hold the cup up, and she&#39;d back away. She spends hours a day in the shower, but she does not like getting splashed.
 
-God, am I feeling melodramatic and sorry for myself. I want to say I&#39;m sorry for alarming everybody, but I&#39;m not capable of being sorry for anyone but me right now. Nobody&#39;s terminally ill. We have a place to stay and food in the cupboard. And, of course, I have all of you, but it&#39;s not the same as a real flesh-and-blood shoulder to cry on, or better yet, &#39;&#39;babysitter&#39;&#39;, is it?
-
---higher
---lower
-
+God, am I feeling melodramatic and sorry for myself. I want to say I&#39;m sorry for alarming everybody, but I&#39;m not capable of being sorry for anyone but me right now. Nobody&#39;s terminally ill. We have a place to stay and food in the cupboard. And, of course, I have all of you, but it&#39;s not the same as a real flesh-and-blood shoulder to cry on, or better yet, (link-repeat:&quot;babysitter,&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. What did the baby say&quot;, &quot;babysitters&quot;)
+(link-goto: &quot;when it was sat on?&quot;, &quot;Smokers&quot;)
+(link-goto: &quot;A. Nothing.&quot;, &quot;If we do&quot;)
+(link-goto: &quot;Babies can&#39;t talk&quot;, &quot;dancing&quot;)
+]], is it?
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Doubletake&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;No harm done&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;peanut butter&#39;&#39;
-A. Which nuts make the -&gt; (link-goto: &quot;Credits&quot;)
-best batters? -&gt; (link-goto: &quot;Anthropophobia&quot;)
-A. Peanuts -&gt; (link-goto: &quot;First strike&quot;)
-(Peanut butter) -&gt; (link-goto: &quot;peanut butter&quot;)
-
-&#39;&#39;Starburst&#39;&#39; -&gt; (link-goto: &quot;Doubletake&quot;)
-
-&#39;&#39;Your mother loves you&#39;&#39;
-Love is just another way -&gt; (link-goto: &quot;Abandon-mints&quot;)
-of saying there&#39;s -&gt; (link-goto: &quot;Tobacco shards&quot;)
-nothing left to lose. -&gt; (link-goto: &quot;Death wish&quot;)
-
-&#39;&#39;babysitter&#39;&#39;
-Q. What did the baby say -&gt; (link-goto: &quot;babysitters&quot;)
-when it was sat on? -&gt; (link-goto: &quot;Smokers&quot;)
-A. Nothing. -&gt; (link-goto: &quot;If we do&quot;)
-Babies can&#39;t talk -&gt; (link-goto: &quot;dancing&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Doubletake&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;No harm done&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="247" name="No harm done" tags="Sarah" position="10700,3475" size="100,100">To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="247" name="No harm done" tags="Sarah" position="10700,3475" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;No harm done&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To: mmarconi@netcom.com, grahambell@aol.com, grever@ibr8smtp...
 From: Sarah 
 Date: 5/25/96 23:10
 Subject: Venting. 
 
 
-Yesterday, Laurel went walkabout and I followed. I physically kept her from walking out into Colorado Boulevard for about 15 minutes, until Mr. &#39;&#39;Cooper&#39;&#39; drove by, recognized the situation, and pulled over. He and I grabbed Laurel by both arms and one foot and shoved her into the car. Then we dragged her into the house, where she pulled my hair, punched and kicked me. I pushed her into her room and locked her in. I owe that couple. Massive major. And I don&#39;t even know their first names. 
+Yesterday, Laurel went walkabout and I followed. I physically kept her from walking out into Colorado Boulevard for about 15 minutes, until Mr.(link-repeat:&quot;Cooper&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Just another day&quot;)
+]] drove by, recognized the situation, and pulled over. He and I grabbed Laurel by both arms and one foot and shoved her into the car. Then we dragged her into the house, where she pulled my hair, punched and kicked me. I pushed her into her room and locked her in. I owe that couple. Massive major. And I don&#39;t even know their first names. 
 
-But still I am pawing the ground. Snort snort snort, heavy breath, heavy breath, heavy breath (and not all of it from the &#39;&#39;bone-murdering trauma&#39;&#39; of keeping Laurel from running into a highway at the thick of rush hour). Mostly, I&#39;m mad about the people who honked and swore at me like I was killing my child--and yet offered not their one little pinky to help me save her.
+But still I am pawing the ground. Snort snort snort, heavy breath, heavy breath, heavy breath (and not all of it from the (link-repeat:&quot;bone-murdering trauma&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;This isn&#39;t what&quot;, &quot;Emergency placement&quot;)
+(link-goto: &quot;Emily meant by&quot;, &quot;moon mind&quot;)
+(link-goto: &quot;zero at the bone.&quot;, &quot;Rain-blowed&quot;)
+]] of keeping Laurel from running into a highway at the thick of rush hour). Mostly, I&#39;m mad about the people who honked and swore at me like I was killing my child--and yet offered not their one little pinky to help me save her.
 
 Rationally, I suppose what they all saw out the window was a mean mother grabbing any convenient part of an unruly child&#39;s anatomy for some ill-tempered venting. They didn&#39;t see the age-old drama of mother putting herself in physical danger to save the life of the child. These are the same folks who would applaud a mother bear mauling a host of enemies to save her cub, or a woman shooting an intruder to save her child.
 
-But they don&#39;t extend that to someone restraining a wild child from hurtling into a highway. Oh, no, if things get that bad, they may reason to themselves (if they reason at all behind the smug little wheels of their Mercedes) then just throw the child away. Don&#39;t save it, put it into an &#39;&#39;institution&#39;&#39; and forget about it.
+But they don&#39;t extend that to someone restraining a wild child from hurtling into a highway. Oh, no, if things get that bad, they may reason to themselves (if they reason at all behind the smug little wheels of their Mercedes) then just throw the child away. Don&#39;t save it, put it into an (link-repeat:&quot;institution&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Out of sight,&quot;, &quot;Advocrazy&quot;)
+(link-goto: &quot;out of mind.&quot;, &quot;Leaving&quot;)
+]] and forget about it.
 
 After all, once it&#39;s there, it won&#39;t come back to ask why.
-
-
---higher
---lower
-
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;HL&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;HL1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Just another day&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;HL1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;HARM&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;Cooper&#39;&#39; -&gt; (link-goto: &quot;Just another day&quot;)
-
-&#39;&#39;bone-murdering trauma&#39;&#39;
-This isn&#39;t what -&gt; (link-goto: &quot;Emergency placement&quot;)
-Emily meant by -&gt; (link-goto: &quot;moon mind&quot;) 
-zero at the bone. -&gt; (link-goto: &quot;Rain-blowed&quot;)
-
-&#39;&#39;institution&#39;&#39;
-Out of sight, -&gt; (link-goto: &quot;Advocrazy&quot;)
-out of mind. -&gt; (link-goto: &quot;Leaving&quot;)
-
-&#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Just another day&quot;)
-&#39;&#39;--lower &#39;&#39;-&gt; (link-goto: &quot;HARM&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="248" name="HARM" tags="Moon" position="10950,3225" size="100,100">The moon never shows the same face twice. She gathers the clouds into veils, concealing her intentions.
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="248" name="HARM" tags="Moon" position="10950,3225" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;HARM&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+The moon never shows the same face twice. She gathers the clouds into veils, concealing her intentions.
 
 Or she hangs high after the sun has risen, never relinquishing her place, never content to remain in the bright shadows of the sun.
 
 But I know her. In all of her disguises, I know her.
 
-And I will brave more than &#39;&#39;Colorado Boulevard&#39;&#39; in rush hour, more than the &#39;&#39;OCR&#39;&#39;, more than the &#39;&#39;Social Services&#39;&#39; themselves to ensure that the moon does not conceal my child as she does her face.
-
---moon
---sarah
-
+And I will brave more than (link-repeat:&quot;Colorado Boulevard&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;There are more&quot;, &quot;ARKENSTONES&quot;)
+(link-goto: &quot;terrors in this world,&quot;, &quot;clouds creep&quot;)
+(link-goto: &quot;Horatio, than are&quot;, &quot;No harm done&quot;)
+(link-goto: &quot;dreamed of in your&quot;, &quot;dramatical&quot;)
+(link-goto: &quot;moon&#39;s philosophy.&quot;, &quot;Slip-sliding away&quot;)
+]] in rush hour, more than the (link-repeat:&quot;OCR&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;OCR is definitley not&quot;, &quot;My chains&quot;)
+(link-goto: &quot;akin to CPR&quot;, &quot;OCR&quot;)
+]], more than the (link-repeat:&quot;Social Services&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;There are the enemies&quot;, &quot;Gestapo&quot;)
+(link-goto: &quot;I have learned to fear.&quot;, &quot;Social Services&quot;)
+]] themselves to ensure that the moon does not conceal my child as she does her face.
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;MS&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;MS1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;IN THE BEGINNING&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;MS1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Take me for a ride&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;Colorado Boulevard&#39;&#39;
-There are more -&gt; (link-goto: &quot;ARKENSTONES&quot;)
-terrors in this world, -&gt; (link-goto: &quot;clouds creep&quot;)
-Horatio, than are -&gt; (link-goto: &quot;No harm done&quot;)
-dreamed of in your -&gt; (link-goto: &quot;dramatical&quot;)
-moon&#39;s philosophy. -&gt; (link-goto: &quot;Slip-sliding away&quot;)
-
-&#39;&#39;OCR&#39;&#39;
-OCR is definitley not -&gt; (link-goto: &quot;My chains&quot;)
-akin to CPR -&gt; (link-goto: &quot;OCR&quot;)
-
-&#39;&#39;Social Services&#39;&#39;
-There are the enemies -&gt; (link-goto: &quot;Gestapo&quot;)
-I have learned to fear. -&gt; (link-goto: &quot;Social Services&quot;)
-
-&#39;&#39;--Moon&#39;&#39; -&gt; (link-goto: &quot;IN THE BEGINNING&quot;)
-&#39;&#39;--Sarah&#39;&#39;-&gt; (link-goto: &quot;Take me for a ride&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="249" name="Two camps" tags="Note" position="5825,8675" size="100,100">NOTE:
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="249" name="Two camps" tags="Note" position="5825,8675" size="100,100">NOTE:
 
 There are political factions among parents of autistic kids.  On the one hand, you have the Inclusionists.  The platform is basically &quot;Inclusion, period.  Forget available therapies, forget reasonable accomodation, forget appropriate curriculum.  Inclusion.&quot;  My kid deserves &#39;&#39;the same rights*&#39;&#39; as everyone else. The advantage here is that your child is always in the spotlight, always demanding and getting &#39;&#39;attention*&#39;&#39;.
 
@@ -20226,37 +20773,37 @@ what she might see. -&gt; (link-goto: &quot;MOON EYES&quot;)
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="473" name="MOON BLESSINGS" tags="Moon" position="11700,2800" size="100,100">Giver of light, grant us your vision.
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="473" name="MOON BLESSINGS" tags="Moon" position="11700,2800" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;MOON BLESSINGS&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+Giver of light, grant us your vision.
 Holder of dark, hold also our sorrows.
 Lover of clouds, show us your mercy.
 Creator of purity, heal our sins.
-Weaver of dreams, capture our &#39;&#39;illusions&#39;&#39;.
-
---moon
---sarah
-
+Weaver of dreams, capture our (link-repeat:&quot;illusions&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Bringer of death,&quot;, &quot;WARNING LIGHTS&quot;)
+(link-goto: &quot;into our souls.&quot;, &quot;FALL SILENT&quot;)
+]].
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;MS&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;MS1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;IN THE BEGINNING&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;MS1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Take me for a ride&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;illusions&#39;&#39;
-Bringer of death, -&gt; (link-goto: &quot;WARNING LIGHTS&quot;)
-into our souls. -&gt; (link-goto: &quot;FALL SILENT&quot;)
-
-&#39;&#39;--Moon&#39;&#39; -&gt; (link-goto: &quot;IN THE BEGINNING&quot;)
-&#39;&#39;--Sarah&#39;&#39; -&gt; (link-goto: &quot;Take me for a ride&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;) 
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-
-
-
-</tw-passagedata><tw-passagedata pid="474" name="cds" tags="Laurel-G" position="7625,6575" size="100,100">IntelliType 
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="474" name="cds" tags="Laurel-G" position="7625,6575" size="100,100">IntelliType 
 
 FACILITATED TYPING EXERCISE. 
 
@@ -20441,7 +20988,231 @@ blood drips -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;)
 	  (css:&quot;float:right&quot;)+(link-repeat:&quot;×&quot;)[(replace: ?modalhooks)[]]
 	]
   ]
-}]</tw-passagedata></tw-storydata>
+}]</tw-passagedata><tw-passagedata pid="480" name="Home Map" tags="map" position="1200,100" size="100,100">&lt;div class=&quot;box title-page&quot;&gt;
+		&lt;div class=&quot;header&quot;&gt;&lt;a&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;Title page&lt;/a&gt;&lt;/div&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner&quot; id=&quot;t1&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner&quot; id=&quot;t2&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner&quot; id=&quot;t3&quot;&gt;&lt;/a&gt;
+	&lt;/div&gt;
+
+	&lt;div class=&quot;box laurel green-lg&quot; id=&quot;l1&quot;&gt;
+		&lt;div class=&quot;header&quot;&gt;&lt;a&gt;[[&lt;span&gt;&amp;#182;&lt;/span&gt;Laurel&#39;s World|Laurel&#39;s World Map]]&lt;/a&gt;&lt;/div&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a1&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a2&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a3&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a4&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a5&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a6&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a7&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a8&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a9&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a10&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a11&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a12&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a13&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a14&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a15&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a16&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a17&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a18&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a19&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a20&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a21&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a22&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a23&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a24&quot;&gt;&lt;/a&gt;
+
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a1&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a2&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a3&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a4&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a5&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a6&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a7&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a8&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a9&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a10&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a11&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a12&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a13&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a14&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a15&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a16&quot;&gt;&lt;/a&gt;
+        
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a1&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a2&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a3&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a4&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a5&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a6&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a7&quot;&gt;&lt;/a&gt;
+		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a8&quot;&gt;&lt;/a&gt;
+        
+		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l4-a1&quot;&gt;&lt;/a&gt;
+	&lt;/div&gt;</tw-passagedata><tw-passagedata pid="481" name="Laurel&#39;s World Map" tags="map" position="1325,100" size="100,100">&lt;div class=&quot;map&quot;&gt;
+(bg:red)[&lt;!-- ------------------------Laurel 1------------------------ --&gt;]
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a1&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;books&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a2&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;stones&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a3&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;carpet&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a4&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;hands&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a5&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;snowvoice&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a6&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;hideouts&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a7&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;people&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a8&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;doors&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a9&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;filigree&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a10&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;papers&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a11&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;practice&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a12&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;bridges&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a13&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;darkness&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a14&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;clothes&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a15&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;gravy&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a16&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;potatoe eyes&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a17&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;trees&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a18&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;cars&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a19&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;peanut butter&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a20&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;dust&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a21&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;bones&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a22&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;clouds&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a23&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;doorlights&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a24&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;glass&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+ 
+(bg:red)[&lt;!-- ------------------------Laurel 2------------------------ --&gt;]
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a1&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;cold sun&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a2&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;disharmonics&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a3&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;pine secrets&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a4&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;cds&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a5&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;moon cd&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a6&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;moon closets&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a7&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;moon door&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a8&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;moon mind&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a9&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;moon hole&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a10&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;other moons&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a11&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;moon skin&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a12&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;moon flesh&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a13&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;blood talks&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a14&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;numbers know&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a15&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;water falls&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l2-a16&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;water drowns&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  
+(bg:red)[&lt;!-- ------------------------Laurel 3------------------------ --&gt;]
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l3-a1&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;carpet knows&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l3-a2&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;moon wants&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l3-a3&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;clouds creep&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l3-a4&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;everything waits&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l3-a5&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;letters come&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l3-a6&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;grass talks&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box laurel  yellow-lg&quot; id=&quot;lg-l3-a7&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;moon breaks&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;box laurel  yellow-lg&quot; id=&quot;lg-l3-a8&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;dandelion blood&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  
+(bg:red)[&lt;!-- ------------------------Laurel 4------------------------ --&gt;]
+  &lt;div class=&quot;box laurel green-lg&quot; id=&quot;lg-l4-a1&quot;&gt;
+          &lt;div class=&quot;header&quot;&gt;&lt;a href=&quot;&quot;&gt;&lt;span&gt;&amp;#182;&lt;/span&gt;You know&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
