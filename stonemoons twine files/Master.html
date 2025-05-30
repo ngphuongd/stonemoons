@@ -548,6 +548,7 @@ tw-passage {
   box-shadow: 5px 5px 5px gray;
   width: 100%;
   min-width: 824px;
+  max-width: 1138px;
 }
 
 /* Exclude the 'map' passage */
@@ -653,12 +654,13 @@ tw-passage[tags~="map"] tw-link {
 
 .DT {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   line-height: 0;
-  align-items: end;
+  text-align: right;
 }
 
+.DT div {
+  display: inline-block;
+}
 
 .DT1A{
   width: 30%; 
@@ -18860,29 +18862,40 @@ ____________________
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="438" name="Title page" tags="Title" position="900,100" size="100,100">&#39;&#39;--sarah&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-
-&#39;&#39;--moon&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-
-&#39;&#39;--laurel&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;) 
-
-&#39;&#39;--Stone Moons &#39;&#39;-&gt; (link-goto: &quot;Underlying Truth&quot;)
-
-&#39;&#39;--Directions&#39;&#39; -&gt; (link-goto: &quot;Directions&quot;)
-
-&#39;&#39;--Laurel&#39;s Reality&#39;&#39; -&gt; (link-goto: &quot;Laurel&#39;s World&quot;) -&gt; (link-goto: &quot;books&quot;)
-
-&#39;&#39;--Deeper Wars&#39;&#39; -&gt;  (link-goto: &quot;Undercoverings&quot;)
-
-&#39;&#39;--The Moon&#39;&#39; -&gt;  (link-goto: &quot;Selene&#39;s dreams&quot;)
-
-&#39;&#39;--Laurel&#39;s World&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-
-&#39;&#39;Disclaimer&#39;&#39; -&gt; (link-goto: &quot;Disclaimer&quot;)
-
-&#39;&#39;Dedication&#39;&#39; -&gt; (link-goto: &quot;Dedication&quot;)
-
-&#39;&#39;LINK TO Publisher information here&#39;&#39; -&gt; (link-goto: &quot;Publisher information&quot;)</tw-passagedata><tw-passagedata pid="439" name="Acknowledgements" tags="Note" position="900,400" size="100,100">NOTE:
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="438" name="Title page" tags="Title" position="900,100" size="100,100">&lt;div class=&quot;B&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;title&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;DT&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;DT1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Directions&quot;)
+]]]
+&lt;div class=&quot;DT1B&quot;&gt;&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;DT1C&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Undercoverings&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;DT1D&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;DT1E&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]
+&lt;/div&gt;
+&lt;div class=&quot;credits&quot;&gt;
+  //&#39;&#39;by&lt;br&gt;
+  Deena Larsen&lt;br&gt;
+  Clarsa McElhaney&lt;br&gt;
+  and Jeanne Templeton&#39;&#39;//
+&lt;/div&gt;
+&lt;div class=&quot;footer-links&quot;&gt;
+&#39;&#39;(text-colour:blue)[(link-repeat: &#39;[Disclaimer]&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Disclaimer&quot;)
+]]]]&#39;&#39;
+&#39;&#39;(text-colour:red)[(link-repeat: &#39;[Dedication]&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Dedication&quot;)
+]]]]&#39;&#39;
+&#39;&#39;(text-colour:black)[(link-repeat: &#39;LINK TO Publisher information here&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Publisher information&quot;)
+]]]]&#39;&#39;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="439" name="Acknowledgements" tags="Note" position="900,400" size="100,100">NOTE:
 
 
 &#39;&#39;&quot;Lost Voices&quot;&#39;&#39; and &#39;&#39;&quot;Lullaby&quot;&#39;&#39; by Clarsa McElhaney  were changed for this work and used by permission 
