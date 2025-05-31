@@ -612,6 +612,15 @@ tw-passage[tags~="map"] tw-link {
   transform: translateY(9%) translateX(%);
 }
 
+.container6 { /*Title*/
+  display: inline-flex; 
+  width: 22px;
+  height: 22px;
+  background-color: orange;
+  margin: 0 2% 3px 2%;
+  transform: translateY(9%) translateX(%);
+}
+
 /* image styling */
 .space {
   margin-top: 0px;
@@ -13560,7 +13569,7 @@ ___________________
 Links:
 ____________________
 
-&#39;&#39;Florence&#39;&#39; -&gt; (link-goto: &quot;DOWN TO GRIEF&quot;)
+&#39;&#39;Florence&#39;&#39; -&gt; (link-goto: &quot;DOWN TOO GRIEF&quot;)
 
 &#39;&#39;better off without you&#39;&#39;
 The origins of guilt -&gt; (link-goto: &quot;Yesterday&quot;)
@@ -13569,7 +13578,7 @@ impossible to pull out -&gt; (link-goto: &quot;Sending her away&quot;)
 completely -&gt; (link-goto: &quot;WHAT I DON&#39;T KNOW&quot;)
 
 &#39;&#39;--higher&#39;&#39; -&gt; (link-goto: &quot;Kelly and I&quot;)
-&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;DOWN TO GRIEF&quot;)
+&#39;&#39;--lower&#39;&#39; -&gt; (link-goto: &quot;DOWN TOO GRIEF&quot;)
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
@@ -19008,49 +19017,55 @@ ____________________
 &#39;&#39;(text-colour:black)[(link-repeat: &#39;LINK TO Publisher information here&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
  (link-goto: &quot;Publisher information&quot;)
 ]]]]&#39;&#39;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="439" name="Acknowledgements" tags="Note" position="900,400" size="100,100">NOTE:
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="439" name="Acknowledgements" tags="Note" position="900,400" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;Acknowledgements&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
 
 
-&#39;&#39;&quot;Lost Voices&quot;&#39;&#39; and &#39;&#39;&quot;Lullaby&quot;&#39;&#39; by Clarsa McElhaney  were changed for this work and used by permission 
-
-
---back
-
+&#39;&#39;(link-repeat:&quot;Lost Voices&quot;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;The calmness of knowing&quot;)
+]]]&#39;&#39; and &#39;&#39;(link-repeat:&quot;Lullaby&quot;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;LULLABY&quot;)
+]]]&#39;&#39; by Clarsa McElhaney  were changed for this work and used by permission 
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;The calmness of knowing&quot;)
+(link-goto: &quot;back&quot;, &quot;LULLABY&quot;)
+]]]
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="440" name="Publisher information" tags="Title" position="700,500" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;Publisher information&lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+--NOTE: Please keep navigational links at the bottom of this page--
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Title page&quot;)
+]]]
 ___________________
-
-
-Links:
-____________________
-
-&#39;&#39;&quot;Lost Voices&quot;&#39;&#39; -&gt; (link-goto: &quot;The calmness of knowing&quot;)
-
-&#39;&#39;&quot;Lullaby&quot;&#39;&#39; -&gt; (link-goto: &quot;LULLABY&quot;)
-
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;The calmness of knowing&quot;)
-back -&gt; (link-goto: &quot;LULLABY&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="440" name="Publisher information" tags="Title" position="700,500" size="100,100">--NOTE: Please keep navigational links at the bottom of this page--
-
---back
-
-___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;--back&#39;&#39; -&gt; (link-goto: &quot;Title page&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="441" name="Cast of characters" tags="Title" position="1100,500" size="100,100">The Murphy Family
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="441" name="Cast of characters" tags="Title" position="1100,500" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;Cast of characters&lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+The Murphy Family
 
 &#39;&#39;Sarah&#39;&#39; 4/13/64 A 33-year old single woman with two kids:  Laurel and Janet.
 &#39;&#39;Laurel&#39;&#39; 6/13/87 An autistic child. She has shoulder-length soft baby-blonde hair, light brown eyebrows, and large green eyes.
@@ -19113,10 +19128,16 @@ Hecate, sorceress of the waning and dark moons. Great ancient goddess, she outsh
 Isis, Io, ancient moon goddesses transcribed into Egyptian and Olympian mythology. Hera protects Io from Zeus&#39; attentions, first with a giant guardian, Argos. When Hermes slays Argus, Hera sends a gadfly to torment Io into fleeing to Egypt, thus saving her.
 
 &#39;&#39;Changing Woman&#39;&#39;, important Navajo and Apache female deity. She changes between baby, girl, woman, and old woman. Mother of Killer-of-Enemies and Child-of-the-water. Also the Eternal One, the Old-Woman-Who-Never-Dies.
-
-
+&lt;/div&gt;
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
 ___________________
 
 
@@ -19386,38 +19407,43 @@ different faces. -&gt; (link-goto: &quot;Disclaimer&quot;)
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="442" name="Autism" tags="Note" position="700,900" size="100,100">Autism, n. Morbid concentration, a mental disorder which develops in childhood.  The most striking symptom of the autistic child is his almost total withdrawal into himself. Ironically, autistic children often are very intelligent.
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="442" name="Autism" tags="Note" position="700,900" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;Autism&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+Autism, n. Morbid concentration, a mental disorder which develops in childhood.  The most striking symptom of the autistic child is his almost total withdrawal into himself. Ironically, autistic children often are very intelligent.
 
 
 from: New Webster&#39;s Dictionary, Roget&#39;s Thesaurus, and Medical Dictionary. 1992, Book Essentials, Inc. New York, NY.
-
-
---back
-
-
-Links:
-____________________
-
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;Directions&quot;)
-back -&gt; (link-goto: &quot;DEATH WAITS FOR LIFE&quot;)
-back -&gt; (link-goto: &quot;Train&#39;s booked solid&quot;)
-back -&gt; (link-goto: &quot;Dedication&quot;)
-back -&gt; (link-goto: &quot;Before the storm&quot;)
-back -&gt; (link-goto: &quot;Isn&#39;t that special?&quot;)
-back -&gt; (link-goto: &quot;Flyer&quot;)
-back -&gt; (link-goto: &quot;Bruno&#39;s origin&quot;)
-back -&gt; (link-goto: &quot;Random mixup&quot;)
-back -&gt; (link-goto: &quot;Egress&quot;)
-back -&gt; (link-goto: &quot;ADD&quot;)
-back -&gt; (link-goto: &quot;Directions&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-
-
-</tw-passagedata><tw-passagedata pid="443" name="Disclaimer" tags="Title" position="900,600" size="100,100">NOTE:
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;Directions&quot;)
+(link-goto: &quot;back&quot;, &quot;DEATH WAITS FOR LIFE&quot;)
+(link-goto: &quot;back&quot;, &quot;Train&#39;s booked solid&quot;)
+(link-goto: &quot;back&quot;, &quot;Dedication&quot;)
+(link-goto: &quot;back&quot;, &quot;Before the storm&quot;)
+(link-goto: &quot;back&quot;, &quot;Isn&#39;t that special?&quot;)
+(link-goto: &quot;back&quot;, &quot;Flyer&quot;)
+(link-goto: &quot;back&quot;, &quot;Bruno&#39;s origin&quot;)
+(link-goto: &quot;back&quot;, &quot;Random mixup&quot;)
+(link-goto: &quot;back&quot;, &quot;Egress&quot;)
+(link-goto: &quot;back&quot;, &quot;ADD&quot;)
+(link-goto: &quot;back&quot;, &quot;Directions&quot;)
+]]]
+___________________
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="443" name="Disclaimer" tags="Title" position="900,600" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;Disclaimer&lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
 
 A disclaimer from the authors:
 
@@ -19425,68 +19451,65 @@ This hypertext novel is fictional-however, many incidents are drawn from those i
 
 This hypertext is not a medical manual for treating autism, nor is it a clinical description of all autistic children.  Rather, it is the story of one mother and her daughter.  
 
-Neither is this hypertext a social or political treatise on the welfare system of the U.S. or Colorado governments.  The governmental branches dealing with education and social services are harshly portrayed here.  We  know that there are great, incredible people in these organizations who are truly working to help people with disabilities.  However, we feel the systems themselves are flawed and have not bothered to keep our &#39;&#39;personal sentiments*&#39;&#39; from influencing this work.  Other than a few &#39;&#39;humble suggestions&#39;&#39; (get rid of the &#39;&#39;bureaucrazy*,&#39;&#39; let parents keep custody of their children, get parents involved in treatment, and treat parents with respect), we do not know how to fix the system.
+Neither is this hypertext a social or political treatise on the welfare system of the U.S. or Colorado governments.  The governmental branches dealing with education and social services are harshly portrayed here.  We  know that there are great, incredible people in these organizations who are truly working to help people with disabilities.  However, we feel the systems themselves are flawed and have not bothered to keep our (link-repeat:&quot;personal sentiments*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;personal sentiments&quot;)
+]] from influencing this work.  Other than a few (link-repeat:&quot;humble suggestion&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The trouble with problems&quot;, &quot;Armor&quot;)
+(link-goto: &quot;is the answers&quot;, &quot;School success!&quot;)
+(link-goto: &quot;are not easy.&quot;, &quot;the bullshit&quot;)
+]] (get rid of the (link-repeat:&quot;bureaucrazy*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;bureaucrazy&quot;)
+]] let parents keep custody of their children, get parents involved in treatment, and treat parents with respect), we do not know how to fix the system.
 
 If the incidents in this work enrage you, we suggest you contact the Autism Society of America.  Find out about your local chapters and volunteer.  Or volunteer in any myriad of ways to help people in need.
 
 Caution: This hypertext is not endorsed by the Autism Society of America or any other person, product, etc.  mentioned herein.
-
---back
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Title page&quot;)
+]]
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="444" name="bureaucrazy" tags="Note" position="850,675" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;bureaucrazy&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
+
+Bureaucrazy, n.  The regulations that choke government agencies in (link-repeat:&quot;catch 22s&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. When is a can&quot;, &quot;Catch 22&quot;)
+(link-goto: &quot;not a can?&quot;, &quot;Damned if you do&quot;)
+(link-goto: &quot;A. When it&#39;s a can&#39;t.&quot;, &quot;1-2 punch&quot;)
+]] (You can&#39;t have y until you have z, you can&#39;t have z until you have y), expensive propositions (you have to meet this specification even though that situation won&#39;t come up for a million years), and delays (well, our next budget cycle is in 2 years, so come back in about 4 years for funding).
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;Disclaimer&quot;)
+(link-goto: &quot;back&quot;, &quot;Cop-sickles&quot;)
+(link-goto: &quot;back&quot;, &quot;Resource letter&quot;)
+(link-goto: &quot;back&quot;, &quot;We take our destiny&quot;)
+(link-goto: &quot;back&quot;, &quot;It&#39;s no picnic&quot;)
+(link-goto: &quot;explore&quot;, &quot;Egress&quot;)
+(link-goto: &quot;back&quot;, &quot;Social Services&quot;)
+(link-goto: &quot;back&quot;, &quot;On an orphan train&quot;)
+(link-goto: &quot;back&quot;, &quot;My chains&quot;)
+]]]
 ___________________
-
-
-Links:
-____________________
-
-&#39;&#39;personal sentiments*&#39;&#39; -&gt; (link-goto: &quot;personal sentiments&quot;)
-
-&#39;&#39;humble suggestion&#39;&#39;
-The trouble with problems -&gt; (link-goto: &quot;Armor&quot;)
-is that answers -&gt; (link-goto: &quot;School success!&quot;)
-are not easy -&gt; (link-goto: &quot;the bullshit&quot;)
-
-&#39;&#39;bureaucrazy*&#39;&#39; -&gt; (link-goto: &quot;bureaucrazy&quot;)
-
-&#39;&#39;--back&#39;&#39; -&gt; (link-goto: &quot;Title page&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="444" name="bureaucrazy" tags="Note" position="850,675" size="100,100">NOTE:
-
-Bureaucrazy, n.  The regulations that choke government agencies in &#39;&#39;catch 22s&#39;&#39; (You can&#39;t have y until you have z, you can&#39;t have z until you have y), expensive propositions (you have to meet this specification even though that situation won&#39;t come up for a million years), and delays (well, our next budget cycle is in 2 years, so come back in about 4 years for funding).
-
-
---back
-
-___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;catch 22s&#39;&#39;
-Q. When is a can -&gt; (link-goto: &quot;Catch 22&quot;)
-not a can? -&gt; (link-goto: &quot;Damned if you do&quot;)
-A. When it&#39;s a can&#39;t. -&gt; (link-goto: &quot;1-2 punch&quot;)
-
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;Disclaimer&quot;)
-back -&gt; (link-goto: &quot;Cop-sickles&quot;)
-back -&gt; (link-goto: &quot;Resource letter&quot;)
-back -&gt; (link-goto: &quot;We take our destiny&quot;)
-back -&gt; (link-goto: &quot;It&#39;s no picnic&quot;)
-explore -&gt; (link-goto: &quot;Egress&quot;)
-back -&gt; (link-goto: &quot;Social Services&quot;)
-back -&gt; (link-goto: &quot;On an orphan train&quot;)
-back -&gt; (link-goto: &quot;My chains&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="445" name="Timeline" tags="Title" position="1100,900" size="100,100">Chronology
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="445" name="Timeline" tags="Title" position="1100,900" size="100,100">Chronology
 
 
 3/9/96         &#39;&#39;Running&#39;&#39;
@@ -19544,143 +19567,259 @@ ____________________
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="446" name="personal sentiments" tags="Note" position="950,675" size="100,100">NOTE:
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="446" name="personal sentiments" tags="Note" position="950,675" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;personal sentiments&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
 
-&#39;&#39;A work devoid of personal sentiments is dead&#39;&#39;.
-
---back
-
+(link-repeat:&quot;A work devoid of personal sentiments is dead&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Disclaimer&quot;)
+]].
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;Disclaimer&quot;)
+(link-goto: &quot;back&quot;, &quot;LISTEN&quot;)
+(link-goto: &quot;back&quot;, &quot;Egress&quot;)
+]]]
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="447" name="Laurel" tags="Note" position="1175,525" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;Laurel&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
+
+Sacred to Artemis. Its intoxicating properties bestow the gift of poetry and prophecy - but not always the wisdome needed to understand these gifts. Symbolizes immortality and used to seal lovers and crown victors. Causes (link-repeat:&quot;forgetfulness&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;What is there&quot;, &quot;SCATH GEALACH&quot;)
+(link-goto: &quot;to remember&quot;, &quot;WHAT THE MOON FORGOT&quot;)
+(link-goto: &quot;when the world breaks?&quot;, &quot;moon breaks&quot;)
+]]. 
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;MOON GIRL&quot;)
+(link-goto: &quot;back&quot;, &quot;Cast of characters&quot;)
+(link-goto: &quot;back&quot;, &quot;Into our own hands&quot;)
+]]]
 ___________________
-
-
-Links:
-____________________
-
-&#39;&#39;A work devoid of personal sentiments is dead&#39;&#39; -&gt; (link-goto: &quot;Disclaimer&quot;)
-
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;Disclaimer&quot;)
-back -&gt; (link-goto: &quot;LISTEN&quot;)
-back -&gt; (link-goto: &quot;Egress&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="447" name="Laurel" tags="Note" position="1175,525" size="100,100">NOTE:
-
-Sacred to Artemis. Its intoxicating properties bestow the gift of poetry and prophecy - but not always the wisdome needed to understand these gifts. Symbolizes immortality and used to seal lovers and crown victors. Causes &#39;&#39;forgetfulness&#39;&#39;. 
-
-
-
---back 
-
-___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;forgetfulness&#39;&#39;
-What is there -&gt; (link-goto: &quot;SCATH GEALACH&quot;)
-to remember -&gt; (link-goto: &quot;WHAT THE MOON FORGOT&quot;)
-when the world breaks? -&gt; (link-goto: &quot;moon breaks&quot;)
-
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;MOON GIRL&quot;)
-back -&gt; (link-goto: &quot;Cast of characters&quot;)
-back -&gt; (link-goto: &quot;Into our own hands&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="448" name="Directions" tags="Title" position="900,300" size="100,100">N/A ??</tw-passagedata><tw-passagedata pid="449" name="Underlying Truth" tags="Note" position="300,700" size="100,100">NOTE:
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="448" name="Directions" tags="Title" position="900,300" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;Directions&lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+The original version of this passage was lost due to file corruption in the source project. What remains is a placeholder in place of what was once here.
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="449" name="Underlying Truth" tags="Note" position="300,700" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;Underlying Truth&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
 
 At the turn of the millenium, we understand everything.  We have seen the atom as a universe unto itself.  We have stood upon the moon, the dust ground beneath our boots. We know her cycles, her thoughts, her very essence.  And that essence is stone.   We have held her stones in our hands.  We know now.
 
-The moon is stone and stone alone. No longer can she be the night goddess to hold our hearts in terror. Saying that the moon once had a voice and lost it, once &#39;&#39;created the world&#39;&#39; and &#39;&#39;destroyed it&#39;&#39;, is simply mouthing a string of sounds without meaning.  
+The moon is stone and stone alone. No longer can she be the night goddess to hold our hearts in terror. Saying that the moon once had a voice and lost it, once (link-repeat:&quot;created the world&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;We know what&quot;, &quot;IN THE BEGINNING&quot;)
+(link-goto: &quot;created the world.&quot;, &quot;IT MUST BE WRITTEN&quot;)
+(link-goto: &quot;Chaos.&quot;, &quot;Into our own hands&quot;)
+]] and (link-repeat:&quot;destroyed it&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The moon is no longer&quot;, &quot;MOON SHADOWS&quot;)
+(link-goto: &quot;known as the destroyer&quot;, &quot;AFTER THE FALL&quot;)
+(link-goto: &quot;of souls, or of foes.&quot;, &quot;DEATH WAITS FOR LIFE&quot;)
+]], is simply mouthing a string of sounds without meaning.  
 
 This is the way of the world.
 
-And those who think they know better should &#39;&#39;consult their physicians&#39;&#39; immediately.
-
---directions
---back
-
+And those who think they know better should (link-repeat:&quot;consult their physician&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The correct diagnoses&quot;, &quot;drugs&quot;)
+(link-goto: &quot;of illusion is&quot;, &quot;The father&quot;)
+(link-goto: &quot;schizophrenia&quot;, &quot;ALTERED SACRIFICES&quot;)
+]] immediately.
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;directions&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Directions&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;Egress&quot;)
+(link-goto: &quot;back&quot;, &quot;Title page&quot;)
+(link-goto: &quot;back&quot;, &quot;Egress&quot;)
+(link-goto: &quot;back&quot;, &quot;DENIAL&quot;)
+(link-goto: &quot;back&quot;, &quot;IT MUST BE WRITTEN&quot;)
+]]]
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="450" name="Dedication" tags="Note" position="900,1200" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;Dedication&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+This is for all those lost
+under the (link-repeat:&quot;moon&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;And for those who know&quot;, &quot;DEATH WAITS FOR LIFE&quot;)
+(link-goto: &quot;the moon is more than&quot;, &quot;moon breaks&quot;)
+(link-goto: &quot;the sum of her stones.&quot;, &quot;OICHE DHUIBHRE&quot;)
+]].
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;directions&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Directions&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;Directions&quot;)
+(link-goto: &quot;back&quot;, &quot;Title page&quot;)
+(link-goto: &quot;back&quot;, &quot;BONES KNOW&quot;)
+(link-goto: &quot;back&quot;, &quot;Egress&quot;)
+(link-goto: &quot;back&quot;, &quot;Egress&quot;)
+(link-goto: &quot;back&quot;, &quot;carpet knows&quot;)
+(link-goto: &quot;back&quot;, &quot;SOLE REMEDY&quot;)
+]]]
 ___________________
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="451" name="Egress" tags="Title" position="1500,700" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;Egress&lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+(link-repeat:&quot;Note&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;No doubt by now&quot;, &quot;Underlying Truth&quot;)
+(link-goto: &quot;you&#39;ve noticed that the&quot;, &quot;Desperate&quot;)
+(link-goto: &quot;link names in this story&quot;, &quot;understands this&quot;)
+(link-goto: &quot;tell stories themselves.&quot;, &quot;Emergency placement&quot;)
+]] (link-repeat:&quot;from the authors&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Links are the true&quot;, &quot;books&quot;)
+(link-goto: &quot;creators of meaning&quot;, &quot;Vanity&quot;)
+(link-goto: &quot;in this work.&quot;, &quot;Who can she be&quot;)
+(link-goto: &quot;The interstices are&quot;, &quot;FLOOD OF WORDS&quot;)
+(link-goto: &quot;where everything happens.&quot;, &quot;wash over me&quot;)
+]] (link-repeat:&quot;to the reader&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;When you read, you must&quot;, &quot;people&quot;)
+(link-goto: &quot;read between the lines.&quot;, &quot;to return&quot;)
+(link-goto: &quot;Determine what happens&quot;, &quot;Psychic Roses&quot;)
+(link-goto: &quot;between the spaces&quot;, &quot;RIDING THE FLOOD&quot;)
+]]:
 
+(link-repeat:&quot;You&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;And then, and only then,&quot;, &quot;Out on a limb&quot;)
+(link-goto: &quot;will you understand&quot;, &quot;You beckon&quot;)
+(link-goto: &quot;your place&quot;, &quot;You mean&quot;)
+(link-goto: &quot;in our lives.&quot;, &quot;I&quot;)
+]] (link-repeat:&quot;have travelled&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;It is never the&quot;, &quot;Sending her away&quot;)
+(link-goto: &quot;destination that matters.&quot;, &quot;trip&quot;)
+(link-goto: &quot;Only the nitty-gritty&quot;, &quot;Chicago&quot;)
+(link-goto: &quot;of the journey counts.&quot;, &quot;On an orphan train&quot;)
+]] (link-repeat:&quot;far&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The meaning of our lives&quot;, &quot;Paranoia&quot;)
+(link-goto: &quot;depends on how you go.&quot;, &quot;RECEPTION&quot;)
+(link-goto: &quot;Are you systematic?&quot;, &quot;clouds&quot;)
+(link-goto: &quot;Or are you chaotic&quot;, &quot;Mythic origins&quot;)]] (link-repeat:&quot;through this work&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Do you take the time&quot;, &quot;Directions&quot;)
+(link-goto: &quot;to understand the way&quot;, &quot;Profoundly simple&quot;)
+(link-goto: &quot;the light enters?&quot;, &quot;Dedication&quot;)
+]].  (link-repeat:&quot;Perhaps&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Or do you revel in&quot;, &quot;moon wants&quot;)
+(link-goto: &quot;the darkness--thinking&quot;, &quot;If we do&quot;)
+(link-goto: &quot;you understand it all&quot;, &quot;Death wish&quot;)
+(link-goto: &quot;when you truly don&#39;t&quot;, &quot;Before the child&quot;)
+]] (link-repeat:&quot;you know everything&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Know everything.&quot;, &quot;Consultants&quot;)
+(link-goto: &quot;Understand everything.&quot;, &quot;Catch 22&quot;)
+(link-goto: &quot;Find out everything&quot;, &quot;Aha&quot;)
+(link-goto: &quot;by taking the links.&quot;, &quot;numbers know&quot;)
+]] (link-repeat:&quot;you need to know&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Make the links a part&quot;, &quot;WHAT I KNOW&quot;)
+(link-goto: &quot;of yourself--&quot;, &quot;AFTER THE KNOWING&quot;)
+(link-goto: &quot;a journey into&quot;, &quot;ARKENSTONES&quot;)
+(link-goto: &quot;your own soul.&quot;, &quot;IN THE BEGINNING&quot;)
+]] - (link-repeat:&quot;and perhaps&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Perhaps then you&quot;, &quot;Slip-sliding away&quot;)
+(link-goto: &quot;will understand the&quot;, &quot;Running again&quot;)
+(link-goto: &quot;analepsis in&quot;, &quot;Once again,&quot;)
+(link-goto: &quot;your own life.&quot;, &quot;practice&quot;)
+]] (link-repeat:&quot;you don&#39;t&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Because the relationships&quot;, &quot;moon wants&quot;)
+(link-goto: &quot;range from superficial&quot;, &quot;The answer sheet&quot;)
+(link-goto: &quot;to surrealistic, you&quot;, &quot;WHAT I DON&#39;T KNOW&quot;)
+(link-goto: &quot;don&#39;t know what to expect.&quot;, &quot;Uncertain&quot;)
+]].
 
-Links:
-____________________
+(link-repeat:&quot;What you have seen&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Relax. Trace your steps&quot;, &quot;Steamed clams&quot;)
+(link-goto: &quot;a couple of times.&quot;, &quot;Emergency&quot;)
+(link-goto: &quot;You can always revisit&quot;, &quot;Running&quot;)
+(link-goto: &quot;to ensure you understand.&quot;, &quot;Yanking&quot;)
+]], (link-repeat:&quot;what you have not seen&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;And whatever patterns&quot;, &quot;Can&#39;t say 2&quot;)
+(link-goto: &quot;you haven&#39;t seen&quot;, &quot;OICHE DHUIBHRE&quot;)
+(link-goto: &quot;will still be there,&quot;, &quot;water drowns&quot;)
+(link-goto: &quot;waiting for your mind&quot;, &quot;MOON MOTHS&quot;)
+(link-goto: &quot;to unravel them.&quot;, &quot;Rain included&quot;)
+]], (link-repeat:&quot;does not matter.&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;What we are trying to&quot;, &quot;Ach du lieber&quot;)
+(link-goto: &quot;do here, and what you&quot;, &quot;looked very hard.&quot;)
+(link-goto: &quot;find out here, does&quot;, &quot;Underlying truth&quot;)
+(link-goto: &quot;not matter in the end.&quot;, &quot;LISTEN&quot;)
+]].
 
-&#39;&#39;created the world&#39;&#39;
-We know what -&gt; (link-goto: &quot;IN THE BEGINNING&quot;)
-created the world. -&gt; (link-goto: &quot;IT MUST BE WRITTEN&quot;)
-Chaos. -&gt; (link-goto: &quot;Into our own hands&quot;)
-
-&#39;&#39;destroyed it&#39;&#39;
-The moon is no longer -&gt; (link-goto: &quot;MOON SHADOWS&quot;)
-known as the destroyer -&gt; (link-goto: &quot;AFTER THE FALL&quot;)
-of souls, or of foes. -&gt; (link-goto: &quot;DEATH WAITS FOR LIFE&quot;)
-
-&#39;&#39;consult their physicians&#39;&#39;
-The correct diagnoses -&gt; (link-goto: &quot;drugs&quot;)
-of illusion is -&gt; (link-goto: &quot;The father&quot;)
-schizophrenia. -&gt; (link-goto: &quot;ALTERED SACRIFICES&quot;)
-
-&#39;&#39;--directions&#39;&#39; -&gt; (link-goto: &quot;Directions&quot;)
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;Egress&quot;)
-back -&gt; (link-goto: &quot;Title page&quot;)
-back -&gt; (link-goto: &quot;Egress&quot;)
-back -&gt; (link-goto: &quot;DENIAL&quot;)
-back -&gt; (link-goto: &quot;IT MUST BE WRITTEN&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="450" name="Dedication" tags="Note" position="900,1200" size="100,100">This is for all those lost
-under the &#39;&#39;moon&#39;&#39;.
-
-
-
---directions
---back
-
-___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;moon&#39;&#39;
-And for those who know -&gt; (link-goto: &quot;DEATH WAITS FOR LIFE&quot;)
-the moon is more than -&gt; (link-goto: &quot;moon breaks&quot;)
-the sum of her stones. -&gt; (link-goto: &quot;OICHE DHUIBHRE&quot;)
-
-&#39;&#39;--directions&#39;&#39; -&gt; (link-goto: &quot;Directions&quot;)
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;Directions&quot;)
-back -&gt; (link-goto: &quot;Title page&quot;)
-back -&gt; (link-goto: &quot;BONES KNOW&quot;)
-back -&gt; (link-goto: &quot;Egress&quot;)
-back -&gt; (link-goto: &quot;Egress&quot;)
-back -&gt; (link-goto: &quot;carpet knows&quot;)
-back -&gt; (link-goto: &quot;SOLE REMEDY&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="451" name="Egress" tags="Title" position="1500,700" size="100,100">&#39;&#39;Note from the authors to the reader:
-
-You have travelled far through this work.  Perhaps you know everything you need to know - and perhaps you don&#39;t.
-
-What you have seen, what you have not seen, does not matter.
-
-If this were an academic tome, we could sit over coffee and chat about the hyperpoesis of automatic text decomposition, or the taxonomy of hypermedia as a change agent, or better yet, navigational bewilderments in hyperstructures.  
+(link-repeat:&quot;If this were&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;If it did, you would need&quot;, &quot;Profession&quot;)
+(link-goto: &quot;time to understand it all.&quot;, &quot;show and tell&quot;)
+]] (link-repeat:&quot;an academic tome&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;No one has time to&quot;, &quot;Laurel&#39;s World&quot;)
+(link-goto: &quot;parse each atom.&quot;, &quot;School success&quot;)
+(link-goto: &quot;each quark, each galaxy.&quot;, &quot;Janet&#39;s magazine&quot;)
+(link-goto: &quot;So why do we try?&quot;, &quot;Bruno&quot;)
+]], (link-repeat:&quot;we could sit&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Why can&#39;t we just sit&quot;, &quot;All I wanted&quot;)
+(link-goto: &quot;in the green grass&quot;, &quot;trees&quot;)
+]] (link-repeat:&quot;over coffee&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;on a summer day,&quot;, &quot;He says&quot;)
+(link-goto: &quot;watch the world go by,&quot;, &quot;Thursday coffees&quot;)
+(link-goto: &quot;glance into the lovers&#39;&quot;, &quot;He declines&quot;)
+(link-goto: &quot;hands and smiles.&quot;, &quot;He leaves&quot;)
+]] (link-repeat:&quot;and chat about the&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Why are you here&quot;, &quot;They say&quot;)
+(link-goto: &quot;talking with us about&quot;, &quot;First strike&quot;)
+(link-goto: &quot;these arcane&quot;, &quot;Hands on talking&quot;)
+(link-goto: &quot;incomprehensibilities?&quot;, &quot;Can&#39;t say 1&quot;)
+]] (link-repeat:&quot;hyperpoesis of automatic&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Perhaps it is because&quot;, &quot;Going on empty&quot;)
+(link-goto: &quot;we, both author and&quot;, &quot;filigree&quot;)
+(link-goto: &quot;reader, have found in&quot;, &quot;MOON STORIES&quot;)
+(link-goto: &quot;hypertext&quot;, &quot;personal sentiments&quot;)
+]] (link-repeat:&quot;text decomposition&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;a way to become more&quot;, &quot;Electronic madness&quot;)
+(link-goto: &quot;than mere author,&quot;, &quot;to return&quot;)
+(link-goto: &quot;than passive reader,&quot;, &quot;dust&quot;)
+(link-goto: &quot;a way to be text.&quot;, &quot;AFTER THE FALL&quot;)
+]], (link-repeat:&quot;or the taxonomy of&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Hypermedia must&quot;, &quot;I knew&quot;)
+(link-goto: &quot;be classified in new&quot;, &quot;regular classroom&quot;)
+]] hypermedia as a change agent, or better yet, navigational bewilderments in hyperstructures.  
 
 But we have no point to prove or position to keep.  We have only a story to tell.  Or to keep from telling.  By now, you&#39;ve poked through most of the major materials.  If you have found one point to shiver over, we&#39;ll rest content.
 
@@ -19691,7 +19830,8 @@ So, if you want to keep lurking about, please feel free to stay as long as you l
 &#39;&#39;Click anywhere on this page to explore.&#39;&#39;
 
 &#39;&#39;Return to the Major Players:&#39;&#39; &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-
+&lt;/div&gt;
+&lt;/div&gt;
 Or leave us:
 On a Mac, choose DONE from the READER menu
 On a Windows machine, choose EXIT from the FILE menu.
@@ -19985,120 +20125,157 @@ absolutely everything -&gt; (link-goto: &quot;Undercoverings&quot;)
 
 &#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
 &#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="452" name="content" tags="Note" position="1575,750" size="100,100">NOTE:
+&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="452" name="content" tags="Note" position="1575,750" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;content&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
 As Arthur Conan Doyle says in his preface to Round the Fire Stories, 
 
 &quot;[If my stories] have the good fortune to give pleasure to anyone, at anytime or place, their author will be very satisfied.&quot;
 
 McClure Company, 1908.  1991 reprint by Chronicle Books, San Francisco, CA.
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Directions&quot;)
+]]]
 
-
-
---back
-
-
-Links:
-____________________
-
-&#39;&#39;--back&#39;&#39; -&gt; (link-goto: &quot;Directions&quot;)
-</tw-passagedata><tw-passagedata pid="453" name="Undercoverings" tags="Title" position="900,1500" size="100,100">N/A</tw-passagedata><tw-passagedata pid="454" name="Cat&#39;s eyes" tags="Title" position="600,1200" size="100,100">&#39;&#39;Individual Education Plan
-Facilitated Communication
-Collection of facilitated typing exercises&#39;&#39;
-
+</tw-passagedata><tw-passagedata pid="453" name="Undercoverings" tags="Title" position="900,1500" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;Undercoverings&lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+The original version of this passage was lost due to file corruption in the source project. What remains is a placeholder in place of what was once here.
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="454" name="Cat&#39;s eyes" tags="Title" position="600,1200" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;Cat&#39;s eyes&lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+&lt;div class=&quot;CE&quot;&gt;&lt;/div&gt;
+(link-repeat:&quot;Individual Education Plan&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Laurel&#39;s World&quot;)
+]]
+(link-repeat:&quot;Facilitated Communication&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;When mouths do not work&quot;, &quot;We take our destiny&quot;)
+(link-goto: &quot;bridges to the mind&quot;, &quot;Hands on talking&quot;)
+]]
+(link-repeat:&quot;Collection of facilitated typing exercises&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;we must find other&quot;, &quot;School success!&quot;)
+(link-goto: &quot;widdershins&quot;, &quot;books&quot;)
+]]
+&lt;/div&gt;
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;Individual Education Plan&#39;&#39; -&gt; (link-goto: &quot;Laurel&#39;s World&quot;)
-
-&#39;&#39;Facilitated Communication&#39;&#39;
-When mouths do not work -&gt; (link-goto: &quot;We take our destiny&quot;)
-bridges to the mind. -&gt; (link-goto: &quot;Hands on talking&quot;)
-
-&#39;&#39;Collection of facilitated typing exercises&#39;&#39;
-we must find other -&gt; (link-goto: &quot;School success!&quot;)
-widdershins -&gt; (link-goto: &quot;books&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="455" name="Selene&#39;s dreams" tags="Title" position="1200,1200" size="100,100">N/A</tw-passagedata><tw-passagedata pid="456" name="MOON FALLEN" tags="Moon" position="1450,1150" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="455" name="Selene&#39;s dreams" tags="Title" position="1200,1200" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;Selene&#39;s dreams&lt;div class=&quot;container6&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+The original version of this passage was lost due to file corruption in the source project. What remains is a placeholder in place of what was once here.
+&lt;/div&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="456" name="MOON FALLEN" tags="Moon" position="1450,1150" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;MOON FALLEN&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Myth files
 
-Once in a land so far away no one has heard of it now, an old woman lost her daughter to &#39;&#39;blood fever&#39;&#39; on the wane of the moon. She washed the small body - the cold had rushed into the joints so soon after the heat of the fever that the old woman shivered and could not stop her own shaking.
+Once in a land so far away no one has heard of it now, an old woman lost her daughter to (link-repeat:&quot;blood fever&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;You could die from&quot;, &quot;Death fear&quot;)
+(link-goto: &quot;the wrong blood.&quot;, &quot;LOOSE SOULS&quot;)
+]] on the wane of the moon. She washed the small body - the cold had rushed into the joints so soon after the heat of the fever that the old woman shivered and could not stop her own shaking.
 
-Then she &#39;&#39;buried her daughter&#39;&#39; on the moonless night, leaving new honey and old wineskins for the moon&#39;s supper. She bent over a dark pond, fringed with cattails. Moaned to the moon goddess, baring her wrinkled, sagging breasts to the darkened stars. Begged the moon to give back her daughter, her only comfort in the dark rag poverty of the forest. 
+Then she (link-repeat:&quot;buried her daughter&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;It is when we&quot;, &quot;LIFE FEAR&quot;)
+(link-goto: &quot;bury ourselves in our&quot;, &quot;alone.&quot;)
+(link-goto: &quot;children that we&quot;, &quot;Frozen dreams&quot;)
+(link-goto: &quot;cannot come out.&quot;, &quot;I could never&quot;)
+]] on the moonless night, leaving new honey and old wineskins for the moon&#39;s supper. She bent over a dark pond, fringed with cattails. Moaned to the moon goddess, baring her wrinkled, sagging breasts to the darkened stars. Begged the moon to give back her daughter, her only comfort in the dark rag poverty of the forest. 
 
 The moon came to her, carrying a torch with five flames and a scrouge painted in dusk red ochres. &quot;You cannot have your daughter,&quot; she told the old woman. &quot;For your daughter has always been mine. But you may have anything else you desire.&quot;
 
 The old woman fell to her knees, clutching the thin pale roots of the cattails. &quot;Then let me be with you, so I can just glimpse her on the brink of a new moon,&quot; the old woman pleaded.
 
-&#39;&#39;The moon smiled&#39;&#39;. Cold swept swiftly through the old woman&#39;s outstretched arms.
+(link-repeat:&quot;The moon smiled&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;This is how Hades&quot;, &quot;DOUBLED&quot;)
+(link-goto: &quot;must have felt when&quot;, &quot;THE SOUL SELECTS&quot;)
+(link-goto: &quot;Persephone ate&quot;, &quot;moon wants&quot;)
+(link-goto: &quot;the pomegranate seeds.&quot;, &quot;HOLD NO HOPE&quot;)
+]]. Cold swept swiftly through the old woman&#39;s outstretched arms.
 
 A woodcutter found her the next day, with blood fever marks staining her lips, splitting them into a frozen smile.
-
-
-
---image
---go back
---press on
-
-
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;empty&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;entirely sure&quot;)
+]]]
+&lt;div class=&quot;GP&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;GP1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON CAKES&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;GP1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON PRINCESS&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;blood fever&#39;&#39;
-You could die from -&gt; (link-goto: &quot;Death feat&quot;)
-the wrong blood. -&gt; (link-goto: &quot;LOOSE SOULS&quot;)
-
-&#39;&#39;buried her daughter&#39;&#39;
-It is when we -&gt; (link-goto: &quot;LIFE FEAR&quot;)
-bury ourselves in our -&gt; (link-goto: &quot;alone.&quot;)
-childeren that we -&gt; (link-goto: &quot;Frozen dreams&quot;)
-cannot come out. -&gt; (link-goto: &quot;I could never&quot;)
-
-&#39;&#39;The moon smiled&#39;&#39;
-This is how Hades -&gt; (link-goto: &quot;DOUBLED&quot;)
-must have felt when -&gt; (link-goto: &quot;THE SOUL SELECTS&quot;)
-Persephone ate -&gt; (link-goto: &quot;moon wants&quot;)
-the pomegranate seeds. -&gt; (link-goto: &quot;HOLD NO HOPE&quot;)
-
-&#39;&#39;--image&#39;&#39; -&gt; (link-goto: &quot;entirely sure&quot;)
-&#39;&#39;--go back&#39;&#39; -&gt; (link-goto: &quot;MOON CAKES&quot;)
-&#39;&#39;--press on&#39;&#39; -&gt; (link-goto: &quot;MOON PRINCESS&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="457" name="MOON PRINCESS" tags="Moon" position="1500,1225" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="457" name="MOON PRINCESS" tags="Moon" position="1500,1225" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;MOON PRINCESS&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Myth files
 
-This happened &#39;&#39;more than once&#39;&#39;, for many lands have the same sort of tale. A girl mocked the boys in her village, so none of them would marry her as they grew up. She didn&#39;t mind living alone at the edge of the sea, so much. But she &#39;&#39;mourned for a child&#39;&#39;. Each night, she would walk the beach at the lowest tide, imploring the moon to give her a child just as she gave back the tide to the sea.
+This happened (link-repeat:&quot;more than once&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;What the goddess&quot;, &quot;REPETITION&quot;)
+(link-goto: &quot;would destroy, she first&quot;, &quot;DOWN TOO GRIEF&quot;)
+(link-goto: &quot;must resurrect.&quot;, &quot;Mythic origins&quot;)
+]], for many lands have the same sort of tale. A girl mocked the boys in her village, so none of them would marry her as they grew up. She didn&#39;t mind living alone at the edge of the sea, so much. But she (link-repeat:&quot;mourned for a child&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Those who wait&quot;, &quot;MOON MOTHER&quot;)
+(link-goto: &quot;to be born&quot;, &quot;SCATH GEALACH&quot;)
+(link-goto: &quot;are the ones&quot;, &quot;Death wish&quot;)
+(link-goto: &quot;who wait to die&quot;, &quot;MOON SHADOWS&quot;)
+]]. Each night, she would walk the beach at the lowest tide, imploring the moon to give her a child just as she gave back the tide to the sea.
 
-Each night, the sea rushed back and the moon was &#39;&#39;silent and unforgiving&#39;&#39;.  Until one night, the harvest moon shone low and blooded just over the sea&#39;s far horizon. She ran to the shore, and threw herself into the reflection of the moon on the wet sand, washing the glistening salt drops of tide pools with her tears. And a child rose up out of the sea, light and beautiful as sea foam.
+Each night, the sea rushed back and the moon was (link-repeat:&quot;silent and unforgiving&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Night moves&quot;)
+]].  Until one night, the harvest moon shone low and blooded just over the sea&#39;s far horizon. She ran to the shore, and threw herself into the reflection of the moon on the wet sand, washing the glistening salt drops of tide pools with her tears. And a child rose up out of the sea, light and beautiful as sea foam.
 
 The girl, now a woman, scooped the child in her arms and ran back to her hut by the side of the sea. She wrapped the child in clean long linens and put her to sleep. She herself did not sleep, but kept watch, fearing the moon would change her mind and snatch the child back.
 
 The child grew red and rosy, and the mother laughed to see the child playing with the tide pools, running in the daisies, savoring the snow. The child grew wise and beautiful, so much so that first the children, then the women, and finally the men of the village came out each morning to gaze upon her and hear her words. (The child&#39;s name here varies~from Hanako, Moon Flower, to  Bur“deach Gealach, Moon Bride. I do not know the name the child finally received.) The mother feared the villagers&#39; attention might cause the moon to remember, and so she tried to keep them away from her daughter. But still the villagers came. So she said nothing, but made sure they both were in well before sunset, and she locked the door tight against the moon each night.  They chinked up the walls in their home and covered the windows so that no light of the moon would ever reach their daughter&#39;s fair features.
 
-However great her &#39;&#39;precautions against the moon&#39;&#39;, the mother could not keep the news of her extraordinary child from reaching the Emperor&#39;s ears. One fine summer&#39;s day, the Emperor&#39;s horsemen came knocking on the door, asking for the Moon Child. &quot;We have come,&quot; they cried, &quot;To take you to the Emperor&#39;s side. For he will have only you, the most fair and most wise of the entire country, as his bride.&quot;
+However great her (link-repeat:&quot;precautions against the moon&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Nothing you do&quot;, &quot;Merging&quot;)
+(link-goto: &quot;will stop your fate.&quot;, &quot;TRIUMPHS&quot;)
+]], the mother could not keep the news of her extraordinary child from reaching the Emperor&#39;s ears. One fine summer&#39;s day, the Emperor&#39;s horsemen came knocking on the door, asking for the Moon Child. &quot;We have come,&quot; they cried, &quot;To take you to the Emperor&#39;s side. For he will have only you, the most fair and most wise of the entire country, as his bride.&quot;
 
 The moon girl smiled slowly and bowed deeply. &quot;I am so heavily honored,&quot; she replied. &quot;But please, I cannot leave this land yet. Please tell your Emperor that I cannot marry him, no matter what our hearts desire. And if he wishes to see me, then he must come here.&quot;
 
 The villagers heard about this and came running to persuade the girl to go with the Emperor&#39;s horsemen. But she adamently refused. They implored her, telling her that they would all have their necks slit for her impudence. The mother drove them away with a pitchfork, saying she would do the same for any who tried to force the girl away.
 
-But force was unnecessary. The Emperor himself came soon after, just to listen to the spell of the girl&#39;s singing while she wove the mats for the house. He stood &#39;&#39;spellbound&#39;&#39; all of the first day, content merely to be within the sphere of her beauty.  The second day he stayed away and sent her love poems.  She returned them unread.
+But force was unnecessary. The Emperor himself came soon after, just to listen to the spell of the girl&#39;s singing while she wove the mats for the house. He stood (link-repeat:&quot;spellbound&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;These spells work best&quot;, &quot;GLASS HARMONICA&quot;)
+(link-goto: &quot;without words.&quot;, &quot;GLASS ENDINGS&quot;)
+]] all of the first day, content merely to be within the sphere of her beauty.  The second day he stayed away and sent her love poems.  She returned them unread.
 
-The third day, he gathered his courage and knocked upon her door.  The mother served them tea cakes.  The moon girl knelt prettily, her dainty ankles tucked carefully under her.  She mentioned a poet.  He mentioned another.  They talked long into after the &#39;&#39;sun&#39;&#39; had set.  (Stories diverge here also.  Some say he courted for a single day, others a year and a day, still others over a hundred years.  Whatever the length, all the stories agree that still the girl would not leave to go with him and still the mother locked the door tight against the night.)
+The third day, he gathered his courage and knocked upon her door.  The mother served them tea cakes.  The moon girl knelt prettily, her dainty ankles tucked carefully under her.  She mentioned a poet.  He mentioned another.  They talked long into after the (link-repeat:&quot;sun&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON GIRL&quot;)
+]] had set.  (Stories diverge here also.  Some say he courted for a single day, others a year and a day, still others over a hundred years.  Whatever the length, all the stories agree that still the girl would not leave to go with him and still the mother locked the door tight against the night.)
 
 The Emperor was not satisfied with merely noonday talks, so he carefully slit a hole in the wall of the poorly made house. He opened it slowly, and the strong pearled light of the moon fell on the face of his beloved. She rose quickly, and went past him to greet the moon. She said nothing. The Emperor placed his hand on her shoulder, but she went on without feeling it.
 
@@ -20106,148 +20283,130 @@ The moon&#39;s light grew stronger, forming a path right up to the door of the h
 
 
 The story usually ends here. At any rate, it does not go on, in any of its variations, to detail how the Emperor broke the news to the mother.
-
-
-
---image
---go back
---press on
-
-
-
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;empty&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;this is how&quot;)
+]]]
+&lt;div class=&quot;GP&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;GP1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON FALLEN&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;GP1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON GIRL&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;more than once&#39;&#39;
-What the goddess -&gt; (link-goto: &quot;REPETITION&quot;)
-would destroy, she first -&gt; (link-goto: &quot;DOWN TO GRIEF&quot;)
-must resurrect. -&gt; (link-goto: &quot;Mythic origins&quot;)
-
-&#39;&#39;mourned for a child&#39;&#39;
-Those who wait -&gt; (link-goto: &quot;MOON MOTHER&quot;)
-to be born -&gt; (link-goto: &quot;SCATH GEALACH&quot;)
-are the ones -&gt; (link-goto: &quot;Death wish&quot;)
-who wait to die -&gt; (link-goto: &quot;MOON SHADOWS&quot;)
-
-&#39;&#39;silent and unforgiving&#39;&#39; -&gt; (link-goto: &quot;Night moves&quot;)
-
-&#39;&#39;precautions against the moon&#39;&#39;
-Nothing you do -&gt; (link-goto: &quot;Merging&quot;)
-will stop your fate. -&gt; (link-goto: &quot;TRIUMPHS&quot;)
-
-&#39;&#39;spellbound&#39;&#39;
-These spells work best -&gt; (link-goto: &quot;GLASS HARMONICA&quot;)
-without words. -&gt; (link-goto: &quot;GLASS ENDINGS&quot;)
-
-&#39;&#39;sun&#39;&#39; -&gt; (link-goto: &quot;MOON GIRL&quot;)
-
-&#39;&#39;--image&#39;&#39; -&gt; (link-goto: &quot;this is how&quot;)
-&#39;&#39;--go back &#39;&#39;-&gt; (link-goto: &quot;MOON FALLEN&quot;)
-&#39;&#39;--press on&#39;&#39; -&gt; (link-goto: &quot;MOON GIRL&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="458" name="MOON GIRL" tags="Moon" position="1550,1300" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="458" name="MOON GIRL" tags="Moon" position="1550,1300" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;MOON GIRL&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Myth files
 
 Once, an old woman held the knowledge of an entire village. She searched for someone to share it with, someone to take her place when she was gone. Finding no suitable young girl in the village, she walked under the moon. Strewing the finest, strongest herbs she could find into a circle, she called the moon. She bathed in moonlight, letting the light find her. She chanted to the moon beams, begged them to grant her last wish:  I thirst for company, someone I can share my old years with. Give me a young girl, some one fair to see. Grant me someone who can see far and think clearly. And I will name her after you, the fairest of the sky. 
 
-The moon laughed when she heard the tale. &quot;I do not want your &#39;&#39;namings*&#39;&#39;,&quot; she cried. &quot;But I will give you what you ask for.&quot; 
+The moon laughed when she heard the tale. &quot;I do not want your (link-repeat:&quot;namings*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Laurel&quot;)
+]]&quot; she cried. &quot;But I will give you what you ask for.&quot; 
 
 After far too many more moons to remember, the girl came. Her hair was long spun copper, her eyes buttered gold, her limbs lithe and strong. Her beauty made the trees bow to her, the ground offer up to her any number of precious stones. Some swore the girl had sailed down the moon&#39;s light. The old woman smiled and said that she had seen the girl&#39;s soul, that the girl could indeed see far and think clearly. But when the girl tried to speak, only the harsh braying of donkeys emerged. Spittle flew from the edges of her mouth.
 
-Everyone then said the woman had finally gone mad under the moon, for the girl &#39;&#39;could not speak&#39;&#39; and was obviously an idiot.
+Everyone then said the woman had finally gone mad under the moon, for the girl (link-repeat:&quot;could not speak&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Without words&quot;, &quot;she can&#39;t talk&quot;)
+(link-goto: &quot;nothing in your&quot;, &quot;pre-verbal&quot;)
+(link-goto: &quot;mind will ever&quot;, &quot;Real words&quot;)
+(link-goto: &quot;penetrate&quot;, &quot;Into our own hands&quot;)
+(link-goto: &quot;anyone else&#39;s mind.&quot;, &quot;Broken wires&quot;)
+]] and was obviously an idiot.
 
 When I think of this, I wonder what I asked for under the moon, what I promised to name my child after. Sometimes, I spin the story out a bit longer, weaving the memory of an old woman showing the girl all the stores of her knowledge, hoarding it away from the bitter shunning of the villagers.
-
-
-
---image
---go back
---press on
-
-
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;empty&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;it happened&quot;)
+]]]
+&lt;div class=&quot;GP&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;GP1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON PRINCESS&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;GP1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON CYCLES&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;namings*&#39;&#39; -&gt; (link-goto: &quot;Laurel&quot;)
-
-&#39;&#39;could not speak&#39;&#39;
-Without words -&gt; (link-goto: &quot;she can&#39;t talk&quot;)
-nothing in your -&gt; (link-goto: &quot;pre-verbal&quot;)
-mind will ever -&gt; (link-goto: &quot;Real words&quot;)
-penetrate -&gt; (link-goto: &quot;Into our own hands&quot;)
-anyone else&#39;s mind. -&gt; (link-goto: &quot;Broken wires&quot;)
-
-&#39;&#39;--image&#39;&#39; -&gt;  (link-goto: &quot;it happened&quot;)
-&#39;&#39;--go back&#39;&#39; -&gt; (link-goto: &quot;MOON PRINCESS&quot;)
-&#39;&#39;--press on&#39;&#39; -&gt; (link-goto: &quot;MOON CYCLES&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="459" name="MOON CYCLES" tags="Moon" position="1500,1375" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="459" name="MOON CYCLES" tags="Moon" position="1500,1375" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;MOON CYCLES&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Myth files
 
-It is said that once, Coyote &#39;&#39;chased the moon&#39;&#39; away for a joke. He pranced and trotted, grinned and growled at the dark, star-abandoned sky. And the night stayed so dark that even he could not see his way and had to rest in the night.
+It is said that once, Coyote (link-repeat:&quot;chased the moon&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Q. What do animals&quot;, &quot;disuse&quot;)
+(link-goto: &quot;use for flashlights?&quot;, &quot;is captured&quot;)
+(link-goto: &quot;A. Moon-beams.&quot;, &quot;carpet knows&quot;)
+]] away for a joke. He pranced and trotted, grinned and growled at the dark, star-abandoned sky. And the night stayed so dark that even he could not see his way and had to rest in the night.
 
 This may or may not be so. At any rate, it was certain that the moon was missing for a very long time. And while the moon was gone, a cradleboard with a glowing child appeared at the feet of the oldest woman in the tribe. The oldest woman took it and nursed it, for as the child touched her breast, milk once again began to flow. The woman named her child She-Who-Comes-Quietly. And the child grew strong, going out each day and bringing back game and berries out of season. And her skin grew rosy in the daylight. At night, she glowed softly, like ground corn caught in light.
 
-Still the moon lay dark, and still the stars refused to shine. Coyote now was &#39;&#39;desperate*&#39;&#39; to play in the moon&#39;s light, as the harsh sun burned his nose and ruffled his ears. He started to prowl about the tribe, looking for light to throw into the sky. He poked his nose into one teepee, and the woman brought her mano down upon it, bruising it. Coyote howled off and poked his nose into the next teepee, searching for the fire he himself had given them.
+Still the moon lay dark, and still the stars refused to shine. Coyote now was (link-repeat:&quot;desperate*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Desperate&quot;)
+]] to play in the moon&#39;s light, as the harsh sun burned his nose and ruffled his ears. He started to prowl about the tribe, looking for light to throw into the sky. He poked his nose into one teepee, and the woman brought her mano down upon it, bruising it. Coyote howled off and poked his nose into the next teepee, searching for the fire he himself had given them.
 
 But the people were angry at Coyote for chasing the moon away, and would have nothing to do with him. Instead, they gathered in the oldest woman&#39;s teepee at night, gazing at She-Who-Comes-Quietly, soaking in her light.
 
 Finally, Coyote wondered what they were all up to, each night and every night, slipping away to the oldest woman&#39;s teepee. So he danced about the edges and got his nose under one of the stones on the west end. He saw the light from the girl and thought to himself:  &quot;Aha! That is where the moon is hiding! I&#39;ll show them!&quot; So he wriggled his way under the teepee and snatched the girl up, running out of the east hole. The people were catching up to him quickly, too quickly. So he flung her up into the sky, and said &quot;Now, stay there this time!&quot; 
 
-But the girl came down from the sky and changed into a woman far older than the oldest woman. She said &quot;Coyote, I am always here, always in the form you least expect. But I will stay in my sky now and not visit you here again. &#39;&#39;I will change often&#39;&#39;, too, just so that you may watch and learn.&quot; Then Changing Woman went back up to the sky, for she truly was the moon, as everyone knows.
+But the girl came down from the sky and changed into a woman far older than the oldest woman. She said &quot;Coyote, I am always here, always in the form you least expect. But I will stay in my sky now and not visit you here again. (link-repeat:&quot;I will change often&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Nothing is ever quite&quot;, &quot;Before the child&quot;)
+(link-goto: &quot;what we think&quot;, &quot;DOUBLED&quot;)
+(link-goto: &quot;it should be.&quot;, &quot;dandelion blood&quot;)
+]], too, just so that you may watch and learn.&quot; Then Changing Woman went back up to the sky, for she truly was the moon, as everyone knows.
 
 And only the oldest woman wept.
-
-
-
---image
---go back
---press on
-
-
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;empty&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;Or if it did.&quot;)
+]]]
+&lt;div class=&quot;GP&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;GP1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON GIRL&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;GP1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON SHINE&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;chased the moon&#39;&#39;
-Q. What do animals -&gt; (link-goto: &quot;disuse&quot;)
-use for flashlights? -&gt; (link-goto: &quot;is captured&quot;)
-A. Moon-beams. -&gt; (link-goto: &quot;carpet knows&quot;)
-
-&#39;&#39;desperate*&#39;&#39; -&gt; (link-goto: &quot;Desperate&quot;)
-
-&#39;&#39;I will change often&#39;&#39;
-Nothing is ever quite -&gt; (link-goto: &quot;Before the child&quot;)
-what we think -&gt; (link-goto: &quot;DOUBLED&quot;)
-it should be. -&gt; (link-goto: &quot;dandelion blood&quot;)
-
-&#39;&#39;--image&#39;&#39; -&gt; (link-goto: &quot;Or if it did.&quot;)
-&#39;&#39;--go back&#39;&#39; -&gt; (link-goto: &quot;MOON GIRL&quot;)
-&#39;&#39;--press on&#39;&#39; -&gt; (link-goto: &quot;MOON SHINE&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="460" name="MOON SHADOWS" tags="Moon" position="1400,1525" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="460" name="MOON SHADOWS" tags="Moon" position="1400,1525" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;MOON SHADOWS&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Myth files
 
@@ -20255,140 +20414,148 @@ This is one my grandmother told me, but I have not told it to my own children.
 
 Once, long after the moon created the world, and chased away the darkness forever, the world became crowded.  You could not walk, because every inch of land was covered with a breathing animal. Even the ants could not squeeze through the immense pile of life. You could not sail the sea as every drop was taken by a breathing animal. Even the plankton could not wander through the waves of life. 
 
-And the world was painful. Creatures grew older, joints aching, muscles straining, lungs pounding with every breath. The people complained of lumbago, rheumatism, arthritis, and every other sort of disease. Their knees hurt, their eyes squinted, their minds grew rusty from the constant wear of &#39;&#39;pain&#39;&#39;. 
+And the world was painful. Creatures grew older, joints aching, muscles straining, lungs pounding with every breath. The people complained of lumbago, rheumatism, arthritis, and every other sort of disease. Their knees hurt, their eyes squinted, their minds grew rusty from the constant wear of (link-repeat:&quot;pain&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Contrarainism: where&quot;, &quot;to become&quot;)
+(link-goto: &quot;not dying is a fate&quot;, &quot;in my pain&quot;)
+(link-goto: &quot;worse than death.&quot;, &quot;Death wish&quot;)
+]]. 
 
-But there was no death, no release. So the people cried out to the moon, telling her of their pain, of their strong desire for elbow room, of every other complaint that came from a world of never-ending life. And the moon called down. &quot;What do you want me to do about it? It seems to be your lack of control, &#39;&#39;your hatred&#39;&#39; that is doing this to you. Besides, as I recall, you helped yourselves out the last time.&quot; This then was her answer. 
+But there was no death, no release. So the people cried out to the moon, telling her of their pain, of their strong desire for elbow room, of every other complaint that came from a world of never-ending life. And the moon called down. &quot;What do you want me to do about it? It seems to be your lack of control, (link-repeat:&quot;your hatred&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Hatred is usually&quot;, &quot;No harm done&quot;)
+(link-goto: &quot;in the mind of&quot;, &quot;Sidestreaming&quot;)
+(link-goto: &quot;the beholder.&quot;, &quot;show and tell&quot;)
+]] that is doing this to you. Besides, as I recall, you helped yourselves out the last time.&quot; This then was her answer. 
 
 And the people said, &quot;Very well. We will do something about it then.&quot; For they had learned to hunt, to eat of other life. So now they worked for many days and nights. Some gathered sticks and honed both edges to cutting points. Others moved bodies and dug a huge pit, lining it with dry grasses and smaller sticks. Still others lined the outside of the pit, all except the west side, with sharp thorns. 
 
-Then some of the people drove every creature and person they could find into the pit. They called down fire from their brothers the sun people, and burned everything in the pit. This made the mass of people and animals smaller. But the charred bones and seared flesh &#39;&#39;still breathed&#39;&#39;, moaning in agony at each draught of air. And the sea remained unchanged.
+Then some of the people drove every creature and person they could find into the pit. They called down fire from their brothers the sun people, and burned everything in the pit. This made the mass of people and animals smaller. But the charred bones and seared flesh (link-repeat:&quot;still breathed&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Breathing is something&quot;, &quot;STICKY SOULS&quot;)
+(link-goto: &quot;most of us&quot;, &quot;My soul&quot;)
+(link-goto: &quot;could do without.&quot;, &quot;Merging&quot;)
+]], moaning in agony at each draught of air. And the sea remained unchanged.
 
-So the people again cried out to the moon. &quot;You created this mess. &#39;&#39;You&#39;&#39; started it. Now do something about it.&quot;
+So the people again cried out to the moon. &quot;You created this mess. (link-repeat:&quot;You&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOONBLOOD&quot;)
+]] started it. Now do something about it.&quot;
 
 And the moon was tired of hearing their complaints. So she drew in a breath to the bottom of her being and blew it out upon the sea. And this breath was the chilling cold of death. Sea creatures died, leaving their bodies to flood the land. Land creatures died, leaving their charred and scarred bodies behind. And the water cleansed the earth of all the bodies, taking them deep inside the earth herself.
 
 &quot;Now when things are too much to bear,&quot; the moon told the people who were left, &quot;I will come. I will take care of you. So stop complaining.&quot;
 
 The people never spoke to the moon again.
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;empty&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;GLASS HARMONICA&quot;)
+]]]
+&lt;div class=&quot;GP&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;GE1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON SHINE&quot;)
+]]]
 
-
-
---image
---go back
---go elsewhere
-
-
+(link-repeat:&#39;&lt;div class=&quot;GE1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;cosmo-agony&quot;, &quot;MOONBLOOD&quot;)
+(link-goto: &quot;Laurel&quot;, &quot;Cat&#39;s eyes&quot;)
+(link-goto: &quot;Under&quot;, &quot;Undercoverings&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;pain&#39;&#39;
-Contrarainism: where -&gt; (link-goto: &quot;to become&quot;)
-not dying is a fate -&gt; (link-goto: &quot;in my pain&quot;)
-worse than death. -&gt; (link-goto: &quot;Death wish&quot;)
-
-&#39;&#39;your hatred&#39;&#39;
-Hatered is usually -&gt; (link-goto: &quot;No harm done&quot;)
-in the mind of -&gt; (link-goto: &quot;Sidestreaming&quot;)
-the beholder -&gt; (link-goto: &quot;show and tell&quot;)
-
-&#39;&#39;still breathed&#39;&#39;
-Breathing is something -&gt; (link-goto: &quot;STICKY SOULS&quot;)
-most of us -&gt; (link-goto: &quot;My soul&quot;)
-could do without -&gt; (link-goto: &quot;Merging&quot;)
-
-&#39;&#39;You&#39;&#39; -&gt; (link-goto: &quot;MOONBLOOD&quot;)
-
-&#39;&#39;--image&#39;&#39; -&gt; (link-goto: &quot;GLASS HARMONICA&quot;)
-&#39;&#39;--go back&#39;&#39; -&gt; (link-goto: &quot;MOON SHINE&quot;)
-&#39;&#39;--go elsewhere&#39;&#39;
-cosmo-agony -&gt; (link-goto: &quot;MOONBLOOD&quot;)
-Laurel -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)
-Under -&gt; (link-goto: &quot;Undercoverings&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="461" name="MOON SHINE" tags="Moon" position="1450,1450" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="461" name="MOON SHINE" tags="Moon" position="1450,1450" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;MOON SHINE&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Myth files
 
-This then, is the true story. &#39;&#39;The others&#39;&#39; you hear are all twisted variations, passed down by those who cannot remember.
+This then, is the true story. (link-repeat:&quot;The others&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The real paradox is: &quot;, &quot;moon hole&quot;)
+(link-goto: &quot;Truth is a lie.&quot;, &quot;MOONBLOOD&quot;)
+(link-goto: &quot;Blood is truth.&quot;, &quot;STICKY SOULS&quot;)
+]] you hear are all twisted variations, passed down by those who cannot remember.
 
-At first, only the &#39;&#39;dark&#39;&#39; existed. She twirled nothingness into fantastic patterns of shade and shadow. And no one could see them - not even the dark herself. She became bored with the &#39;&#39;unseen patterns&#39;&#39;, the atom-chilling loneliness of chaos. Of emptiness.
+At first, only the (link-repeat:&quot;dark&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;In the beginning was&quot;, &quot;AFTER A WHILE&quot;)
+(link-goto: &quot;the end. And the end&quot;, &quot;PRO RE NATA&quot;)
+(link-goto: &quot;existed without form.&quot;, &quot;HANDING DOWN DOOM&quot;)
+]] existed. She twirled nothingness into fantastic patterns of shade and shadow. And no one could see them - not even the dark herself. She became bored with the (link-repeat:&quot;unseen patterns&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Changes in patterns&quot;, &quot;WHAT THE MOON FORGOT&quot;)
+(link-goto: &quot;are themselves patterns&quot;, &quot;dust&quot;)
+]], the atom-chilling loneliness of chaos. Of emptiness.
 
 Slowly, she gathered strength into her, taking on form, substance. She created blood to swirl inside her, beating out patterns of breath, into her and out of her. For a long time, this was enough. When she became bored again, she reached outside of herself and shaped the earth. And her thoughts became embodied in the darkness:  thoughts of the sea moving in and out with her own breath. Of creatures breathing in the sea water. Of land for the sea to beat against. Of creatures breathing in the thin air. 
 
 For a long time, this was enough. When the creatures stumbled against each other in the dark, she laughed. Finally, they came to her and asked her for light. &quot;We are tired of feeling,&quot; they said. &quot;We want to see.&quot;
 
-The darkness nodded. She breathed into her very bones, causing them to glow like old, nearly abandoned coals. And she glowed pearl silver, so light that the clouds around her took on the glow, clothing the sky about her in streamy, loving patterns. The patterns changed as you watched them, and the animals sat for a long time, entranced. And &#39;&#39;*&#39;&#39; so the darkness became the moon.
+The darkness nodded. She breathed into her very bones, causing them to glow like old, nearly abandoned coals. And she glowed pearl silver, so light that the clouds around her took on the glow, clothing the sky about her in streamy, loving patterns. The patterns changed as you watched them, and the animals sat for a long time, entranced. And so the darkness became the moon.
 
-But this was not enough. The animals convened a hearing. &quot;We want what we do not have, we will &#39;&#39;die without it&#39;&#39; &quot; they told themselves. &quot;We will create ourselves into light, just as the dark has created herself into moon.&quot;
+But this was not enough. The animals convened a hearing. &quot;We want what we do not have, we will (link-repeat:&quot;die without it&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;There are too many&quot;, &quot;LOOSE SOULS&quot;)
+(link-goto: &quot;things we believe&quot;, &quot;fades.&quot;)
+(link-goto: &quot;we cannot live without.&quot;, &quot;peanut butter&quot;)
+]] &quot; they told themselves. &quot;We will create ourselves into light, just as the dark has created herself into moon.&quot;
 
 All the animals held their breath and blew in on themselves. And their wind was so great that they blew half the animals into the sky, where they glowed with such a fire that nothing remained in darkness. Even the dark moon fled. The rest of the animals found they, too, had changed. Now they all stood upright on two tiny pins, they all clothed themselves and needed to hunt each other to eat. So they hunted each other, and called themselves the people. They cried to the moon &quot;Help us in our misery! We cannot go on with the light!&quot; 
 
-And the light the animals had &#39;&#39;made&#39;&#39; sank into the ground. And the dark moon rose.  But she was no longer purely dark, nor did she glow with the beautiful light she had once had.  Now she was too weak to hide all of the hideous light of the people. &quot;You have taken my strength, my people. For centuries hence I must spend most of my time rebuilding my own body. But I will do what I can,&quot; she cried. The moon gathered her full strength (which, in truth, was very little now) and turned some of the people back into animals. These were grateful, and paid their respect to the moon. But some of the people liked living as loathsome people and did not want to go back to the old animal ways, and so each time the moon has her strength, they hide.
-
-
---image
---go back
---press on
-
-
+And the light the animals had (link-repeat:&quot;made&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON SHADOWS&quot;)
+]] sank into the ground. And the dark moon rose.  But she was no longer purely dark, nor did she glow with the beautiful light she had once had.  Now she was too weak to hide all of the hideous light of the people. &quot;You have taken my strength, my people. For centuries hence I must spend most of my time rebuilding my own body. But I will do what I can,&quot; she cried. The moon gathered her full strength (which, in truth, was very little now) and turned some of the people back into animals. These were grateful, and paid their respect to the moon. But some of the people liked living as loathsome people and did not want to go back to the old animal ways, and so each time the moon has her strength, they hide.
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;empty&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;trip&quot;)
+]]]
+&lt;div class=&quot;GP&quot;&gt;
+(link-repeat:&#39;&lt;div class=&quot;GP1A&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON CYCLES&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;GP1B&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON SHADOWS&quot;)
+]]]
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;The others&#39;&#39;
-The real paradox is: -&gt; (link-goto: &quot;moon hole&quot;)
-Truth is a lie. -&gt; (link-goto: &quot;MOONBLOOD&quot;)
-Blood is truth. -&gt; (link-goto: &quot;STICKY SOULS&quot;)
-
-&#39;&#39;dark&#39;&#39;
-In the beginning was -&gt; (link-goto: &quot;AFTER A WHILE&quot;)
-the end. And the end -&gt; (link-goto: &quot;PRO RE NATA&quot;)
-existed without form. -&gt; (link-goto: &quot;HANDING DOWN DOOM&quot;)
-
-&#39;&#39;unseen patterns&#39;&#39;
-Changes in patterns -&gt; (link-goto: &quot;WHAT THE MOON FORGOT&quot;)
-are themselves patterns. -&gt; (link-goto: &quot;dust&quot;)
-
-&#39;&#39;(The space between &quot;And so&quot; in &quot;And so the darkness became the moon&quot;)&#39;&#39;
-There are too many -&gt; (link-goto: &quot;LOOSE SOULS&quot;)
-things we believe -&gt; (link-goto: &quot;fades.&quot;)
-we cannot live without. -&gt; (link-goto: &quot;peanut butter&quot;)
-
-&#39;&#39;die without it&#39;&#39;
-There are too many -&gt; (link-goto: &quot;LOOSE SOULS&quot;)
-things we believe -&gt; (link-goto: &quot;fades.&quot;)
-we cannot live without. -&gt; (link-goto: &quot;peanut butter&quot;)
-
-&#39;&#39;made&#39;&#39; -&gt; (link-goto: &quot;MOON SHADOWS&quot;)
-
-&#39;&#39;--image&#39;&#39; -&gt; (link-goto: &quot;trip&quot;)
-&#39;&#39;--go back&#39;&#39; -&gt; (link-goto: &quot;MOON CYCLES&quot;)
-&#39;&#39;--press on &#39;&#39;-&gt; (link-goto: &quot;MOON SHADOWS&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="462" name="MOON CAKES" tags="Moon" position="1400,1075" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="462" name="MOON CAKES" tags="Moon" position="1400,1075" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;MOON CAKES&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Myth files
 
-Once, the moon always full. The hare in the moon shared his rice cakes if you could touch him as he rose and fell. A poor young rice farmer&#39;s daughter went wandering through a bamboo forest gathering young ferns. A rain had just fallen and the air and ground glistened in the newness of promised growth. She gathered more ferns and strayed much further than she ever had before. Before she knew it, she was &#39;&#39;completely lost&#39;&#39;. Taking a deep breath to calm herself, she stopped to rest and take her bearings. But when she woke, the waxing moon was nearly midway through the dark, starless sky.
+Once, the moon always full. The hare in the moon shared his rice cakes if you could touch him as he rose and fell. A poor young rice farmer&#39;s daughter went wandering through a bamboo forest gathering young ferns. A rain had just fallen and the air and ground glistened in the newness of promised growth. She gathered more ferns and strayed much further than she ever had before. Before she knew it, she was (link-repeat:&quot;completely lost&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Three little kittens&quot;, &quot;Slip-sliding away&quot;)
+(link-goto: &quot;have lost their mittens&quot;, &quot;Broken wires&quot;)
+(link-goto: &quot;and they began to cry.&quot;, &quot;ALTERED SACRIFICES&quot;)
+(link-goto: &quot;But the moon was&quot;, &quot;Running&quot;)
+(link-goto: &quot;too far to hear them.&quot;, &quot;leaving only&quot;)
+]]. Taking a deep breath to calm herself, she stopped to rest and take her bearings. But when she woke, the waxing moon was nearly midway through the dark, starless sky.
 
-&quot;Oh &#39;&#39;hare*&#39;&#39;, oh hare, up there pounding your rice cakes,&quot; she cried to the moon, &quot;Grant me swift feet and a clear head that I might run home quickly. My poor parents will soon die of fright for me if they have not already!&quot;
+&quot;Oh (link-repeat:&quot;hare*&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Hares&quot;)
+]], oh hare, up there pounding your rice cakes,&quot; she cried to the moon, &quot;Grant me swift feet and a clear head that I might run home quickly. My poor parents will soon die of fright for me if they have not already!&quot;
 
 As she ran, the trees thickened about her. She fled faster through the forest, her fast footsteps barely making a sound in the moist fallen leaves. Her breath came quick and hard, a delicate intrusion in the thick of the night. Nothing else stirred.
 
-Finally, she reached the clearing where her father&#39;s paddies lay, gleaming softly with the shadows of the moon. She walked up to her &#39;&#39;father&#39;s house&#39;&#39;, but the door had slid shut and was fastened tight. She walked around to the firehole, and peered into the darkness.
+Finally, she reached the clearing where her father&#39;s paddies lay, gleaming softly with the shadows of the moon. She walked up to her (link-repeat:&quot;father&#39;s house&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Do fathers forget&quot;, &quot;ever get&quot;)
+(link-goto: &quot;their children because&quot;, &quot;prepaid&quot;)
+(link-goto: &quot;they do not carry&quot;, &quot;Dead parakeets&quot;)
+(link-goto: &quot;them in the womb?&quot;, &quot;Meaning what&quot;)
+]], but the door had slid shut and was fastened tight. She walked around to the firehole, and peered into the darkness.
 
 Her father and mother were inside safely sleeping, and her own form glittered harshly between them. 
 
@@ -20396,117 +20563,97 @@ The young girl screamed, and her father rushed out to see what was going on. The
 
 The father shooed her off, and made the sign of protection against witches. &quot;Be off with you, fox-girl!&quot; He cried. &quot;Our daughter is safe at home with us in bed. Go torment someone else and leave us alone!&quot;
 
-Knowing that the cold form in bed was not her own, but a &#39;&#39;changeling&#39;&#39;, a moon-child sent to satisfy her father and mother, the girl screamed louder.  But the father shut the door firmly and would not listen.  The girl ran back into the forest. She touched the pads of her feet, felt the sharp growth of her nose and the soft, pointed ears.
+Knowing that the cold form in bed was not her own, but a (link-repeat:&quot;changeling&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;How many lives have&quot;, &quot;BESTOWING BIRTHRIGHTS&quot;)
+(link-goto: &quot;we turned our backs on&quot;, &quot;GYNATRISIA&quot;)
+(link-goto: &quot;simply because the moon&quot;, &quot;MOON MOTHER&quot;)
+(link-goto: &quot;wanted them more&quot;, &quot;WILD MOONS&quot;)
+(link-goto: &quot;than we did?&quot;, &quot;MOON PRINCESS&quot;)
+]], a moon-child sent to satisfy her father and mother, the girl screamed louder.  But the father shut the door firmly and would not listen.  The girl ran back into the forest. She touched the pads of her feet, felt the sharp growth of her nose and the soft, pointed ears.
 
 &quot;Hare,&quot; she said, &quot;I shall take every one of your rice cakes for my family. Then they will believe it is me!&quot; And she jumped up to bite the moon. The moon grew smaller, and the hare pounded more and more furiously. 
 
 As far as I know, the fox girl is still leaping, determined to get every last rice cake. But sometimes she must rest, and then the hare can catch up.
-
-
-
---image
---Press on
-
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;empty&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;I am not&quot;)
+]]]
+(link-repeat:&#39;&lt;div class=&quot;PO&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON FALLEN&quot;)
+]]]
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="463" name="Hares" tags="Note" position="1650,1075" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;Hares&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
 
-
-Links:
-____________________
-
-&#39;&#39;completely lost&#39;&#39;
-Three little kittens -&gt; (link-goto: &quot;Slip-sliding away&quot;)
-have lost their mittens -&gt; (link-goto: &quot;Broken wires&quot;)
-And they began to cry -&gt; (link-goto: &quot;ALTERED SACRIFICES&quot;)
-But the moon was -&gt; (link-goto: &quot;Running&quot;)
-too far to hear them. -&gt; (link-goto: &quot;leaving only&quot;)
-
-&#39;&#39;hare*&#39;&#39; -&gt; (link-goto: &quot;hares&quot;)
-
-&#39;&#39;father&#39;s house&#39;&#39;
-Do fathers forget -&gt; (link-goto: &quot;ever get&quot;)
-their childeren because -&gt; (link-goto: &quot;prepaid&quot;)
-they do not carry -&gt; (link-goto: &quot;Dead parakeets&quot;)
-them in the womb? -&gt; (link-goto: &quot;Meaning what&quot;)
-
-&#39;&#39;changeling&#39;&#39;
-How many lives have -&gt; (link-goto: &quot;BESTOWING BIRTHRIGHTS&quot;)
-we turned our backs on -&gt; (link-goto: &quot;GYNATRISIA&quot;)
-simply because the moon -&gt; (link-goto: &quot;MOON MOTHER&quot;)
-wanted them more -&gt; (link-goto: &quot;WILD MOONS&quot;)
-than we did? -&gt; (link-goto: &quot;MOON PRINCESS&quot;)
-
-&#39;&#39;--image&#39;&#39; -&gt; (link-goto: &quot;I am not&quot;)
-&#39;&#39;--press on&#39;&#39; -&gt; (link-goto: &quot;MOON FALLEN&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="463" name="Hares" tags="Note" position="1650,1075" size="100,100">NOTE:
-
-In China and Japan, the hare embodies power and immortality. His cakes are made from &#39;&#39;elixirs of immortality&#39;&#39; - once you taste one in your dreams, you will never die.
+In China and Japan, the hare embodies power and immortality. His cakes are made from (link-repeat:&quot;elixirs of immortality&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Immortality is more&quot;, &quot;STICKY SOULS&quot;)
+(link-goto: &quot;often a curse&quot;, &quot;waiting lists&quot;)
+(link-goto: &quot;than a cure.&quot;, &quot;Merging&quot;)
+]] - once you taste one in your dreams, you will never die.
 
 The hare offered himself to the Buddha; or the Buddha - in one of his incantations as a hareÑoffered himself to a starving god, Sakra; or a female hare offered herself to a starving peasant, who turned out to be the Buddha. In any case, the Buddha or the Sakra placed the hare carefully on the moon, where he/she has been ever since.
-
-
-
---back
-
-
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;MOON CAKES&quot;)
+]]]
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="464" name="Desperate" tags="Note" position="1650,1450" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;Desperate&lt;div class=&quot;container3&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+NOTE:
+
+desperate a. leaving (link-repeat:&quot;no room for hope&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Nothing is crueler&quot;, &quot;Ach du lieber&quot;)
+(link-goto: &quot;than giving hope&quot;, &quot;see it.&quot;)
+(link-goto: &quot;when there is none.&quot;, &quot;Thin bridges&quot;)
+]]; hopelessly bad or difficult or dangerous; reckless from danger.
+&lt;/div&gt;
+&lt;/div&gt;
+(link-repeat:&#39;&lt;div class=&quot;back&quot;&gt;&lt;/div&gt;&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+(link-goto: &quot;back&quot;, &quot;Directions&quot;)
+(link-goto: &quot;back&quot;, &quot;Frozen dreams&quot;)
+(link-goto: &quot;back&quot;, &quot;MOON CYCLES&quot;)
+(link-goto: &quot;back&quot;, &quot;Merging&quot;)
+(link-goto: &quot;back&quot;, &quot;Escaping the storm&quot;)
+(link-goto: &quot;back&quot;, &quot;Going on empty&quot;)
+(link-goto: &quot;back&quot;, &quot;Visigoths&quot;)
+(link-goto: &quot;back&quot;, &quot;Egress&quot;)
+(link-goto: &quot;back&quot;, &quot;affair&quot;)
+(link-goto: &quot;back&quot;, &quot;PRAYER&quot;)
+]]]
 ___________________
-
-
-Links:
-____________________
-
-&#39;&#39;elixirs of immortality&#39;&#39;
-Immortality is more -&gt; (link-goto: &quot;STICKY SOULS&quot;)
-often a curse -&gt; (link-goto: &quot;waiting lists&quot;)
-than a cure. -&gt; (link-goto: &quot;Merging&quot;)
-
-&#39;&#39;--back &#39;&#39;-&gt; (link-goto: &quot;MOON CAKES&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="464" name="Desperate" tags="Note" position="1650,1450" size="100,100">NOTE:
-
-desperate a. leaving &#39;&#39;no room for hope&#39;&#39;; hopelessly bad or difficult or dangerous; reckless from danger.
-
-
-
---back 
-
-
-___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;no room for hope&#39;&#39;
-Nothing is crueler -&gt; (link-goto: &quot;Ach du lieber&quot;)
-than giving hope -&gt; (link-goto: &quot;see it.&quot;)
-when there is none. -&gt; (link-goto: &quot;Thin bridges&quot;)
-
-&#39;&#39;--back&#39;&#39;
-back -&gt; (link-goto: &quot;Directions&quot;)
-back -&gt; (link-goto: &quot;Frozen dreams&quot;)
-back -&gt; (link-goto: &quot;MOON CYCLES&quot;)
-back -&gt; (link-goto: &quot;Merging&quot;)
-back -&gt; (link-goto: &quot;Escaping the storm&quot;)
-back -&gt; (link-goto: &quot;Going on empty&quot;)
-back -&gt; (link-goto: &quot;Visigoths&quot;)
-back -&gt; (link-goto: &quot;Egress&quot;)
-back -&gt; (link-goto: &quot;affair&quot;)
-back -&gt; (link-goto: &quot;PRAYER&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="465" name="MOON STORIES" tags="Moon" position="1300,1300" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="465" name="MOON STORIES" tags="Moon" position="1300,1300" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;MOON STORIES&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Myth files
 
@@ -20515,40 +20662,42 @@ I&#39;ve been keeping a list of folk tales about the moon. Collecting them, rety
 But I tell them only to myself.
 
 
-&#39;&#39;Artemis:  Moon Cakes
-Hecate:    Moon Fallen
-Io/Isis:     Moon Princess
-Selene:    Moon Girl
-Changing Woman:    Moon Cycles
-Moon Creator:            Moon Shine
-Moon Destroyer:       Moon Shadows&#39;&#39;
-
-
+(link-repeat:&quot;Artemis: Moon Cakes&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON CAKES&quot;)
+]]
+(link-repeat:&quot;Hecate: Moon Fallen&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON FALLEN&quot;)
+]]
+(link-repeat:&quot;Hecate: Moon Fallen&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON FALLEN&quot;)
+]]
+(link-repeat:&quot;Selene: Moon Girl&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON GIRL&quot;)
+]]
+(link-repeat:&quot;Changing Woman: Moon Cycles&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON CYCLES&quot;)
+]]
+(link-repeat:&quot;Moon Creator: Moon Shine&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON SHINE&quot;)
+]]
+(link-repeat:&quot;Moon Destroyer: Moon Shadows&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON SHADOWS&quot;)
+]]
+&lt;/div&gt;
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;Artemis: Moon Cakes&#39;&#39; -&gt; (link-goto: &quot;MOON CAKES&quot;)
-
-&#39;&#39;Hecate: Moon Fallen&#39;&#39; -&gt; (link-goto: &quot;MOON FALLEN&quot;)
-
-&#39;&#39;Io/Isis: Moon Princess&#39;&#39; -&gt; (link-goto: &quot;MOON PRINCESS&quot;)
-
-&#39;&#39;Selene: Moon Girl &#39;&#39;-&gt; (link-goto: &quot;MOON GIRL&quot;)
-
-&#39;&#39;Changing Woman: Moon Cycles&#39;&#39; -&gt; (link-goto: &quot;MOON CYCLES&quot;)
-
-&#39;&#39;Moon Creator: Moon Shine&#39;&#39; -&gt; (link-goto: &quot;MOON SHINE&quot;)
-
-&#39;&#39;Moon Destroyer: Moon Shadows&#39;&#39; -&gt; (link-goto: &quot;MOON SHADOWS&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="466" name="BLOOD DROPS" tags="Moon" position="1375,1300" size="100,100">To:  Sarah Murphy
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="466" name="BLOOD DROPS" tags="Moon" position="1375,1300" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+  &lt;h2 class&gt;
+    &lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;BLOOD DROPS&lt;div class=&quot;container2&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
+  &lt;div class=&quot;sarah&quot;&gt;
+To:  Sarah Murphy
 From:  Sarah
 Subject:  Soul files
 
@@ -20556,137 +20705,198 @@ The moon makes her demands known in a  dizzying kaleidoscope of blood.  As I tur
 
 The moon turns her fragments faster, knowing I cannot piece them together.  And I let the shards of her memory run through my fingers and cut my soul into fragile glass ribbons.
 
-&#39;&#39;After a while  
-Aha
-All I really want
-Altered sacrifices
-Bones know
-Borges
-Cell memory
-Death fear
-Denial
-Doubled
-Fall silent
-Glass endings
-Glass harmonica
-Gynastrisia
-Harm
-Hysterics
-Imbibe
-Left angles to the moon
-Life fear
-Life sparks
-Listen
-Loose souls
-Lullaby
-Moon blessings
-Moon eyes
-Moon madness
-Moon mother
-Moon moths
-Moonsisters
-My soul is captured so far in my pain that I cannot free her
-Oiche Dhuibhre
-Once again, shut downs wash over me, leaving only to return.
-Prayer
-Prayers unanswered 
-Pro Re Nata
-Rage
-Repetition
-Rituals
-Scath Gaelach
-Sole remedy
-Sticky souls
-Stones understand
-Stubbed out
-The air between us fades.  She is alone.
-The moon&#39;s price
-The most precious
-Tobacco shards
-Triumphs
-Warning lights
-What I don&#39;t know 
-What the moon forgot
-Wild moons&#39;&#39;
-
+(link-repeat:&quot;After a while&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;AFTER A WHILE&quot;)
+]]
+(link-repeat:&quot;Aha&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Aha&quot;)
+]]
+(link-repeat:&quot;All I really want&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;ALL I REALLY WANT&quot;)
+]]
+(link-repeat:&quot;Bones know&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;BONES KNOW&quot;)
+]]
+(link-repeat:&quot;Borges&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;BORGES&quot;)
+]]
+(link-repeat:&quot;Cell memory&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;CELL MEMORY&quot;)
+]]
+(link-repeat:&quot;Death fear&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Death fear&quot;)
+]]
+(link-repeat:&quot;Denial&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;DENIAL&quot;)
+]]
+(link-repeat:&quot;Doubled&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;DOUBLED&quot;)
+]]
+(link-repeat:&quot;Fall silent&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;FALL SILENT&quot;)
+]]
+(link-repeat:&quot;Glass endings&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;GLASS ENDINGS&quot;)
+]]
+(link-repeat:&quot;Glass Harmonica&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;GLASS HARMONICA&quot;)
+]]
+(link-repeat:&quot;Gynastrisia&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;GYNASTRISIA&quot;)
+]]
+(link-repeat:&quot;Harm&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;HARM&quot;)
+]]
+(link-repeat:&quot;Hysterics&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;HYSTERICS&quot;)
+]]
+(link-repeat:&quot;Imbible&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Imbible&quot;)
+]]
+(link-repeat:&quot;Left angles to the moon&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;LEFT ANGLES TO THE MOON&quot;)
+]]
+(link-repeat:&quot;Life fear&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;LIFE FEAR&quot;)
+]]
+(link-repeat:&quot;Life sparks&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;LIFE SPARKS&quot;)
+]]
+(link-repeat:&quot;Listen&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;LISTEN&quot;)
+]]
+(link-repeat:&quot;Loose souls&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;LOOSE SOULS&quot;)
+]]
+(link-repeat:&quot;Lullaby&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;LULLABY&quot;)
+]]
+(link-repeat:&quot;Moon blessings&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON BLESSINGS&quot;)
+]]
+(link-repeat:&quot;Moon eyes&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON EYES&quot;)
+]]
+(link-repeat:&quot;Moon madness&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON MADNESS&quot;)
+]]
+(link-repeat:&quot;Moon mother&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON MOTHER&quot;)
+]]
+(link-repeat:&quot;Moon moths&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOON MOTHS&quot;)
+]]
+(link-repeat:&quot;Moonsisters&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;MOONSISTERS&quot;)
+]]
+(link-repeat:&quot;My soul&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;My soul&quot;)
+]](link-repeat:&quot;is captured&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;is captured&quot;)
+]](link-repeat:&quot;so far&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;so far&quot;)
+]](link-repeat:&quot;in my pain&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;in my pain&quot;)
+]](link-repeat:&quot;that I cannot&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;that I cannot&quot;)
+]](link-repeat:&quot;free her.&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;free her.&quot;)
+]]
+(link-repeat:&quot;Oiche Dhuibhre&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;OICHE DHUIBHRE&quot;)
+]]
+(link-repeat:&quot;Once again,&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Once again,&quot;)
+]](link-repeat:&quot;shut downs&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;shut downs&quot;)
+]](link-repeat:&quot;wash over me&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;wash over me&quot;)
+]](link-repeat:&quot;leaving only&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;leaving only&quot;)
+]](link-repeat:&quot;to return.&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;to return.&quot;)
+]]
+(link-repeat:&quot;Prayer&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;PRAYER&quot;)
+]]
+(link-repeat:&quot;Prayers unanswered&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;PRAYERS UNANSWERED&quot;)
+]]
+(link-repeat:&quot;Pro Re Nata&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;PRO RE NATA&quot;)
+]]
+(link-repeat:&quot;Rage&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Rage&quot;)
+]]
+(link-repeat:&quot;Repetition&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;REPETITION&quot;)
+]]
+(link-repeat:&quot;Rituals&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;RITUALS&quot;)
+]]
+(link-repeat:&quot;Scath Gealach&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;SCATH GEALACH&quot;)
+]]
+(link-repeat:&quot;Sole remedy&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;SOLE REMEDY&quot;)
+]]
+(link-repeat:&quot;Sticky souls&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;STICKY SOULS&quot;)
+]]
+(link-repeat:&quot;Stones understand&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;STONES UNDERSTAND&quot;)
+]]
+(link-repeat:&quot;Stubbed out&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Stubbed out&quot;)
+]]
+(link-repeat:&quot;The air&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;The air&quot;)
+]](link-repeat:&quot;between&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;between&quot;)
+]](link-repeat:&quot;us&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;us&quot;)
+]](link-repeat:&quot;fades.&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;fades.&quot;)
+]](link-repeat:&quot;She is&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;She is&quot;)
+]](link-repeat:&quot;alone.&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;alone.&quot;)
+]]
+(link-repeat:&quot;The moon&#39;s price&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;THE MOON&#39;S PRICE&quot;)
+]]
+(link-repeat:&quot;The most precious&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;THE MOST PRECIOUS&quot;)
+]]
+(link-repeat:&quot;Tobacco shards&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;Tobacco shards&quot;)
+]]
+(link-repeat:&quot;Triumphs&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;TRIUMPHS&quot;)
+]]
+(link-repeat:&quot;Warning lights&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;WARNING LIGHTS&quot;)
+]]
+(link-repeat:&quot;What I don&#39;t know&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;WHAT I DON&#39;T KNOW&quot;)
+]]
+(link-repeat:&quot;What the moon forgot&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;WHAT THE MOON FORGOT&quot;)
+]]
+(link-repeat:&quot;Wild moons&quot;)[(display:&quot;Modal code&quot;)(append:?modal)[
+(link-goto: &quot;WILD MOONS&quot;)
+]]
+&lt;/div&gt;
+&lt;/div&gt;
 ___________________
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39;/ &#39;&#39;(text-colour:red)[Moon]&#39;&#39;/ &#39;&#39;(text-colour:green)[Laurel]&#39;&#39;
-___________________
-
-
-Links:
-____________________
-
-&#39;&#39;After a while&#39;&#39; -&gt; (link-goto: &quot;AFTER A WHILE&quot;)
-&#39;&#39;Aha&#39;&#39; -&gt; (link-goto: &quot;Aha&quot;)
-&#39;&#39;All I really want&#39;&#39; -&gt; (link-goto: &quot;ALL I REALLY WANT&quot;)
-&#39;&#39;Altered sacrifices&#39;&#39; -&gt; (link-goto: &quot;ALTERED SACRIFICES&quot;)
-&#39;&#39;Bones know&#39;&#39; -&gt; (link-goto: &quot;BONES KNOW&quot;)
-&#39;&#39;Borges&#39;&#39; -&gt; (link-goto: &quot;BORGES&quot;)
-&#39;&#39;Cell memory&#39;&#39; -&gt; (link-goto: &quot;CELL MEMORY&quot;)
-&#39;&#39;Death fear&#39;&#39; -&gt; (link-goto: &quot;Death fear&quot;)
-&#39;&#39;Denial&#39;&#39; -&gt; (link-goto: &quot;DENIAL&quot;)
-&#39;&#39;Doubled&#39;&#39; -&gt; (link-goto: &quot;DOUBLED&quot;)
-&#39;&#39;Fall silent&#39;&#39; -&gt; (link-goto: &quot;FALL SILENT&quot;)
-&#39;&#39;Glass endings&#39;&#39; -&gt; (link-goto: &quot;GLASS ENDINGS&quot;)
-&#39;&#39;Glass harmonica&#39;&#39; -&gt; (link-goto: &quot;GLASS HARMONICA&quot;)
-&#39;&#39;Gynastrisia&#39;&#39; -&gt; (link-goto: &quot;GYNASTRISIA&quot;)
-&#39;&#39;Harm&#39;&#39; -&gt; (link-goto: &quot;HARM&quot;)
-&#39;&#39;Hysterics&#39;&#39; -&gt; (link-goto: &quot;HYSTERICS&quot;)
-&#39;&#39;Imbible&#39;&#39; -&gt; (link-goto: &quot;Imbible&quot;)
-&#39;&#39;Left angles to the moon&#39;&#39; -&gt; (link-goto: &quot;LEFT ANGLES TO THE MOON&quot;)
-&#39;&#39;Life fear&#39;&#39; -&gt; (link-goto: &quot;LIFE FEAR&quot;)
-&#39;&#39;Life sparks&#39;&#39; -&gt; (link-goto: &quot;LIFE SPARKS&quot;)
-&#39;&#39;Listen&#39;&#39; -&gt; (link-goto: &quot;LISTEN&quot;)
-&#39;&#39;Loose souls&#39;&#39; -&gt; (link-goto: &quot;LOOSE SOULS&quot;)
-&#39;&#39;Lullaby&#39;&#39; -&gt; (link-goto: &quot;LULLABY&quot;)
-&#39;&#39;Moon blessings&#39;&#39; -&gt; (link-goto: &quot;MOON BLESSINGS&quot;)
-&#39;&#39;Moon eyes&#39;&#39; -&gt; (link-goto: &quot;MOON EYES&quot;)
-&#39;&#39;Moon madness&#39;&#39; -&gt; (link-goto: &quot;MOON MADNESS&quot;)
-&#39;&#39;Moon mother&#39;&#39; -&gt; (link-goto: &quot;MOON MOTHER&quot;)
-&#39;&#39;Moon moths&#39;&#39; -&gt; (link-goto: &quot;MOON MOTHS&quot;)
-&#39;&#39;Moonsisters&#39;&#39; -&gt; (link-goto: &quot;MOONSISTERS&quot;)
-&#39;&#39;My soul&#39;&#39; -&gt; (link-goto: &quot;My soul&quot;)
-&#39;&#39;is captured&#39;&#39; -&gt;is captured&quot;)
-&#39;&#39;so far&#39;&#39; -&gt; (link-goto: &quot;so far&quot;)
-&#39;&#39;in my pain&#39;&#39; -&gt; (link-goto: &quot;in my pain&quot;)
-&#39;&#39;that I cannot&#39;&#39; -&gt; (link-goto: &quot;that I cannot&quot;)
-&#39;&#39;free her&#39;&#39; -&gt; (link-goto: &quot;free her.&quot;)
-&#39;&#39;Oiche Dhuibhre&#39;&#39; -&gt; (link-goto: &quot;OICHE DHUIBHRE&quot;)
-&#39;&#39;Once again,&#39;&#39; -&gt; (link-goto: &quot;Once again,&quot;)
-&#39;&#39;shut downs&#39;&#39; -&gt; (link-goto: &quot;shut downs&quot;)
-&#39;&#39;wash over me&#39;&#39; -&gt; (link-goto: &quot;wash over me&quot;)
-&#39;&#39;leaving only&#39;&#39; -&gt; (link-goto: &quot;leaving only&quot;)
-&#39;&#39;to return.&#39;&#39; -&gt; (link-goto: &quot;to return.&quot;)
-&#39;&#39;Prayer&#39;&#39; -&gt; (link-goto: &quot;PRAYER&quot;)
-&#39;&#39;Prayers unanswered&#39;&#39; -&gt; (link-goto: &quot;PRAYERS UNANSWERED&quot;)
-&#39;&#39;Pro Re Nata&#39;&#39; -&gt; (link-goto: &quot;PRO RE NATA&quot;)
-&#39;&#39;Rage&#39;&#39; -&gt; (link-goto: &quot;Rage&quot;)
-&#39;&#39;Repetition&#39;&#39; -&gt; (link-goto: &quot;REPETITION&quot;)
-&#39;&#39;Rituals&#39;&#39; -&gt; (link-goto: &quot;RITUALS&quot;)
-&#39;&#39;Scath Gealach&#39;&#39; -&gt; (link-goto: &quot;SCATH GEALACH&quot;)
-&#39;&#39;Sole remedy&#39;&#39; -&gt; (link-goto: &quot;SOLE REMEDY&quot;)
-&#39;&#39;Sticky souls&#39;&#39; -&gt; (link-goto: &quot;STICKY SOULS&quot;)
-&#39;&#39;Stones understands&#39;&#39; -&gt; (link-goto: &quot;STONES UNDERSTAND&quot;)
-&#39;&#39;Stubbed out&#39;&#39; -&gt; (link-goto: &quot;Stubbed out&quot;)
-&#39;&#39;The air&#39;&#39; -&gt; (link-goto: &quot;The air&quot;)
-&#39;&#39;between&#39;&#39; -&gt; (link-goto: &quot;between&quot;)
-&#39;&#39;us&#39;&#39; -&gt; (link-goto: &quot;us&quot;)
-&#39;&#39;fades.&#39;&#39; -&gt; (link-goto: &quot;fades.&quot;)
-&#39;&#39;She is&#39;&#39; -&gt; (link-goto: &quot;She is&quot;)
-&#39;&#39;alone&#39;&#39; -&gt; (link-goto: &quot;alone.&quot;)
-&#39;&#39;The moon&#39;s price&#39;&#39; -&gt; (link-goto: &quot;THE MOON&#39;S PRICE&quot;)
-&#39;&#39;The most precious&#39;&#39; -&gt; (link-goto: &quot;THE MOST PRECIOUS&quot;)
-&#39;&#39;Tobacco shards&#39;&#39; -&gt; (link-goto: &quot;Tobacco shards&quot;)
-&#39;&#39;Triumphs&#39;&#39; -&gt; (link-goto: &quot;TRIUMPHS&quot;)
-&#39;&#39;Warning lights&#39;&#39; -&gt; (link-goto: &quot;WARNING LIGHTS&quot;)
-&#39;&#39;What I don&#39;t know&#39;&#39; -&gt; (link-goto: &quot;WHAT I DON&#39;T KNOW&quot;)
-&#39;&#39;What the moon forgot&#39;&#39; -&gt; (link-goto: &quot;WHAT THE MOON FORGOT&quot;)
-&#39;&#39;Wild moons &#39;&#39; -&gt; (link-goto: &quot;WILD MOONS&quot;)
-
-&#39;&#39;(text-colour:navy)[Sarah]&#39;&#39; -&gt; (link-goto: &quot;Undercoverings&quot;)
-&#39;&#39;(text-colour:red)[Moon]&#39;&#39; -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;) 
-&#39;&#39;(text-colour:green)[Laurel]&#39;&#39; -&gt; (link-goto: &quot;Cat&#39;s eyes&quot;)</tw-passagedata><tw-passagedata pid="467" name="Profession" tags="Sarah" position="10450,7900" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
+&#39;&#39;(text-colour:navy)[(link-repeat: &#39;Sarah&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Undercoverings&quot;)
+]]]]&#39;&#39;/&#39;&#39;(text-colour:red)[(link-repeat: &#39;Moon&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Selene&#39;s dreams&quot;)
+]]]]&#39;&#39;/ &#39;&#39;(text-colour:green)[(link-repeat: &#39;Laurel&#39;)[(display: &quot;Modal code&quot;)(append: ?modal)[(set: $modal to true)(if: $modal)[
+ (link-goto: &quot;Cat&#39;s eyes&quot;)
+]]]]&#39;&#39;
+___________________</tw-passagedata><tw-passagedata pid="467" name="Profession" tags="Sarah" position="10450,7900" size="100,100">&lt;div class=&quot;tw-passage&quot;&gt;
   &lt;h2 class&gt;
     &lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;Profession&lt;div class=&quot;container1&quot;&gt;&lt;/div&gt;&lt;/h2&gt;
   &lt;div class=&quot;sarah&quot;&gt;
@@ -21124,8 +21334,8 @@ blood drips -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;)
 	&lt;/div&gt;
 
 	&lt;div class=&quot;box laurel green-lg&quot; id=&quot;l1&quot;&gt;
-		&lt;div class=&quot;header&quot;&gt;&lt;a&gt;[[&lt;span&gt;&amp;#182;&lt;/span&gt;Laurel&#39;s World|Laurel&#39;s World Map]]&lt;/a&gt;&lt;/div&gt;
-		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a1&quot;&gt;&lt;/a&gt;
+		&lt;div class=&quot;header&quot;&gt;&lt;a&gt;[[&lt;span&gt;&amp;#182;&lt;/span&gt;Laurel&#39;s World|Laurel&#39;s World]]&lt;/a&gt;&lt;/div&gt;
+		&lt;a class=&quot;inner yellow-sm&quot; id=&quot;l1-a1&quot;&gt;&lt;/a&gt;
 		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a2&quot;&gt;&lt;/a&gt;
 		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a3&quot;&gt;&lt;/a&gt;
 		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l1-a4&quot;&gt;&lt;/a&gt;
@@ -21167,16 +21377,16 @@ blood drips -&gt; (link-goto: &quot;Selene&#39;s dreams&quot;)
 		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a15&quot;&gt;&lt;/a&gt;
 		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l2-a16&quot;&gt;&lt;/a&gt;
         
-		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a1&quot;&gt;&lt;/a&gt;
-		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a2&quot;&gt;&lt;/a&gt;
-		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a3&quot;&gt;&lt;/a&gt;
-		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a4&quot;&gt;&lt;/a&gt;
-		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a5&quot;&gt;&lt;/a&gt;
-		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a6&quot;&gt;&lt;/a&gt;
-		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a7&quot;&gt;&lt;/a&gt;
-		&lt;a href=&quot;&quot; class=&quot;inner yellow-sm&quot; id=&quot;l3-a8&quot;&gt;&lt;/a&gt;
+		&lt;a class=&quot;inner yellow-sm&quot; id=&quot;l3-a1&quot;&gt;&lt;/a&gt;
+		&lt;a class=&quot;inner yellow-sm&quot; id=&quot;l3-a2&quot;&gt;&lt;/a&gt;
+		&lt;a class=&quot;inner yellow-sm&quot; id=&quot;l3-a3&quot;&gt;&lt;/a&gt;
+		&lt;a class=&quot;inner yellow-sm&quot; id=&quot;l3-a4&quot;&gt;&lt;/a&gt;
+		&lt;a class=&quot;inner yellow-sm&quot; id=&quot;l3-a5&quot;&gt;&lt;/a&gt;
+		&lt;a class=&quot;inner yellow-sm&quot; id=&quot;l3-a6&quot;&gt;&lt;/a&gt;
+		&lt;a class=&quot;inner yellow-sm&quot; id=&quot;l3-a7&quot;&gt;&lt;/a&gt;
+		&lt;a class=&quot;inner yellow-sm&quot; id=&quot;l3-a8&quot;&gt;&lt;/a&gt;
         
-		&lt;a href=&quot;&quot; class=&quot;inner green-sm&quot; id=&quot;l4-a1&quot;&gt;&lt;/a&gt;
+		&lt;a class=&quot;inner green-sm&quot; id=&quot;l4-a1&quot;&gt;&lt;/a&gt;
 	&lt;/div&gt;</tw-passagedata><tw-passagedata pid="481" name="Laurel&#39;s World Map" tags="map" position="1325,100" size="100,100">&lt;div class=&quot;map&quot;&gt;
 (bg:red)[&lt;!-- ------------------------Laurel 1------------------------ --&gt;]
   &lt;div class=&quot;box laurel yellow-lg&quot; id=&quot;lg-l1-a1&quot;&gt;
